@@ -281,8 +281,8 @@ class WikiPathwaysCache():
             scour_options.remove_metadata = True
             scour_options.newlines = False
             scour_options.strip_comments = True
-            scour_options.strip_ids = True
-            scour_options.shorten_ids = True
+            scour_options.strip_ids = False
+            scour_options.shorten_ids = False
             scour_options.strip_xml_space_attribute = True
 
             try:
