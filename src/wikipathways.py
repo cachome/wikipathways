@@ -5,10 +5,9 @@ import os
 import re
 import ssl
 from time import sleep
-import zipfile
 
 import requests
-from lxml import html, etree
+from lxml import etree
 from scour import scour
 
 # # Enable importing local modules when directly calling as script
@@ -176,9 +175,9 @@ def custom_lossy_optimize_svg(svg):
 
 class WikiPathwaysCache():
 
-    def __init__(self, output_dir="data/wikipathways/", reuse=False):
+    def __init__(self, output_dir="data/", reuse=False):
         self.output_dir = output_dir
-        self.tmp_dir = f"tmp/wikipathways/"
+        self.tmp_dir = f"tmp/"
         self.reuse = reuse
 
         if not os.path.exists(self.output_dir):
@@ -251,17 +250,6 @@ class WikiPathwaysCache():
             with open(svg_path, "w") as f:
                 f.write(svg)
             sleep(1)
-        # url = get_svg_zip_url(organism)
-        # print(f"Fetching {url}")
-
-        # response = requests.get(url)
-        # zip = zipfile.ZipFile(io.BytesIO(response.content))
-        # zip.extractall(org_dir)
-
-        # # with open(output_path, "w") as f:
-        # #     f.write(content)
-        # with zipfile.ZipFile(output_path, 'r') as zip_ref:
-        #     zip_ref.extractall(self.tmp_dir)
 
     def optimize_svgs(self, org_dir):
         for svg_path in glob.glob(f'{org_dir}*.svg'):
@@ -350,7 +338,7 @@ if __name__ == "__main__":
         help=(
             "Directory to put outcome data.  (default: %(default))"
         ),
-        default="data/wikipathways/"
+        default="data/"
     )
     parser.add_argument(
         "--reuse",
