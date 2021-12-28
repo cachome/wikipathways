@@ -7,6 +7,10 @@ import ssl
 from time import sleep
 import zipfile
 
+from selenium import webdriver
+# from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
+
 import requests
 from lxml import html, etree
 from scour import scour
@@ -56,6 +60,15 @@ def get_pathway_ids_and_names(organism):
 def custom_lossless_optimize_svg(svg):
     """Losslessly decrease size of WikiPathways SVG
     """
+    svg = svg.replace('<?xml version="1.0" encoding="UTF-8"?>\n', '')
+    tree = etree.fromstring(svg)
+    controls = tree.xpath('//*[@class="svg-pan-zoom-control"]')[0]
+    tree.remove(controls)
+    svg = etree.tostring(tree).decode("utf-8")
+
+    svg = '<?xml version="1.0" encoding="UTF-8"?>\n' + svg
+
+
     font_family = "\'Liberation Sans\', Arial, sans-serif"
     svg = re.sub(f'font-family="{font_family}"', '', svg)
     style = (
@@ -138,7 +151,9 @@ def custom_lossy_optimize_svg(svg):
     svg = re.sub('SingleFreeNode DataNode ', '', svg)
     svg = re.sub('SingleFreeNode Label', 'Label', svg)
     svg = re.sub('Edge Interaction ', '', svg)
-    svg = re.sub('Edge Interaction', 'Interaction', svg)
+    svg = re.sub('Edge Interaction', 'Edge', svg)
+    svg = re.sub('Interaction Edge', 'Edge', svg)
+    svg = re.sub('class="Interaction,Edge" ', '', svg)
 
     # Interaction data attributes
     svg = re.sub('SBO_[0-9]+\s*', '', svg)
@@ -167,6 +182,7 @@ def custom_lossy_optimize_svg(svg):
     svg = re.sub('Group Complex GroupComplex', 'GroupComplex', svg)
 
     svg = re.sub('about="[^"]*"', '', svg)
+    svg = re.sub('typeof="[^"]*"', '', svg)
 
     svg = re.sub(r'xlink:href="http[^\'" >]*"', '', svg)
     svg = re.sub('target="_blank"', '', svg)
@@ -176,10 +192,12 @@ def custom_lossy_optimize_svg(svg):
 
 class WikiPathwaysCache():
 
-    def __init__(self, output_dir="data/wikipathways/", reuse=False):
+    def __init__(self, output_dir="data/", reuse=False):
         self.output_dir = output_dir
-        self.tmp_dir = f"tmp/wikipathways/"
+        self.tmp_dir = f"tmp/"
         self.reuse = reuse
+        # self.driver = webdriver.Chrome(ChromeDriverManager().install())
+        # self.driver.implicitly_wait(3) # seconds
 
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
@@ -209,36 +227,19 @@ class WikiPathwaysCache():
                     print(f"Found previous error; skip processing {id}")
                     continue
 
-            url = f"https://pathway-viewer.toolforge.org/?id={id}"
-            # print(url)
-            response = requests.get(url)
-            if response.ok == False:
-                print(f"Response not OK for {url}")
-                error_wpids.append(id)
-                with open(error_path, "w") as f:
-                    f.write(",".join(error_wpids))
-                sleep(0.5)
-                continue
+            # url = f"https://pathway-viewer.toolforge.org/?id={id}"
 
-            content = response.content.decode("utf-8")
+            # url = f"https://www.wikipathways.org/wpi/PathwayWidget.php?id={id}"
+            url = f"https://www.wikipathways.org/index.php/Pathway:{id}?view=widget"
+            # url = f"https://example.com"
+            self.driver.get(url)
 
-            html_path = org_dir + id + ".html"
-            # print("Writing " + old_svg_path)
-            with open(html_path, "w") as f:
-                f.write(content)
-
-            print("Preparing and writing " + svg_path)
-
-            content = content.replace('<?xml version="1.0"?>', "")
-            # print("content")
-            # print(content)
-            tree = etree.fromstring(content)
-            # print("tree", tree)
-            # svg = etree.tostring(tree.xpath('//svg')[0])
-            svg_element = tree.find(".//{http://www.w3.org/2000/svg}svg")
             try:
-                svg = etree.tostring(svg_element).decode("utf-8")
-            except TypeError as e:
+                sleep(1)
+                selector = "svg.Diagram"
+                raw_content = self.driver.find_element_by_css_selector(selector)
+                content = raw_content.get_attribute("outerHTML")
+            except Exception as e:
                 print(f"Encountered error when stringifying SVG for {id}")
                 error_wpids.append(id)
                 with open(error_path, "w") as f:
@@ -246,25 +247,22 @@ class WikiPathwaysCache():
                 sleep(0.5)
                 continue
 
+            svg = content.replace(
+                'typeof="Diagram" xmlns:xlink="http://www.w3.org/1999/xlink"',
+                'typeof="Diagram"'
+            )
+
+            print("Preparing and writing " + svg_path)
+
             svg = '<?xml version="1.0" encoding="UTF-8"?>\n' + svg
 
             with open(svg_path, "w") as f:
                 f.write(svg)
             sleep(1)
-        # url = get_svg_zip_url(organism)
-        # print(f"Fetching {url}")
-
-        # response = requests.get(url)
-        # zip = zipfile.ZipFile(io.BytesIO(response.content))
-        # zip.extractall(org_dir)
-
-        # # with open(output_path, "w") as f:
-        # #     f.write(content)
-        # with zipfile.ZipFile(output_path, 'r') as zip_ref:
-        #     zip_ref.extractall(self.tmp_dir)
 
     def optimize_svgs(self, org_dir):
         for svg_path in glob.glob(f'{org_dir}*.svg'):
+        # for svg_path in ["tmp/homo-sapiens/WP231.svg"]: # debug
             with open(svg_path, 'r') as f:
                 svg = f.read()
 
@@ -278,12 +276,13 @@ class WikiPathwaysCache():
             print(f"Optimizing to create: {optimized_svg_path}")
 
             scour_options = scour.sanitizeOptions()
-            scour_options.remove_metadata = True
+            scour_options.remove_metadata = False
             scour_options.newlines = False
             scour_options.strip_comments = True
-            scour_options.strip_ids = True
-            scour_options.shorten_ids = True
+            scour_options.strip_ids = False
+            scour_options.shorten_ids = False
             scour_options.strip_xml_space_attribute = True
+            scour_options.keep_defs = True
 
             try:
                 clean_svg = scour.scourString(svg, options=scour_options)
@@ -326,7 +325,7 @@ class WikiPathwaysCache():
             os.makedirs(org_dir)
 
         ids_and_names = get_pathway_ids_and_names(organism)
-        # ids_and_names = [["WP100", "test"]]
+        ids_and_names = [["WP231", "test"]]
         # print("ids_and_names", ids_and_names)
         self.fetch_svgs(ids_and_names, org_dir)
         self.optimize_svgs(org_dir)
@@ -350,7 +349,7 @@ if __name__ == "__main__":
         help=(
             "Directory to put outcome data.  (default: %(default))"
         ),
-        default="data/wikipathways/"
+        default="data/"
     )
     parser.add_argument(
         "--reuse",
