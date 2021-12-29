@@ -57,36 +57,41 @@ def get_pathway_ids_and_names(organism):
     ids_and_names = [[pw['id'], pw['name']] for pw in data['pathways']]
     return ids_and_names
 
-def custom_lossless_optimize_svg(svg):
+def custom_lossless_optimize_svg(svg, pwid):
     """Losslessly decrease size of WikiPathways SVG
     """
     svg = svg.replace('<?xml version="1.0" encoding="UTF-8"?>\n', '')
     tree = etree.fromstring(svg)
     controls = tree.xpath('//*[@class="svg-pan-zoom-control"]')[0]
     tree.remove(controls)
+    metadata = tree.xpath('//*[@id="' + pwid + '-text"]')[0]
+    metadata.getparent().remove(metadata)
     svg = etree.tostring(tree).decode("utf-8")
-
     svg = '<?xml version="1.0" encoding="UTF-8"?>\n' + svg
 
 
     font_family = "\'Liberation Sans\', Arial, sans-serif"
+    svg = re.sub('font-family="Arial"', '', svg)
     svg = re.sub(f'font-family="{font_family}"', '', svg)
     style = (
         "<style>" +
             "svg {" +
             f"font-family: {font_family}; "
             "}" +
-            # "text {"
+            # "path {fill: transparent;}" +
+            "text {" +
+                "dominant-baseline: central;" +
+                "overflow: hidden;" +
             #   "stroke: #000; " +
             #   "fill: #000;" +
-            # "}" +
+            "}" +
             # "g > a {" +
             #   "color: #000;" +
             # "}" +
         "</style>"
     )
-    old_style = '<style type="text/css"></style>'
-    svg = re.sub(old_style, style, svg)
+    old_style = '<style type="text/css">'
+    svg = re.sub(old_style, style + old_style, svg)
 
     svg = re.sub('xml:space="preserve"', '', svg)
 
@@ -108,7 +113,6 @@ def custom_lossless_optimize_svg(svg):
     svg = re.sub('#cccc00', '#cc0', svg)
     svg = re.sub('#cccccc', '#ccc', svg)
     svg = re.sub('#999999', '#999', svg)
-
     svg = re.sub('#808080', 'grey', svg)
 
     # Remove "px" from attributes where numbers are assumed to be pixels.
@@ -121,18 +125,74 @@ def custom_lossless_optimize_svg(svg):
     svg = re.sub('color="inherit"', '', svg)
 
     svg = re.sub('fill-opacity="0"', '', svg)
+    svg = re.sub('dominant-baseline="central"', '', svg)
+    svg = re.sub('overflow="hidden"', '', svg)
 
-    # Match any anchor tag, up until closing angle bracket (>), that includes a
-    # color attribute with the value black (#000).
-    # For such matches, remove the color attribute but not anything else.
-    svg = re.sub(r'<a([^>]*)(color="#000")', r'<a \1', svg)
+    # # Match any anchor or group tag, up until closing angle bracket (>), that
+    # # includes a color attribute with the value black (#000).
+    # # For such matches, remove the color attribute but not anything else.
+    # svg = re.sub(r'<a([^>]*)(color="#000")', r'<a \1', svg)
+    svg = re.sub(r'<g([^>]*)(color="#000")', r'<g \1', svg)
 
     svg = re.sub(r'<(rect class="Icon"[^>]*)(color="#000")', r'<rect \1', svg)
+    svg = re.sub(r'<(rect class="Icon"[^>]*)(fill="#000")', r'<rect \1', svg)
 
     svg = re.sub(r'<(text class="Text"[^>]*)(fill="#000")', r'<\1', svg)
     svg = re.sub(r'<(text class="Text"[^>]*)(stroke="white" stroke-width="0")', r'<\1', svg)
 
+    svg = re.sub(r'<(text[^>]*)(clip\-path="[^"]*)"', r'<\1', svg)
+    # svg = re.sub(r'<defs><clipPath.*</defs>', r'', svg)
+
+    svg = re.sub(r'class="([^"]*)( Node)"', r'class="\1"', svg)
+    svg = re.sub(r'class="([^"]*)( textContent)"', r'class="\1"', svg)
+
+    svg = re.sub(r'id="[^"]*-text-clipPath"', '', svg)
+
+    # Remove class attributes from elements where it can be deduced
+    svg = re.sub(r'<rect([^>]*)(class="[^"]*)"', r'<rect \1', svg)
+    svg = re.sub(r'<text([^>]*)(class="[^"]*)"', r'<text \1', svg)
+    svg = re.sub(r'<tspan([^>]*)(class="[^"]*)"', r'<tspan \1', svg)
+
+    svg = re.sub(r'<path([^>]*)(id="[^"]*)"', r'<path \1', svg)
+    # svg = re.sub(r'<path([^>]*)(fill="transparent")', r'<path \1', svg)
+
     # svg = re.sub('text-anchor="middle"', '', svg)
+
+    svg = re.sub(pwid.lower(), '', svg)
+
+    svg = re.sub(r'markerendarrow', 'mea', svg)
+    svg = re.sub(r'markerendmim', 'mem', svg)
+    svg = re.sub('mea000000white', 'mea', svg)
+    svg = re.sub(r'mea([^white]+)white', r'mea\1', svg)
+    svg = re.sub('mea000000', 'mea000', svg)
+    svg = re.sub('meaff0000', 'meaf00', svg)
+    svg = re.sub('mea00ff00', 'mea0f0', svg)
+    svg = re.sub('mea0000ff', 'mea00f', svg)
+    svg = re.sub('mea00ffff', 'mea0ff', svg)
+    svg = re.sub('meaff00ff', 'meaf0f', svg)
+    svg = re.sub('meaffff00', 'meaff0', svg)
+    svg = re.sub('meaffffff', 'meafff', svg)
+    svg = re.sub('meacc0000', 'meac00', svg)
+    svg = re.sub('mea00cc00', 'mea0c0', svg)
+    svg = re.sub('mea0000cc', 'mea00c', svg)
+    svg = re.sub('mea00cccc', 'mea0cc', svg)
+    svg = re.sub('meacc00cc', 'meac0c', svg)
+    svg = re.sub('meacccc00', 'meacc0', svg)
+    svg = re.sub('meacccccc', 'meaccc', svg)
+    svg = re.sub('mea999999', 'mea999', svg)
+    svg = re.sub('mea808080', 'meagrey', svg)
+    svg = re.sub('000000white', '000', svg)
+
+    svg = re.sub(r'id="[^"]*-icon" ', '', svg)
+    svg = re.sub(r'id="[^"]*-text" class="[^"]*"', '', svg)
+
+    svg = re.sub(r'\d*\.\d{2,}', lambda m: format(float(m.group(0)), '.2f'), svg)
+
+    svg = re.sub(
+        r'text-anchor="middle"><tspan\s+x="0" y="0"',
+        r'text-anchor="middle"><tspan ',
+        svg
+    )
 
     return svg
 
@@ -149,11 +209,26 @@ def custom_lossy_optimize_svg(svg):
 
     # Remove non-leaf pathway categories.
     svg = re.sub('SingleFreeNode DataNode ', '', svg)
+    svg = re.sub('DataNode SingleFreeNode ', '', svg)
+    svg = re.sub('Shape SingleFreeNode', '', svg)
     svg = re.sub('SingleFreeNode Label', 'Label', svg)
+    svg = re.sub('Label SingleFreeNode', 'Label', svg)
     svg = re.sub('Edge Interaction ', '', svg)
+    svg = re.sub('Interaction Edge ', '', svg)
     svg = re.sub('Edge Interaction', 'Edge', svg)
     svg = re.sub('Interaction Edge', 'Edge', svg)
-    svg = re.sub('class="Interaction,Edge" ', '', svg)
+    # svg = re.sub('class="Interaction,Edge" ', '', svg)
+    svg = re.sub('GraphicalLine Edge', 'Edge', svg)
+    svg = re.sub('Metabolite Node Icon', 'Icon', svg)
+    svg = re.sub('Label Node Icon', 'Icon', svg)
+    svg = re.sub('GroupGroup Node Icon', 'Icon', svg)
+    svg = re.sub('GroupComplex Node Icon', 'Icon', svg)
+    svg = re.sub('Group Complex Icon', 'Icon', svg)
+
+    svg = re.sub('Anchor Burr', 'AB', svg)
+
+
+    svg = re.sub(r'class="[^"]*,[^"]*"', '', svg)
 
     # Interaction data attributes
     svg = re.sub('SBO_[0-9]+\s*', '', svg)
@@ -173,8 +248,18 @@ def custom_lossy_optimize_svg(svg):
     svg = re.sub('P2057_\w+\s*', '', svg)
     svg = re.sub('ChEBI_[0-9]+\s*', '', svg)
     svg = re.sub('ChEBI_CHEBI[0-9]+\s*', '', svg)
+    svg = re.sub('ChEBI_CHEBI_[0-9]+\s*', '', svg)
     svg = re.sub('P683_[0-9]+', '', svg)
     svg = re.sub('HMDB_\w+\s*', '', svg)
+    svg = re.sub(' Enzyme_Nomenclature_[0-9_]*', '', svg)
+    svg = re.sub(' PubChem-compound_[0-9]*', '', svg)
+    svg = re.sub(' Chemspider_[0-9]*', '', svg)
+    svg = re.sub(' CAS_[0-9-]+', '', svg)
+
+    # Other miscellaneous data attributes
+    svg = re.sub(' Pfam_PF[0-9]+', '', svg)
+    svg = re.sub(' Uniprot-TrEMBL_\w+', '', svg)
+    svg = re.sub(' WikiPathways_WP[0-9]+', '', svg)
 
     # Group data attributes
     svg = re.sub('Group GroupGroup', 'GroupGroup', svg)
@@ -185,7 +270,11 @@ def custom_lossy_optimize_svg(svg):
     svg = re.sub('typeof="[^"]*"', '', svg)
 
     svg = re.sub(r'xlink:href="http[^\'" >]*"', '', svg)
+
+    svg = re.sub(r' href="#none"', '', svg)
     svg = re.sub('target="_blank"', '', svg)
+
+    svg = re.sub('font-weight="bold"', '', svg)
 
     return svg
 
@@ -309,8 +398,10 @@ class WikiPathwaysCache():
                 '<?xml version="1.0" encoding="UTF-8"?>\n' + provenance
             )
 
+
+
             # clean_svg = re.sub('tspan x="0" y="0"', 'tspan', clean_svg)
-            clean_svg = custom_lossless_optimize_svg(clean_svg)
+            clean_svg = custom_lossless_optimize_svg(clean_svg, pwid)
             clean_svg = custom_lossy_optimize_svg(clean_svg)
 
             with open(optimized_svg_path, "w") as f:
