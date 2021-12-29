@@ -57,6 +57,69 @@ def get_pathway_ids_and_names(organism):
     ids_and_names = [[pw['id'], pw['name']] for pw in data['pathways']]
     return ids_and_names
 
+def unwrap(tree):
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+    # roottree = tree.getroottree()
+    normalized_class = "concat(' ', normalize-space(@class), ' ')"
+    is_protein = 'contains(' + normalized_class + ', "Protein")'
+    is_metabolite = 'contains(' + normalized_class + ', "Metabolite")'
+    is_rna = 'contains(' + normalized_class + ', "Rna")'
+    is_label = 'contains(' + normalized_class + ', "Label")'
+    # rectSel = f"svg:g[{isProtein}]/svg:g[{isProtein}]/svg:rect"
+    has_bloat = f"{is_protein} or {is_metabolite} or {is_rna} or {is_label}"
+    rect_sel = f"//svg:g[{has_bloat}]/svg:g[{has_bloat}]/svg:rect"
+    rects = tree.xpath(rect_sel, namespaces=ns_map)
+    for element in rects:
+        parent = element.getparent()
+        grandparent = parent.getparent()
+        grandparent.replace(parent, element)
+
+    use_sel = f"//svg:g[{has_bloat}]/svg:g[{has_bloat}]/svg:use"
+    uses = tree.xpath(use_sel, namespaces=ns_map)
+    for element in uses:
+        parent = element.getparent()
+        grandparent = parent.getparent()
+        grandparent.replace(parent, element)
+
+    text_sel = f"//svg:g[{has_bloat}]/svg:g/svg:text"
+    texts = tree.xpath(text_sel, namespaces=ns_map)
+    for element in texts:
+        parent = element.getparent()
+        grandparent = parent.getparent()
+        grandparent.replace(parent, element)
+
+    return tree
+
+def trim_markers(tree):
+    """Remove unused marker elements from diagram
+    """
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+
+    used_marker_ids = []
+
+    # Identify markers that the diagram actually uses
+    elements = tree.xpath("//*")
+    for element in elements:
+        attrs = element.attrib
+        start = attrs["marker-start"] if "marker-start" in attrs else ""
+        start = start.replace("url(#", "").replace(")", "")
+        end = attrs["marker-end"] if "marker-end" in attrs else ""
+        end = end.replace("url(#", "").replace(")", "")
+        if start not in used_marker_ids:
+            used_marker_ids.append(start)
+        if end not in used_marker_ids:
+            used_marker_ids.append(end)
+
+    # Remove markers that are not used
+    markers = tree.xpath('//svg:g[@id="marker-defs"]/svg:marker', namespaces=ns_map)
+    for marker in markers:
+        attrs = marker.attrib
+        id = attrs["id"] if "id" in attrs else ""
+        if id not in used_marker_ids:
+            marker.getparent().remove(marker)
+
+    return tree
+
 def custom_lossless_optimize_svg(svg, pwid):
     """Losslessly decrease size of WikiPathways SVG
     """
@@ -66,9 +129,13 @@ def custom_lossless_optimize_svg(svg, pwid):
     tree.remove(controls)
     metadata = tree.xpath('//*[@id="' + pwid + '-text"]')[0]
     metadata.getparent().remove(metadata)
+
+    tree = unwrap(tree)
+
+    tree = trim_markers(tree)
+
     svg = etree.tostring(tree).decode("utf-8")
     svg = '<?xml version="1.0" encoding="UTF-8"?>\n' + svg
-
 
     font_family = "\'Liberation Sans\', Arial, sans-serif"
     svg = re.sub('font-family="Arial"', '', svg)
@@ -415,7 +482,7 @@ class WikiPathwaysCache():
         if not os.path.exists(org_dir):
             os.makedirs(org_dir)
 
-        ids_and_names = get_pathway_ids_and_names(organism)
+        # ids_and_names = get_pathway_ids_and_names(organism)
         ids_and_names = [["WP231", "test"]]
         # print("ids_and_names", ids_and_names)
         self.fetch_svgs(ids_and_names, org_dir)
