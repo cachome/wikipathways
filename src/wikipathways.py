@@ -57,36 +57,45 @@ def get_pathway_ids_and_names(organism):
     ids_and_names = [[pw['id'], pw['name']] for pw in data['pathways']]
     return ids_and_names
 
-def unwrap(tree):
+def unwrap_leaf(tree, has_bloat, leaf=None, selector=None):
+    """Helper for `unwrap` function
+    """
     ns_map = {"svg": "http://www.w3.org/2000/svg"}
-    # roottree = tree.getroottree()
-    normalized_class = "concat(' ', normalize-space(@class), ' ')"
-    is_protein = 'contains(' + normalized_class + ', "Protein")'
-    is_metabolite = 'contains(' + normalized_class + ', "Metabolite")'
-    is_rna = 'contains(' + normalized_class + ', "Rna")'
-    is_label = 'contains(' + normalized_class + ', "Label")'
-    # rectSel = f"svg:g[{isProtein}]/svg:g[{isProtein}]/svg:rect"
-    has_bloat = f"{is_protein} or {is_metabolite} or {is_rna} or {is_label}"
-    rect_sel = f"//svg:g[{has_bloat}]/svg:g[{has_bloat}]/svg:rect"
-    rects = tree.xpath(rect_sel, namespaces=ns_map)
-    for element in rects:
+    if not selector:
+        selector = f"//svg:g[{has_bloat}]/svg:g[{has_bloat}]/svg:" + leaf
+    elements = tree.xpath(selector, namespaces=ns_map)
+    for element in elements:
         parent = element.getparent()
         grandparent = parent.getparent()
         grandparent.replace(parent, element)
 
-    use_sel = f"//svg:g[{has_bloat}]/svg:g[{has_bloat}]/svg:use"
-    uses = tree.xpath(use_sel, namespaces=ns_map)
-    for element in uses:
-        parent = element.getparent()
-        grandparent = parent.getparent()
-        grandparent.replace(parent, element)
+def get_has_class_clause(raw_class):
+    normed_class = "concat(' ', normalize-space(@class), ' ')"
+    has_class_clause = 'contains(' + normed_class + ', "' + raw_class + '")'
+    return has_class_clause
+
+def unwrap(tree):
+    """Many elements are extraneously wrapped; this pares them
+    """
+    # XPath has poor support for typical class attributes,
+    # so tailor syntax accordingly
+    bloaters = ["Protein", "Metabolite", "Rna", "Label", "GeneProduct"]
+    has_bloat = " or ".join([
+        get_has_class_clause(b) for b in bloaters
+    ])
+
+    unwrap_leaf(tree, has_bloat, "rect")
+    unwrap_leaf(tree, has_bloat, "use")
 
     text_sel = f"//svg:g[{has_bloat}]/svg:g/svg:text"
-    texts = tree.xpath(text_sel, namespaces=ns_map)
-    for element in texts:
-        parent = element.getparent()
-        grandparent = parent.getparent()
-        grandparent.replace(parent, element)
+    unwrap_leaf(tree, has_bloat, selector=text_sel)
+
+    # bloat_groups = ["GroupGroup", "GroupComplex", "GroupNone"]
+    # has_bloats = " or ".join([
+    #     'contains(' + normed_class + ', "' + b + '")' for b in bloat_groups
+    # ])
+    # group_child_sel = f"//svg:g[{has_bloats}]/svg:g[{has_bloats}]/*"
+    # unwrap_leaf(tree, has_bloats, selector=group_child_sel)
 
     return tree
 
@@ -120,50 +129,10 @@ def trim_markers(tree):
 
     return tree
 
-def custom_lossless_optimize_svg(svg, pwid):
-    """Losslessly decrease size of WikiPathways SVG
+def condense_colors(svg):
+    """Condense colors by using hexadecimal abbreviations where possible.
+    Consider using an abstract, general approach instead of hard-coding.
     """
-    svg = svg.replace('<?xml version="1.0" encoding="UTF-8"?>\n', '')
-    tree = etree.fromstring(svg)
-    controls = tree.xpath('//*[@class="svg-pan-zoom-control"]')[0]
-    tree.remove(controls)
-    metadata = tree.xpath('//*[@id="' + pwid + '-text"]')[0]
-    metadata.getparent().remove(metadata)
-
-    tree = unwrap(tree)
-
-    tree = trim_markers(tree)
-
-    svg = etree.tostring(tree).decode("utf-8")
-    svg = '<?xml version="1.0" encoding="UTF-8"?>\n' + svg
-
-    font_family = "\'Liberation Sans\', Arial, sans-serif"
-    svg = re.sub('font-family="Arial"', '', svg)
-    svg = re.sub(f'font-family="{font_family}"', '', svg)
-    style = (
-        "<style>" +
-            "svg {" +
-            f"font-family: {font_family}; "
-            "}" +
-            # "path {fill: transparent;}" +
-            "text {" +
-                "dominant-baseline: central;" +
-                "overflow: hidden;" +
-            #   "stroke: #000; " +
-            #   "fill: #000;" +
-            "}" +
-            # "g > a {" +
-            #   "color: #000;" +
-            # "}" +
-        "</style>"
-    )
-    old_style = '<style type="text/css">'
-    svg = re.sub(old_style, style + old_style, svg)
-
-    svg = re.sub('xml:space="preserve"', '', svg)
-
-    # Condense colors.
-    # Consider using an abstract, general approach instead of hard-coding.
     svg = re.sub('#000000', '#000', svg)
     svg = re.sub('#ff0000', '#f00', svg)
     svg = re.sub('#00ff00', '#0f0', svg)
@@ -182,6 +151,164 @@ def custom_lossless_optimize_svg(svg, pwid):
     svg = re.sub('#999999', '#999', svg)
     svg = re.sub('#808080', 'grey', svg)
 
+    return svg
+
+def prep_edge_style_hoist(tree):
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+    edge_class = get_has_class_clause("Edge")
+    selector = '//svg:g[' + edge_class + ']/svg:path'
+    elements = tree.xpath(selector, namespaces=ns_map)
+    defaults_by_prop = {
+        "fill": "transparent",
+        "stroke": "#000",
+        "marker-end": "url(#markerendarrow000000white)"
+    }
+    noneable_props = ["marker-end"]
+
+    return elements, defaults_by_prop, noneable_props
+
+def prep_rect_style_hoist(tree):
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+    selector = '//svg:rect'
+    elements = tree.xpath(selector, namespaces=ns_map)
+    defaults_by_prop = {
+        "fill": "#fff",
+        "stroke": "#000"
+    }
+    noneable_props = ["stroke"]
+
+    return elements, defaults_by_prop, noneable_props
+
+def prep_text_style_hoist(tree):
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+    selector = '//svg:text'
+    elements = tree.xpath(selector, namespaces=ns_map)
+    defaults_by_prop = {
+        "fill": "#000",
+        "text-anchor": "middle"
+    }
+    noneable_props = []
+
+    return elements, defaults_by_prop, noneable_props
+
+def hoist_style(tree):
+    """Move default styles from elements to `style` tag
+
+    The raw diagram's styles are encoded as attributes on every element.
+    Leveraging CSS specificity rules [1], we can encode that more space-
+    efficiently by "hoisting" style values to the `style` tag, if the style is
+    the default, and setting any non-default styles using the `style`
+    attribute directly on the element.
+
+    [1] https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+    """
+
+    for element_name in ['edge', 'rect', 'text']:
+        if element_name == 'edge':
+            e, d, n = prep_edge_style_hoist(tree)
+        elif element_name == 'rect':
+            e, d, n = prep_rect_style_hoist(tree)
+        elif element_name == 'text':
+            e, d, n = prep_text_style_hoist(tree)
+
+        elements, defaults_by_prop, noneable_props = [e, d, n]
+
+        for element in elements:
+            attrs = element.attrib
+            styles = []
+            # Iterate each property the can be encoded as a CSS style
+            for prop in defaults_by_prop:
+                if prop in attrs:
+                    default = defaults_by_prop[prop]
+                    value = attrs[prop]
+
+                    # Remove the attribute -- this is where we save space
+                    del element.attrib[prop]
+
+                    # If the value of this style prop isn't the default, then
+                    # add it to the list of styles to be encoded inline on the
+                    # element
+                    if value != default:
+                        styles.append(f"{prop}:{value}")
+                elif prop in noneable_props:
+                    styles.append(f"{prop}:none")
+
+            # Set any non-default styles on the element.  Like the raw diagram,
+            # but this `style` attribute has a higher CSS precedence than
+            # styles set in the `style` tag, *unlike* styles set as direct
+            # attributes.
+            if len(styles) > 0:
+                element.attrib['style'] = ";".join(styles)
+
+    return tree
+
+
+def custom_lossless_optimize_svg(svg, pwid):
+    """Losslessly decrease size of WikiPathways SVG
+    """
+    svg = re.sub(pwid.lower(), '', svg)
+    svg = condense_colors(svg)
+
+    svg = svg.replace('<?xml version="1.0" encoding="UTF-8"?>\n', '')
+    tree = etree.fromstring(svg)
+    controls = tree.xpath('//*[@class="svg-pan-zoom-control"]')[0]
+    tree.remove(controls)
+    metadata = tree.xpath('//*[@id="' + pwid + '-text"]')[0]
+    metadata.getparent().remove(metadata)
+
+    tree = unwrap(tree)
+
+    tree = trim_markers(tree)
+
+    tree = hoist_style(tree)
+
+    svg = etree.tostring(tree).decode("utf-8")
+    svg = '<?xml version="1.0" encoding="UTF-8"?>\n' + svg
+
+    # if pwid == "WP231":
+    #     exit()
+
+    font_family = "\'Liberation Sans\', Arial, sans-serif"
+    svg = re.sub('font-family="Arial"', '', svg)
+    svg = re.sub(f'font-family="{font_family}"', '', svg)
+    style = (
+        "<style>" +
+            "svg {" +
+            f"font-family: {font_family}; "
+            "}" +
+            "path {" +
+                "fill: transparent;" +
+                "stroke: #000;" +
+                # "stroke-width: 2;" +
+                "marker-end: url(#mea);"
+            "}" +
+            "symbol path {" +
+                "fill: inherit;" +
+                "stroke: inherit;" +
+                "stroke-width: inherit;" +
+                "marker-end: inherit;"
+            "}" +
+            "rect {" +
+                "fill: #fff;" +
+                "stroke: #000;" +
+            "}" +
+            "text {" +
+                "dominant-baseline: central;" +
+                "overflow: hidden;" +
+                "text-anchor: middle;" +
+                "fill: #000;" +
+            #   "stroke: #000; " +
+            "}" +
+            # "g > a {" +
+            #   "color: #000;" +
+            # "}" +
+        "</style>"
+    )
+    old_style = '<style type="text/css">'
+    svg = re.sub(old_style, style + old_style, svg)
+
+    svg = re.sub('xml:space="preserve"', '', svg)
+
     # Remove "px" from attributes where numbers are assumed to be pixels.
     svg = re.sub(r'width="([0-9.]+)px"', r'width="\1"', svg)
     svg = re.sub(r'height="([0-9.]+)px"', r'height="\1"', svg)
@@ -195,10 +322,9 @@ def custom_lossless_optimize_svg(svg, pwid):
     svg = re.sub('dominant-baseline="central"', '', svg)
     svg = re.sub('overflow="hidden"', '', svg)
 
-    # # Match any anchor or group tag, up until closing angle bracket (>), that
-    # # includes a color attribute with the value black (#000).
-    # # For such matches, remove the color attribute but not anything else.
-    # svg = re.sub(r'<a([^>]*)(color="#000")', r'<a \1', svg)
+    # Match any anchor or group tag, up until closing angle bracket (>), that
+    # includes a color attribute with the value black (#000).
+    # For such matches, remove the color attribute but not anything else.
     svg = re.sub(r'<g([^>]*)(color="#000")', r'<g \1', svg)
 
     svg = re.sub(r'<(rect class="Icon"[^>]*)(color="#000")', r'<rect \1', svg)
@@ -224,8 +350,6 @@ def custom_lossless_optimize_svg(svg, pwid):
     # svg = re.sub(r'<path([^>]*)(fill="transparent")', r'<path \1', svg)
 
     # svg = re.sub('text-anchor="middle"', '', svg)
-
-    svg = re.sub(pwid.lower(), '', svg)
 
     svg = re.sub(r'markerendarrow', 'mea', svg)
     svg = re.sub(r'markerendmim', 'mem', svg)
