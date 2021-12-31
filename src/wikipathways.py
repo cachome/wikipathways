@@ -735,8 +735,8 @@ class WikiPathwaysCache():
         if not os.path.exists(org_dir):
             os.makedirs(org_dir)
 
-        # ids_and_names = get_pathway_ids_and_names(organism)
-        ids_and_names = [["WP231", "test"]]
+        ids_and_names = get_pathway_ids_and_names(organism)
+        # ids_and_names = [["WP231", "test"]]
         # print("ids_and_names", ids_and_names)
         self.fetch_svgs(ids_and_names, org_dir)
         self.optimize_svgs(org_dir)
