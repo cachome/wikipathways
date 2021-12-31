@@ -2,3 +2,8 @@ pytest==6.2.5
 requests==2.26.0
 scour==0.38.2
 lxml==4.6.4
+cssselect==1.1.0
+
+# Scrape WikiPathways
+selenium==4.1.0
+webdriver-manager==3.5.2

@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  WikiPathways page: https://www.wikipathways.org/index.php/Pathway:WP4146
-  URL for this compressed file: https://github.com/eweitz/cachome/tree/main/data/WP4146.svg
-  Source code for compression: https://github.com/eweitz/cachome/tree/main/src/wikipathways.py
--->
-<svg id="wp4146-svg" class="Diagram" width="800" height="600" color="black" baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid" version="1.1" viewBox="0 0 562.52 363.21" vocab="http://vocabularies.wikipathways.org/wp#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }</style><defs><g id="jic-defs"><symbol id="none" preserveAspectRatio="none" viewBox="0 0 100 100"/></g></defs><g id="WP4146" class="Viewport" color="black"  name="Name: Macrophage markers Organism: Homo sapiens"><rect id="WP4146-icon" class="Icon" width="562.52" height="363.21" fill="#fff" stroke="#000" stroke-width="0"/><g id="e702c" class="Label" transform="translate(313.31 199.2)" color="#000"  name="Immune cell specific expression (based on GeneAtlas)"><use id="e702c-icon" class="Icon" width="216.21621621621563" height="34.03403403403411" fill="transparent"  stroke="#000" stroke-width="0" xlink:href="#none"/><text id="e702c-text" class="Text" transform="translate(108.11 21.017)" fill="#000" font-family="Dialog" font-size="12px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="-6.6000000000000005">Immune cell specific expression</tspan> <tspan x="0" y="6.6000000000000005">(based on GeneAtlas)</tspan></text></g><a  id="e2e9c" class="GeneProduct CD14 " transform="translate(378.4 88.098)"   name="CD14"  ><rect id="e2e9c-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="e2e9c-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">CD14</tspan></text></a><a  id="d1bf4" class="GeneProduct CD83 " transform="translate(381.39 273.21)"   name="CD83"  ><rect id="d1bf4-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="d1bf4-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">CD83</tspan></text></a><a  id="b5add" class="GeneProduct CD68 " transform="translate(378.4 108.1)"   name="CD68"  ><rect id="b5add-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="b5add-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">CD68</tspan></text></a><a  id="d431e" class="GeneProduct F3 " transform="translate(378.4 128.1)"   name="F3"  ><rect id="d431e-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="d431e-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">F3</tspan></text></a><a  id="d30f7" class="GeneProduct CD163 " transform="translate(378.4 148.1)"   name="CD163"  ><rect id="d30f7-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="d30f7-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">CD163</tspan></text></a><a  id="ad3bd" class="GeneProduct CD86 " transform="translate(381.39 233.21)"   name="CD86"  ><rect id="ad3bd-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="ad3bd-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">CD86</tspan></text></a><a  id="a3670" class="GeneProduct CD74 " transform="translate(381.39 253.21)"   name="CD74"  ><rect id="a3670-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="a3670-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">CD74</tspan></text></a><g id="dbb52" class="GeneProduct" transform="translate(381.39 293.21)" color="#000"  name="Cd52"><rect id="dbb52-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="dbb52-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">Cd52</tspan></text></g><a  id="d4c29" class="GeneProduct RAC2 " transform="translate(381.39 313.21)"   name="RAC2"  ><rect id="d4c29-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="d4c29-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">RAC2</tspan></text></a><a  id="e4277" class="GeneProduct LYZ " transform="translate(378.4 168.1)"   name="LYZ"  ><rect id="e4277-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="e4277-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">LYZ</tspan></text></a><g id="d859a" class="Label" transform="translate(316.31 52.05)" color="#000"  name="Macrophage markers"><use id="d859a-icon" class="Icon" width="216.21621621621563" height="34.03403403403411" fill="transparent"  stroke="#000" stroke-width="0" xlink:href="#none"/><text id="d859a-text" class="Text" transform="translate(108.11 21.017)" fill="#000" font-family="Dialog" font-size="12px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">Macrophage markers</tspan></text></g><text id="WP4146-text" class="Text" transform="translate(5,27)" dominant-baseline="central" fill="black"  font-size="12px" font-weight="bold" overflow="visible" stroke="white" stroke-width="0"><tspan x="0" y="-9">Name: Macrophage markers</tspan> <tspan x="0" y="9">Organism: Homo sapiens</tspan></text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227205005828" class="svg-pan-zoom_viewport" transform="matrix(1.97 0 0 1.97 47.10 0)" style="transform:matrix(1.97, 0, 0, 1.97, 47.10, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP4146" class="Pathway Viewport"  name="Name: Macrophage markers Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="562.52" height="363.21" style="stroke:none"/><g id="e702c" class="Label" transform="translate(313.31 199.2)"  name="Immune cell specific expression (based on GeneAtlas)" ><g class="Label"/><text   transform="translate(108.11 17.02)"   font-family="Dialog"  style="font-size:12px"><tspan   x="0" y="-6.60">Immune cell specific expression</tspan><tspan   x="0" y="6.60">(based on GeneAtlas)</tspan></text></g><g id="e2e9c" class="GeneProduct " transform="translate(378.4 88.10)"  name="CD14" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >CD14</text></g><g id="d1bf4" class="GeneProduct " transform="translate(381.39 273.21)"  name="CD83" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >CD83</text></g><g id="b5add" class="GeneProduct " transform="translate(378.4 108.1)"  name="CD68" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >CD68</text></g><g id="d431e" class="GeneProduct " transform="translate(378.4 128.1)"  name="F3" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >F3</text></g><g id="d30f7" class="GeneProduct " transform="translate(378.4 148.1)"  name="CD163" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >CD163</text></g><g id="ad3bd" class="GeneProduct " transform="translate(381.39 233.21)"  name="CD86" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >CD86</text></g><g id="a3670" class="GeneProduct " transform="translate(381.39 253.21)"  name="CD74" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >CD74</text></g><g id="dbb52" class="GeneProduct" transform="translate(381.39 293.21)"  name="Cd52" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Cd52</text></g><g id="d4c29" class="GeneProduct " transform="translate(381.39 313.21)"  name="RAC2" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >RAC2</text></g><g id="e4277" class="GeneProduct " transform="translate(378.4 168.1)"  name="LYZ" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >LYZ</text></g><g id="d859a" class="Label" transform="translate(316.31 52.05)"  name="Macrophage markers" ><g class="Label"/><text   transform="translate(108.11 17.02)"   font-family="Dialog"  style="font-size:12px">Macrophage markers</text></g></g></g></g></svg>

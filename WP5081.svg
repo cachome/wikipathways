@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="memtranscriptiontranslation000" markerHeight="24" markerWidth="20" orient="auto" preserveAspectRatio="none" refX="20" refY="12" viewBox="0 0 20 24"><g id="g-memtranscriptiontranslation000" transform=""><g transform="rotate(180 10 12)"><rect y="11" width="12" height="2" style="stroke:#fff"/><line x1="15" x2="15" y1="12" y2="5" fill="none" stroke="#000"/><line x1="15.5" x2="8" y1="5" y2="5" fill="none" stroke="#000"/><polygon points="0 5 8 1 8 9" fill="#fff" stroke="#000"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227212111238" class="svg-pan-zoom_viewport" transform="matrix(1.58 0 0 1.58 130.71 0)" style="transform:matrix(1.58, 0, 0, 1.58, 130.71, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP5081" class="Pathway Viewport"  name="Name: WikiPathways Academy: draw-transcriptiontranslation Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="592.86" height="451" style="stroke:none"/><g id="pvjsgeneratedidf7541" class="Edge"  ><path    d="m233 152h87.02" style="marker-end:url(#memtranscriptiontranslation000)"/></g><g id="c035d" class="Label" transform="translate(97.36 58.42)"  name="An example of highly conserved proteins is actin,  often regarded as one individual protein.  However, in mammals six isoforms are known, encoded by different genes." ><g class="Label"/><text   transform="translate(179.37 32.04)"     style="fill:#404040"><tspan   x="0" y="-19.8">An example of highly conserved proteins is actin, </tspan><tspan   x="0" y="-6.60">often regarded as one individual protein. </tspan><tspan   x="0" y="6.60">However, in mammals six isoforms are known,</tspan><tspan   x="0" y="19.8">encoded by different genes.</tspan></text></g><g id="f7540" class="Label" transform="translate(97.36 258.1)"  name="For this second transcription/translation from ACTA2 to actin, add the correct MIM-interactions and include the following literature reference: 11053242 (PubMedID)." ><g class="Label"/><text   transform="translate(179.37 32.04)"     style="fill:#404040"><tspan   x="0" y="-13.20">For this second transcription/translation from ACTA2</tspan><tspan   x="0" y="0">to actin, add the correct MIM-interactions and include</tspan><tspan   x="0" y="13.20">the following literature reference: 11053242 (PubMedID).</tspan></text></g><g id="a4219" class="GeneProduct " transform="translate(143,219.5)"  name="ACTA2" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >ACTA2</text></g><g id="d6197" class="GeneProduct " transform="translate(143,139.5)"  name="ACTA1" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >ACTA1</text></g><g id="e15ea" class="Protein" transform="translate(320.02 219.5)"  name="Actin" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >Actin</text></g><g id="f1c73" class="Protein" transform="translate(320.02 139.5)"  name="Actin" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >Actin</text></g></g></g></g></svg>

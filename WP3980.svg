@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227204643010" class="svg-pan-zoom_viewport" transform="matrix(0.57 0 0 0.57 0 129.45)" style="transform:matrix(0.57, 0, 0, 0.57, 0, 129.44)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP3980" class="Pathway http___identifiers_org_pw_PW_0001413 Viewport"  name="Name: Protein alkylation leading to liver fibrosis Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0001413 Viewport"><rect   width="2111.6" height="800.82" style="stroke:none"/><g id="id12fed14f" class="Edge"  ><path    d="m251.34 566.54-4e-14 28.39"/></g><g id="id13142ef5" class="Edge"  ><path    d="m251.34 414.36 2e-14 44.05"/></g><g id="id1af8ee40" class="Edge"  ><path    d="m251.34 278.81v25" style="marker-end:none"/></g><g id="id30c1f8d5" class="Edge"  ><path    d="m251.34 278.81-2e-14 110.55"/></g><g id="id40b52e8b" class="Edge"  ><path    d="m475.08 97.55-223.74 82.1"/></g><g id="id49247177" class="Edge"  ><path    d="m197.41 97.55 53.93 82.1"/></g><g id="id4ff32e8c" class="Edge"  ><path    d="m83.35 97.55 167.99 82.1"/></g><g id="id4ff76459" class="Edge"  ><path    d="m347.93 266.31h121.38v255.22h-142.6v20"/></g><g id="id52dfc1b5" class="Edge"  ><path    d="m382.53 97.55-131.18 82.1"/></g><g id="id6a2e251a" class="Edge"  ><path    d="m251.34 619.93" style="marker-end:none"/></g><g id="id752a201a" class="Edge"  ><path    d="m251.34 483.42 4e-14 58.12"/></g><g id="id8d271c5d" class="Edge"  ><path    d="m251.34 278.81v50" style="marker-end:none"/></g><g id="id94850177" class="Edge"  ><path    d="m251.34 619.93v59.40"/></g><g id="idb57b616c" class="Edge"  ><path    d="m251.34 204.64v49.17"/></g><g id="idcadcba35" class="Edge"  ><path    d="m289.97 97.55-38.63 82.1"/></g><g id="idffcd131a" class="Edge"  ><path    d="m251.34 278.81v2.3e-13" style="marker-end:none"/></g><g id="a4523" class="Label" transform="translate(154.07 218.93)"  name="KER 269" ><g class="Label"/><text   transform="translate(45,12.5)"    >KER 269</text></g><g id="bb1ed" class="Label" transform="translate(136.76 179.64)"  name="KE244: Protein alkylation" ><rect   width="229.15" height="25"/><text   transform="translate(114.58 12.5)"   font-family="Dialog" >KE244: Protein alkylation</text></g><g id="ae8fd" class="Pathway" transform="translate(88.19 619.93)"  name="Collagen biosynthesis and modifying enzymes" ><g class="Pathway"><rect   width="326.3" height="25" rx="15" ry="15" style="stroke:#14961e"/></g><g ><defs><clipPath ><rect x="-163.15" y="-12.5" width="326.3" height="25" style="stroke:none"/></clipPath></defs><text   transform="translate(163.15 12.5)"    font-weight="bold"  style="fill:#14961e">Collagen biosynthesis and modifying enzymes</text></g></g><g id="c2756" class="Metabolite " transform="translate(337.53 72.55)"  name="thioacetamide" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">thioacetamide</text></g><g id="ca260" class="Metabolite " transform="translate(16.85 72.55)"  name="Dimethylnitrosamine" ><rect   width="133" height="25" style="stroke:#00f"/><text   transform="translate(66.5,12.5)"     style="fill:#00f">Dimethylnitrosamine</text></g><g id="d6cd8" class="Pathway" transform="translate(118.84 328.81)"  name="Apoptosis Modulation and Signaling" ><g class="Pathway"><rect   width="265.01" height="25" rx="15" ry="15" style="stroke:#14961e"/></g><g ><defs><clipPath ><rect x="-132.51" y="-12.5" width="265.01" height="25" style="stroke:none"/></clipPath></defs><text   transform="translate(132.51 12.5)"    font-weight="bold"  style="fill:#14961e">Apoptosis Modulation and Signaling</text></g></g><g id="e6fc0" class="Metabolite " transform="translate(430.08 72.55)"  name="allyl alcohol" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">allyl alcohol</text></g><g id="ee9ff" class="Pathway" transform="translate(147.52 303.81)"  name="TNF alpha Signaline Pathway" ><g class="Pathway"><rect   width="207.65" height="25" rx="15" ry="15" style="stroke:#14961e"/></g><g ><defs><clipPath ><rect x="-103.82" y="-12.5" width="207.65" height="25" style="stroke:none"/></clipPath></defs><text   transform="translate(103.82 12.5)"    font-weight="bold"  style="fill:#14961e">TNF alpha Signaline Pathway</text></g></g><g id="f101f" class="Metabolite " transform="translate(152.41 72.55)"  name="retinol" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">retinol</text></g><g id="feb8b" class="Metabolite " transform="translate(244.97 72.55)"  name="CCl4" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">CCl4</text></g><g id="ffe79" class="Pathway" transform="translate(206.34 278.81)"  name="Apoptosis" ><g class="Pathway"><rect   width="90" height="25" rx="15" ry="15" style="stroke:#14961e"/></g><g ><defs><clipPath ><rect x="-45" y="-12.5" width="90" height="25" style="stroke:none"/></clipPath></defs><text   transform="translate(45,12.5)"    font-weight="bold"  style="fill:#14961e">Apoptosis</text></g></g><g id="a8ebe" class="Label" transform="translate(154.75 253.81)"  name="KE55: Cell injury/death" ><rect   width="193.18" height="25"/><text   transform="translate(96.59,12.5)"   font-family="Dialog" >KE55: Cell injury/death</text></g><g id="b630b" class="Label" transform="translate(51.88 389.36)"  name="KE134: Increased activation and recruitment of Kupffer Cells" ><rect   width="398.91" height="25"/><text   transform="translate(199.46 12.5)"   font-family="Dialog" >KE134: Increased activation and recruitment of Kupffer Cells</text></g><g id="ecc77" class="Label" transform="translate(154.07 355.51)"  name="KER 67" ><g class="Label"/><text   transform="translate(45,12.5)"    >KER 67</text></g><g id="bb49b" class="Label" transform="translate(100.6 458.42)"  name="KE276: TGFbeta1 expression up regulation" ><rect   width="301.48" height="25"/><text   transform="translate(150.74 12.5)"   font-family="Dialog" >KE276: TGFbeta1 expression up regulation</text></g><g id="c82cc" class="Label" transform="translate(154.07 422.11)"  name="KER 147" ><g class="Label"/><text   transform="translate(45,12.5)"    >KER 147</text></g><g id="a028d" class="Label" transform="translate(100.6 541.54)"  name="KE265: Stellate cell activation" ><rect   width="301.48" height="25"/><text   transform="translate(150.74 12.5)"   font-family="Dialog" >KE265: Stellate cell activation</text></g><g id="cdebd" class="Label" transform="translate(154.07 503.97)"  name="KER 304" ><g class="Label"/><text   transform="translate(45,12.5)"    >KER 304</text></g><g id="a02a2" class="Label" transform="translate(100.6 594.93)"  name="KE68: Collagen accumulation" ><rect   width="301.48" height="25"/><text   transform="translate(150.74 12.5)"   font-family="Dialog" >KE68: Collagen accumulation</text></g><g id="c7446" class="Label" transform="translate(154.07 571.71)"  name="KER 295" ><g class="Label"/><text   transform="translate(45,12.5)"    >KER 295</text></g><g id="eca98" class="Label" transform="translate(100.6 679.33)"  name="KE344: Liver Fibrosis" ><rect   width="301.48" height="25"/><text   transform="translate(150.74 12.5)"   font-family="Dialog" >KE344: Liver Fibrosis</text></g><g id="d7700" class="Label" transform="translate(474.61 387.14)"  name="KER 68" ><g class="Label"/><text   transform="translate(45,12.5)"    >KER 68</text></g><g id="a2b26" class="Label" transform="translate(154.07 657.23)"  name="KER 82" ><g class="Label"/><text   transform="translate(45,12.5)"    >KER 82</text></g></g></g></g></svg>

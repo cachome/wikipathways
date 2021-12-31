@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="memstimulation000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memstimulation000" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:none"/><line x1="12" x2="12" y1="6" y2="6" fill="none"/><polygon points="0 6 11 11 11 1" fill="#fff" stroke="#000"/></g></g></marker><marker id="memcatalysis000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memcatalysis000" transform=""><g transform="rotate(180 6 6)"><circle cx="6" cy="6" r="5.3px" fill="#fff" stroke="#000"/></g></g></marker><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker><marker id="markerendtbar000" markerHeight="20" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><g id="g-markerendtbar000" transform=""><g transform="rotate(180 5 10)"><rect y="9" width="8" height="2" style="stroke:none"/><line x="0" y="0" width="12" height="12" x1="7" x2="7" y2="20" stroke="#000" stroke-width="1.8"/></g></g></marker><marker id="meminhibition000" markerHeight="20" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><g id="g-meminhibition000" transform=""><g transform="rotate(180 5 10)"><rect y="9" width="8" height="2" style="stroke:none"/><line x="0" y="0" width="12" height="12" x1="7" x2="7" y2="20" stroke="#000" stroke-width="1.8"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227204641751" class="svg-pan-zoom_viewport" transform="matrix(1.47 0 0 1.47 0 34.55)" style="transform:matrix(1.47, 0, 0, 1.47, 0, 34.55)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP3976" class="Pathway Viewport"  name="Name: Melanogenesis Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="815" height="438" style="stroke:none"/><g id="id16633748" class="Edge"  ><path    d="m284.5 345.62-77.54-131.47" style="marker-end:url(#memstimulation000)"/></g><g id="id20433933" class="Edge"  ><path    d="m481.25 188-71.75-64.75" style="marker-end:url(#memcatalysis000)"/></g><g id="id23019161" class="Edge"  ><path    d="m673 214.5-159 1"/><g id="aa2d9" class="AB" transform="translate(609.4 214.9)"  ><g class="AB"/></g><g id="ed998" class="AB" transform="translate(609.4 214.9)"  ><g class="AB"/></g></g><g id="id2c3d5a5f" class="Edge"  ><path    d="m147.5 274.25 166.5-19" stroke-dasharray="5,3" style="marker-end:none"/></g><g id="id3b90a6da" class="Edge"  ><path    d="m470 358.25 87-44" style="marker-end:url(#memstimulation000)"/></g><g id="id4852d983" class="Edge"  ><path    d="m586.75 291 22.65-76.1" style="marker-end:url(#markerendtbar000)"/></g><g id="id4971c407" class="Edge"  ><path    d="m111.25 252 61.84-37.84" style="marker-end:url(#memstimulation000)"/></g><g id="id5c2cf35d" class="Edge"  ><path    d="m590.12 373.5-3.38-36" style="marker-end:url(#meminhibition000)"/></g><g id="id6604a915" class="Edge"  ><path    d="m651.38 373.5-0.12-35.5" style="marker-end:url(#memstimulation000)"/></g><g id="id6f4138a3" class="Edge"  ><path    d="m373.25 145.5-23 87.5" style="marker-end:url(#memstimulation000)"/></g><g id="id79336632" class="Edge"  ><path    d="m402.5 358.25-45.5-1.5" style="marker-end:url(#meminhibition000)"/></g><g id="id82bf6a12" class="Edge"  ><path    d="m314 255.25-73.16-41.09" style="marker-end:url(#memstimulation000)"/></g><g id="idc443740d" class="Edge"  ><path    d="M436.25,334.5L609.4,214.9" style="marker-end:url(#meminhibition000)"/></g><g id="idd8b49961" class="Edge"  ><path    d="m651.25 291-41.85-76.1" style="marker-end:url(#memstimulation000)"/></g><g id="ide6fef8fa" class="Edge"  ><path    d="m337 112.12-96.16 43.53" style="marker-end:url(#memstimulation000)"/></g><g id="e3ac5" class="Label" transform="translate(155,266)"  name="Synergy" ><g class="Label"/><text   transform="translate(45,13.25)"    >Synergy</text></g><g id="a5da2" class="Protein" transform="translate(559.5,373.5)"  name="Estrogen" ><rect   width="122.5" height="34.5"/><text   transform="translate(61.25,17.25)"    >Estrogen</text></g><g id="aae67" class="Pathway" transform="translate(139.21 155.66)"  name="Melanogenesis" ><g class="Pathway"/><g ><defs><clipPath ><rect x="-67.75" y="-29.25" width="135.5" height="58.5" style="stroke:none"/></clipPath></defs><text   transform="translate(67.75,29.25)"    font-weight="bold"  style="fill:#14961e;font-size:16px">Melanogenesis</text></g></g><g id="be19b" class="Protein" transform="translate(621.5,291)"  name="tPA" ><rect   width="59.5" height="47"/><text   transform="translate(29.75,23.5)"    >tPA</text></g><g id="d3917" class="Protein" transform="translate(402.5,334.5)"  name="Active TGF-B" ><rect   width="67.5" height="47.5"/><text   transform="translate(33.75,23.75)"    ><tspan   x="0" y="-6.60">Active</tspan><tspan   x="0" y="6.60">TGF-B</tspan></text></g><g id="e1c05" class="Protein" transform="translate(284.5,334.5)"  name="MITF" ><rect   width="72.5" height="44.5"/><text   transform="translate(36.25,22.25)"    >MITF</text></g><g id="f0453" class="Metabolite " transform="translate(448.5,188)"  name="Plasmin" ><rect   width="65.5" height="55" style="fill:#f03"/><text   transform="translate(32.75,27.5)"    >Plasmin</text></g><g id="fe44d" class="Protein" transform="translate(558.5,118.5)"  name="Tranexamic Acid" ><rect   width="113.5" height="27.5"/><text   transform="translate(56.75,13.75)"    >Tranexamic Acid</text></g><g id="a1626" class="Protein" transform="translate(673,187)"  name="Plasminogen" ><rect   width="112" height="55" style="fill:#3c0"/><text   transform="translate(56,27.5)"    >Plasminogen</text></g><g id="f9a99" class="Protein" transform="translate(557,291)"  name="PAI-1" ><rect   width="59.5" height="46.5"/><text   transform="translate(29.75,23.25)"    >PAI-1</text></g><g id="cdd18" class="Protein" transform="translate(337,101)"  name="Active VEGF" ><rect   width="72.5" height="44.5"/><text   transform="translate(36.25,22.25)"    ><tspan   x="0" y="-6.60">Active</tspan><tspan   x="0" y="6.60">VEGF</tspan></text></g><g id="e751b" class="Protein" transform="translate(314,233)"  name="ET-1" ><rect   width="72.5" height="44.5"/><text   transform="translate(36.25,22.25)"    >ET-1</text></g><g id="f4113" class="Edge"  ><path    d="m615.25 146-5.85 68.9" style="marker-end:url(#markerendtbar000)"/></g><g id="e3db9" class="Protein" transform="translate(75,252)"  name="SCF" ><rect   width="72.5" height="44.5"/><text   transform="translate(36.25,22.25)"    >SCF</text></g></g></g></g></svg>

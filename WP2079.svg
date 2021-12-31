@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  WikiPathways page: https://www.wikipathways.org/index.php/Pathway:WP2079
-  URL for this compressed file: https://github.com/eweitz/cachome/tree/main/data/WP2079.svg
-  Source code for compression: https://github.com/eweitz/cachome/tree/main/src/wikipathways.py
--->
-<svg id="wp2079-svg" class="Diagram" width="800" height="600" color="black" baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid" version="1.1" viewBox="0 0 353.46 483" vocab="http://vocabularies.wikipathways.org/wp#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }</style><defs><g id="jit-defs"><filter id="kaavioblackto000000filter" x="0" y="0" width="353.46" height="483" filterUnits="userSpaceOnUse"><feColorMatrix in="SourceGraphic" values="-1   0   0 0 0                   0  -1   0 0 0                   0   0  -1 0 0                   0   0   0 1 0"/></filter><filter id="kaavioblacktocc00ccfilter" x="0" y="0" width="353.46" height="483" filterUnits="userSpaceOnUse"><feColorMatrix in="SourceGraphic" values="-1   0   0 0 0.8                   0  -1   0 0 0                   0   0  -1 0 0.8                   0   0   0 1 0"/></filter><filter id="kaavioblackto999900filter" x="0" y="0" width="353.46" height="483" filterUnits="userSpaceOnUse"><feColorMatrix in="SourceGraphic" values="-1   0   0 0 0.6                   0  -1   0 0 0.6                   0   0  -1 0 0                   0   0   0 1 0"/></filter></g><g id="jic-defs"><marker id="markerEndArrow" stroke-dasharray="99999" markerHeight="12" markerUnits="userSpaceOnUse" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><path transform="rotate(180 6 6)" d="M12 11L0 6l12-5z" fill="currentColor" stroke-width="0"/></marker><marker id="markerEndMimNecessaryStimulation" stroke-dasharray="99999" markerHeight="12" markerUnits="userSpaceOnUse" markerWidth="16" orient="auto" preserveAspectRatio="none" refX="16" refY="6" viewBox="0 0 16 12"><g transform="rotate(180 8 6)" fill="none"><path d="m14 0v12" stroke="#000"/><path d="m16 6"/><path d="M0 6l9 5V1z" stroke="#000"/></g></marker></g></defs><g id="WP2079" class="Viewport" color="black"  name="Name: Serotonin receptor 2 and STAT3 signaling Last Modified: 12/1/2011 Organism: Mus musculus"><rect id="WP2079-icon" class="Icon" width="353.46" height="483" fill="#fff" stroke="#000" stroke-width="0"/><g id="b5b37" class="Interaction" color="#000" ><g color="#000" fill="transparent"  filter="url(#kaavioblackto000000filter)" stroke="#000" stroke-dasharray="5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 9"><path id="b5b37" class="EdgeBody" d="m283.46 263.54-81 62"   marker-end="url(#markerEndMimNecessaryStimulation)" /></g></g><g id="ba2f3" class="Interaction" color="#000" ><g color="#000" fill="transparent"  filter="url(#kaavioblackto000000filter)" stroke="#000" stroke-dasharray="90.62429422585637, 9"><path id="ba2f3" class="EdgeBody" d="m202.46 185.54 81 58"   marker-end="url(#markerEndMimNecessaryStimulation)" /></g></g><g id="be6b0" class="DirectedInteraction" color="#000" ><g color="#000" fill="transparent"  filter="url(#kaavioblackto000000filter)" stroke="#000" stroke-dasharray="60.744121426198504, 5.8"><path id="be6b0" class="EdgeBody" d="m183 99-0.54191 66.542"   marker-end="url(#markerEndArrow)" /></g></g><g id="d2154" class="Interaction" color="#c0c" ><g color="#c0c" fill="transparent"  filter="url(#kaavioblacktocc00ccfilter)" stroke="#000" stroke-dasharray="140, 0"><path id="d2154" class="EdgeBody" d="m182.46 185.54v140"   /></g></g><g id="fe91c" class="Interaction" color="#999900" ><g color="#999900" fill="transparent"  filter="url(#kaavioblackto999900filter)" stroke="#000" stroke-dasharray="78.02298546935747, 9"><path id="fe91c" class="EdgeBody" d="m182.46 345.54-2 87"   marker-end="url(#markerEndMimNecessaryStimulation)" /></g></g><a  id="afa00" class="GeneProduct P594_ENSMUSG00000034997 " transform="translate(142.46 165.54)"   name="Htr2a"  ><rect id="afa00-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="afa00-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">Htr2a</tspan></text></a><a  id="cacda" class="GeneProduct P594_ENSMUSG00000024789 " transform="translate(142.46 325.54)"   name="Jak2"  ><rect id="cacda-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="cacda-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">Jak2</tspan></text></a><a  id="cafea" class="GeneProduct P594_ENSMUSG00000024639 " transform="translate(243.46 243.54)"   name="Gnaq"  ><rect id="cafea-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="cafea-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">Gnaq</tspan></text></a><a  id="ce8ce" class="GeneProduct P594_ENSMUSG00000004040 " transform="translate(140.46 432.54)"   name="Stat3"  ><rect id="ce8ce-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text id="ce8ce-text" class="Text" transform="translate(40,13)" fill="#000"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">Stat3</tspan></text></a><a id="d4a3b" class="CAS_50-67-9 Metabolite ChEBI_CHEBI_28790  " transform="translate(143,79)" color="#3366ff"  name="serotonin"  ><rect id="d4a3b-icon" class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#36f"/><text id="d4a3b-text" class="Text" transform="translate(40,13)" fill="#3366ff"  font-size="10px" stroke="white" stroke-width="0" text-anchor="middle"><tspan x="0" y="0">serotonin</tspan></text></a><text id="WP2079-text" class="Text" transform="translate(5,36)" dominant-baseline="central" fill="black"  font-size="12px" font-weight="bold" overflow="visible" stroke="white" stroke-width="0"><tspan x="0" y="-18">Name: Serotonin receptor 2 and STAT3 signaling</tspan> <tspan x="0" y="0">Last Modified: 12/1/2011</tspan> <tspan x="0" y="18">Organism: Mus musculus</tspan></text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="memnecessarystimulation000" markerHeight="12" markerWidth="16" orient="auto" preserveAspectRatio="none" refX="16" refY="6" viewBox="0 0 16 12"><g id="g-memnecessarystimulation000" transform=""><g transform="rotate(180 8 6)"><rect y="5.4" width="2" height="1.2" style="stroke:none"/><line x1="14" x2="14" y2="12" fill="none" stroke="#000"/><line x1="16" x2="16" y1="6" y2="6" fill="none"/><polygon points="0 6 9 11 9 1" fill="#fff" stroke="#000"/></g></g></marker><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker><marker id="memnecessarystimulation999900white" markerHeight="12" markerWidth="16" orient="auto" preserveAspectRatio="none" refX="16" refY="6" viewBox="0 0 16 12"><g id="g-memnecessarystimulation999900white" transform=""><g transform="rotate(180 8 6)"><rect y="5.4" width="2" height="1.2" style="stroke:none"/><line x1="14" x2="14" y2="12" fill="none" stroke="#990"/><line x1="16" x2="16" y1="6" y2="6" fill="none"/><polygon points="0 6 9 11 9 1" fill="#fff" stroke="#990"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227213647668" class="svg-pan-zoom_viewport" transform="matrix(1.48 0 0 1.48 338.75 0)" style="transform:matrix(1.48, 0, 0, 1.48, 338.75, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP2079" class="Pathway http___identifiers_org_pw_PW_0000854 Viewport"  name="Name: Serotonin receptor 2 and STAT3 signaling Last Modified: 12/1/2011 Organism: Mus musculus" ><g class="Pathway http___identifiers_org_pw_PW_0000854 Viewport"><rect   width="353.46" height="483" style="stroke:none"/><g id="b5b37" class="Edge"  ><path    d="m283.46 263.54-81 62" stroke-dasharray="5,3" style="marker-end:url(#memnecessarystimulation000)"/></g><g id="ba2f3" class="Edge"  ><path    d="m202.46 185.54 81 58" style="marker-end:url(#memnecessarystimulation000)"/></g><g id="be6b0" class="Edge"  ><path    d="m183 99-0.54 66.54"/></g><g id="d2154" class="Edge"  ><path    d="m182.46 185.54v140" style="stroke:#c0c;marker-end:none"/></g><g id="fe91c" class="Edge"  ><path    d="m182.46 345.54-2 87" style="stroke:#990;marker-end:url(#memnecessarystimulation999900white)"/></g><g id="afa00" class="GeneProduct " transform="translate(142.46 165.54)"  name="Htr2a" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Htr2a</text></g><g id="cacda" class="GeneProduct " transform="translate(142.46 325.54)"  name="Jak2" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Jak2</text></g><g id="cafea" class="GeneProduct " transform="translate(243.46 243.54)"  name="Gnaq" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Gnaq</text></g><g id="ce8ce" class="GeneProduct " transform="translate(140.46 432.54)"  name="Stat3" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Stat3</text></g><g id="d4a3b" class="Metabolite" transform="translate(143,79)"  name="serotonin" ><rect   width="80" height="20" style="stroke:#36f"/><text   transform="translate(40,10)"     style="fill:#3366ff">serotonin</text></g></g></g></g></svg>

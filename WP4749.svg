@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="filter-defs"><filter id="doublefalse3filter" x="-50%" y="-50%" width="200%" height="200%"><feComposite in="SourceGraphic" in2="SourceGraphic" result="doubleDark"/><feMorphology in="doubleDark" operator="dilate" radius="0.17" result="in2Double"/><feMorphology in="SourceGraphic" operator="dilate" radius="3" result="inDouble"/><feComposite in="inDouble" in2="in2Double" operator="out" result="doubleResult"/></filter></g><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"><symbol id="Ellipse" class=" Icon Ellipse" x="0" y="0" overflow="visible" preserveAspectRatio="none" viewBox="0 0 50 50"><desc>Ellipse</desc><ellipse cx="25" cy="25" rx="25" ry="25" vector-effect="non-scaling-stroke"/></symbol></g><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227213954264" class="svg-pan-zoom_viewport" transform="matrix(0.88 0 0 0.88 90.38 0)" style="transform:matrix(0.88, 0, 0, 0.88, 90.38, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP4749" class="Pathway http___identifiers_org_pw_PW_0000300 Viewport"  name="Name: Immune response in Tg26 glomeruli Organism: Mus musculus" ><g class="Pathway http___identifiers_org_pw_PW_0000300 Viewport"><rect   width="1162" height="814" style="stroke:none"/><g id="id4f2b49b9" class="Edge"  ><path    d="m1038.8 328.75-70 83.75"/></g><g id="ida7273fcd" class="Edge"  ><path    d="m550 192.5 31.25 55"/></g><g id="idd548db99" class="Edge"  ><path    d="m847.25 312.75-78.5 99.75"/></g><g id="id2660c745" class="Edge"  ><path    d="m600 272.5 2 213"/></g><g id="id29b5272a" class="Edge"  ><path    d="m931.25 437.5-283.75 64.56"/></g><g id="id3a404a6a" class="Edge"  ><path    d="m731.25 437.5-106.5 48"/></g><g id="id61e90c0a" class="Edge"  ><path    d="m624.75 551.75 302.5 94.75"/></g><g id="idc7edead9" class="Edge"  ><path    d="m399.5 518 157 0.62"/></g><g id="id72ffcd2d" class="Edge"  ><path    d="m624.75 551.75 102.5 93.75"/></g><g id="id73e24a72" class="Edge"  ><path    d="m750 437.5v208"/></g><g id="c5ae9" class=" PhysicalEntity CellularComponent Vesicle" transform="translate(867.5,265.5)"  ><g class=" PhysicalEntity CellularComponent Vesicle"><use class=" PhysicalEntity CellularComponent Vesicle Node Icon" transform="matrix(0.98 0 0 0.96 1.47 1.44)" width="160.5" height="74.5" fill="transparent" stroke="#c0c0c0" stroke-width="3" href="#Ellipse"/></g></g><g id="f2e61" class=" PhysicalEntity CellularComponent Cell" transform="translate(232.5,176.5)"  ><g class=" PhysicalEntity CellularComponent Cell" filter="url(#doublefalse3filter)"><g class=" PhysicalEntity CellularComponent Cell"><rect   width="901" height="609" rx="15" ry="15" stroke-width="3" style="fill:transparent;stroke:#c0c0c0"/></g></g></g><g id="d83c7" class="GroupGroup" transform="translate(556.5,485.5)"  ><g class="GroupGroup"><g id="bc49e" class="GeneProduct " transform="translate(8,8)"  name="Nfkb1" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Nfkb1</text></g><g id="f3af2" class="GeneProduct " transform="translate(8,33.25)"  name="Nfkb2" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Nfkb2</text></g></g></g><g id="b1df3" class="GeneProduct " transform="translate(512.5,167.5)"  name="Tlr2" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Tlr2</text></g><g id="cf9c2" class="GeneProduct " transform="translate(612.5,167.5)"  name="Tlr4" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Tlr4</text></g><g id="eeeec" class="GeneProduct " transform="translate(562.5,247.5)"  name="Myd88" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Myd88</text></g><g id="b59ce" class="Edge"  ><path    d="m650 192.5-31.25 55"/></g><g id="ad96f" class="GeneProduct " transform="translate(982.5,278.5)"  name="Tlr7" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Tlr7</text></g><g id="c3f03" class="GeneProduct " transform="translate(982.5,303.75)"  name="Tlr8" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Tlr8</text></g><g id="f81dc" class="GeneProduct " transform="translate(828.5,287.75)"  name="Tlr3" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Tlr3</text></g><g id="ae5d0" class="GeneProduct " transform="translate(712.5,412.5)"  name="Irf3" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Irf3</text></g><g id="bc029" class="GeneProduct " transform="translate(912.5,412.5)"  name="Nlrp3" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Nlrp3</text></g><g id="b21bf" class="GroupGroup" transform="translate(308.5,472.5)"  ><g class="GroupGroup"><g id="ce94e" class="GeneProduct " transform="translate(8,8)"  name="Cgas" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Cgas</text></g><g id="a21f9" class="GeneProduct " transform="translate(8,33)"  name="Ifi204" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Ifi204</text></g><g id="b11a2" class="GeneProduct " transform="translate(8,58)"  name="Sting1" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Sting1</text></g></g></g><g id="ea8a7" class="GroupGroup" transform="translate(704.5,645.5)"  ><g class="GroupGroup"><g id="b1066" class="GeneProduct " transform="translate(8,8)"  name="Ifna" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Ifna</text></g><g id="f99af" class="GeneProduct " transform="translate(8,33.25)"  name="Ifnab1" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Ifnab1</text></g></g></g><g id="ac19d" class="GroupGroup" transform="translate(904.5,646.5)"  ><g class="GroupGroup"><g id="baffc" class="GeneProduct " transform="translate(8,8)"  name="Il1b" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Il1b</text></g><g id="a9b32" class="GeneProduct " transform="translate(8,33.25)"  name="Casp1" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Casp1</text></g></g></g><g id="bced6" class="Edge"  ><path    d="m950 437.5v209"/></g><g id="cf813" class="GeneProduct " transform="translate(362.5,167.5)"  name="Tnfrsf1b" ><rect   width="75" height="25"/><text   transform="translate(37.5,12.5)"    >Tnfrsf1b</text></g><g id="d2ba8" class="Edge"  ><path    d="m400 192.5 179.25 293"/></g></g></g></g></svg>

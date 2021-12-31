@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227204543786" class="svg-pan-zoom_viewport" transform="matrix(3.38 0 0 3.38 0 46.23)" style="transform:matrix(3.38, 0, 0, 3.38, 0, 46.22)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP3910" class="Pathway Viewport"  name="Name: WikiPathways Academy: draw-complex Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="355.45" height="184.11" style="stroke:none"/><g id="a9a73" class="GeneProduct go_GO_0005886 go_GO_0008152 ncbigene_8801 go_GO_0000287 affy_probeset_212459_x_at go_GO_0046872 refseq_NM_001177599 ensembl_ENSG00000172340 affy_probeset_11756967_x_at affy_probeset_8088664 uniprot_A0A024R325 refseq_NP_003839 affy_probeset_16955975 go_GO_0000166 go_GO_0043234 go_GO_0019003 go_GO_0005739 uniprot_Q96I99 go_GO_0005759 go_GO_0045244 affy_probeset_11762120_at go_GO_0004775 refseq_NM_003848 uniprot_E9PDQ8 go_GO_0004776 affy_probeset_215772_x_at hgnc_symbol_SUCLG2 go_GO_0046982 affy_probeset_214835_s_at uniprot_H0Y852 go_GO_0005525 go_GO_0005524 go_GO_0006104 go_GO_0006105 wikigenes_8801 go_GO_0016874 refseq_NP_001171070 affy_probeset_11717610_s_at affy_probeset_39252_at go_GO_0006099 go_GO_0003824" transform="translate(144.06 97.59)"  name="SUCLG2" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >SUCLG2</text></g><g id="b9559" class="GeneProduct go_GO_0005886 go_GO_0003723 go_GO_0008152 affy_probeset_8053366 go_GO_0048037 uniprot_H7C233 uniprot_P53597 affy_probeset_Z68204_at affy_probeset_217874_at affy_probeset_11754861_s_at go_GO_0000166 affy_probeset_69775_at go_GO_0070062 omim_611224 go_GO_0005829 go_GO_0005739 affy_probeset_216762_at go_GO_0005759 omim_245400 ncbigene_8802 affy_probeset_244638_at go_GO_0004775 go_GO_0004776 refseq_NM_003849 refseq_NP_003840 wikigenes_8802 affy_probeset_46247_at hgnc_symbol_SUCLG1 go_GO_0016874 affy_probeset_11760400_at affy_probeset_11715899_a_at go_GO_0006099 ensembl_ENSG00000163541 go_GO_0003824 affy_probeset_16899580 go_GO_0005743" transform="translate(142.71 65.10)"  name="SUCLG1" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >SUCLG1</text></g></g></g></g></svg>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"><symbol id="Ellipse" class=" Icon Ellipse" x="0" y="0" overflow="visible" preserveAspectRatio="none" viewBox="0 0 50 50"><desc>Ellipse</desc><ellipse cx="25" cy="25" rx="25" ry="25" vector-effect="non-scaling-stroke"/></symbol></g><g id="marker-defs"><marker id="meminhibition000" markerHeight="20" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><g id="g-meminhibition000" transform=""><g transform="rotate(180 5 10)"><rect y="9" width="8" height="2" style="stroke:none"/><line x="0" y="0" width="12" height="12" x1="7" x2="7" y2="20" stroke="#000" stroke-width="1.8"/></g></g></marker><marker id="memstimulation000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memstimulation000" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:none"/><line x1="12" x2="12" y1="6" y2="6" fill="none"/><polygon points="0 6 11 11 11 1" fill="#fff" stroke="#000"/></g></g></marker><marker id="memconversion000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memconversion000" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227213753828" class="svg-pan-zoom_viewport" transform="matrix(1.46 0 0 1.46 4.66 0)" style="transform:matrix(1.46, 0, 0, 1.46, 4.66, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP2904" class="Pathway http___identifiers_org_pw_PW_0000004 Viewport"  name="Name: miR302-367 promoting cardiomyocyte proliferation Organism: Mus musculus" ><g class="Pathway http___identifiers_org_pw_PW_0000004 Viewport"><rect   width="818" height="490.52" style="stroke:none"/><g id="ida843ba0e" class="Edge"  ><path    d="m434.63 368.84-2.38e-12 71.68" style="marker-end:url(#memstimulation000)"/></g><g id="id8b773749" class="Edge"  ><path    d="m394.63 358.84h-170" style="marker-end:url(#memconversion000)"/><g id="dcc1d" class="AB" transform="translate(314.84 358.84)"  ><g class="AB"/></g></g><g id="id8d43a952" class="Edge"  ><path    d="m499.02 166.83-144-56.99" style="marker-end:url(#meminhibition000)"/></g><g id="id928c04bb" class="Edge"  ><path    d="m499.02 166.83-144-0.99" style="marker-end:url(#meminhibition000)"/></g><g id="ida3e384f1" class="Edge"  ><path    d="m499.02 166.83-144 54.01" style="marker-end:url(#meminhibition000)"/></g><g id="id1118fa77" class="Edge"  ><path    d="m315.02 250.84-0.18 108" style="marker-end:url(#memstimulation000)"/></g><g id="fdca1" class="Protein" transform="translate(394.63 348.84)"  name="Yap" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Yap</text></g><g id="be7bc" class="Pathway" transform="translate(335.32 440.52)"  name="Cell proliferation and survival" ><g class="Pathway"/><g ><defs><clipPath ><rect x="-99.31" y="-10" width="198.61" height="20" style="stroke:none"/></clipPath></defs><text   transform="translate(99.31 10)"    font-weight="bold"  style="fill:#14961e;font-size:12px">Cell proliferation and survival</text></g></g><g id="fea97" class="GroupGroup" transform="translate(499.02 108.83)"  ><g class="GroupGroup"><g id="a4962" class="Rna " transform="translate(8,8)"  name="Mir302b" ><rect   width="80" height="20" style="stroke:#60c"/><text   transform="translate(40,10)"     style="fill:#6600cc">Mir302b</text></g><g id="f82b6" class="Rna " transform="translate(8 28)"  name="Mir302c" ><rect   width="80" height="20" style="stroke:#60c"/><text   transform="translate(40,10)"     style="fill:#6600cc">Mir302c</text></g><g id="e6474" class="Rna " transform="translate(8 48)"  name="Mir302a" ><rect   width="80" height="20" style="stroke:#60c"/><text   transform="translate(40,10)"     style="fill:#6600cc">Mir302a</text></g><g id="f44b4" class="Rna " transform="translate(8 68)"  name="Mir302d" ><rect   width="80" height="20" style="stroke:#60c"/><text   transform="translate(40,10)"     style="fill:#6600cc">Mir302d</text></g><g id="e0a6b" class="Rna " transform="translate(8 88)"  name="Mir367" ><rect   width="80" height="20" style="stroke:#60c"/><text   transform="translate(40,10)"     style="fill:#6600cc">Mir367</text></g></g></g><g id="bfc33" class="Group Pathway GroupPathway" transform="translate(257.27 61.84)"  ><g class="Group Pathway GroupPathway"><rect   width="115.5" height="189.5" fill-opacity=".1" stroke-dasharray="5,3" stroke-width=".5" style="fill:#0f0;stroke:grey"/><g id="d40ad" class="GeneProduct " transform="translate(17.75 38)"  name="Mst1" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Mst1</text></g><g id="ae739" class="Pathway" transform="translate(8.5,8.5)"  name="Hippo pathway" ><g class="Pathway"/><g ><defs><clipPath ><rect x="-49.25" y="-14.6" width="98.5" height="172.5" style="stroke:none"/></clipPath></defs><text   transform="translate(49.25 14.6)"    font-weight="bold"  style="fill:#14961e;font-size:12px">Hippo pathway</text></g></g><g id="bcd51" class="GeneProduct " transform="translate(17.75 94)"  name="Lats2" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Lats2</text></g><g id="a07fb" class="GeneProduct " transform="translate(17.75 149)"  name="Mob1b" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Mob1b</text></g></g></g><g id="e3852" class="Protein" transform="translate(144.63 348.84)"  name="Yap" ><rect   width="80" height="20"/><g id="b1586" class="State Burr" transform="translate(72.5,12.5)"  name="P" ><g class="State Burr"><use class="State Burr Node Icon" transform="matrix(0.94 0 0 0.94 0.47 0.47)" width="15" height="15" fill="#fff" stroke="#000" href="#Ellipse"/></g><g ><defs><clipPath ><rect x="-7.5" y="-7.5" width="15" height="15" style="stroke:none"/></clipPath></defs><text   transform="translate(7.5,7.5)"  font-family="arial" overflow="visible">P</text></g></g><text   transform="translate(40,10)"    >Yap</text></g></g></g></g></svg>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"><symbol id="ArcPathVisio" class=" Icon ArcPathVisio" x="0" y="0" overflow="visible" preserveAspectRatio="none" viewBox="0 0 100 100"><desc>ArcPathVisio</desc><path d="m99.5 50c0 27.34-22.16 49.5-49.5 49.5s-49.5-22.16-49.5-49.5" vector-effect="non-scaling-stroke"/></symbol></g><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227205148628" class="svg-pan-zoom_viewport" transform="matrix(1.32 0 0 1.32 0 141.7)" style="transform:matrix(1.32, 0, 0, 1.32, 0, 141.70)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP4316" class="Pathway http___identifiers_org_pw_PW_0000808 Viewport"  name="Name: miRNA degrading enzymes Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0000808 Viewport"><rect   width="907.78" height="325.74" style="stroke:none"/><g id="ea7f3" class="Edge"  ><path    d="m302.64 223.45 241.36-0.45" stroke-dasharray="5,3" style="marker-end:none"/><g id="dbd7a" class="AB" transform="translate(544,223)"  ><g class="AB"/></g><g id="e38fa" class="AB" transform="translate(303 223.45)"  ><g class="AB"/></g></g><g id="eb108" class="GroupGroup" transform="translate(656.67 152.51)"  ><g class="GroupGroup"><g id="idc0104580" class="Edge"  ><path    d="m42.62 35.34 33.16 36.74" style="marker-end:none"/></g><g id="idc320125f" class="Edge"  ><path    d="m76.92 72.84-31.15 33.65" style="marker-end:none"/></g><g id="d2596" class="" transform="translate(8 8) rotate(-89.70 36.22 63.11)"  ><g class=""><use class=" Node Icon" transform="matrix(0.99 0 0 0.99 0.49 0.50)" width="72.44" height="126.22" fill="transparent" stroke="#000" href="#ArcPathVisio"/></g></g></g></g><g id="id3d451533" class="Edge"  ><path    d="m248.26 223.89 54.74-0.44"/></g><g id="c244c" class="Label" transform="translate(284.04 229.98)"  name="5'-P" ><g class="Label"/><text   transform="translate(21.58 12.5)"    >5'-P</text></g><g id="d5d77" class="Label" transform="translate(384.71 183.94)"  name="miRNA" ><g class="Label"/><text   transform="translate(45,12.5)"    >miRNA</text></g><g id="be89d" class="GeneProduct" transform="translate(778,194.5)"  name="RRP41" ><rect   transform="matrix(0.99 0 0 0.96 0.49 0.48)" width="90" height="25"/><text   transform="translate(45,12.5)"    >RRP41</text></g><g id="dc9aa" class="GeneProduct " transform="translate(778.78 229.75)"  name="PNPT1" ><rect   transform="matrix(0.99 0 0 0.96 0.49 0.48)" width="90" height="25"/><text   transform="translate(45,12.5)"    >PNPT1</text></g><g id="e2539" class="GeneProduct " transform="translate(13.13 208.31)"  name="XRN1" ><rect   transform="matrix(0.99 0 0 0.96 0.49 0.48)" width="90" height="25"/><text   transform="translate(45,12.5)"    >XRN1</text></g><g id="f8244" class="GroupGroup" transform="translate(129.63 152.78)"  ><g class="GroupGroup"><g id="e3a5c" class="Edge"  ><path    d="m8.21 72.28 39.24 34.21" style="marker-end:none"/></g><g id="de47c" class="Edge"  ><path    d="m44.31 35.34-36.31 36.73" style="marker-end:none"/></g><g id="f289a" class="" transform="translate(9.68 8) rotate(87.33 36.22 63.11)"  ><g class=""><use class=" Node Icon" transform="matrix(0.99 0 0 0.99 0.49 0.50)" width="72.44" height="126.22" fill="transparent" stroke="#000" href="#ArcPathVisio"/></g></g></g></g><g id="f4fb7" class="Edge"  ><path    d="m629.59 223.62-85.59-0.62"/></g><g id="b6408" class="Label" transform="translate(510.73 233.23)"  name="3'-P" ><g class="Label"/><text   transform="translate(21.58 12.5)"    >3'-P</text></g></g></g></g></svg>

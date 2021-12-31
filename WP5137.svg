@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="memcatalysis000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memcatalysis000" transform=""><g transform="rotate(180 6 6)"><circle cx="6" cy="6" r="5.3px" fill="#fff" stroke="#000"/></g></g></marker><marker id="memconversion000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memconversion000" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227212226642" class="svg-pan-zoom_viewport" transform="matrix(0.78 0 0 0.78 0 186.05)" style="transform:matrix(0.78, 0, 0, 0.78, 0, 186.05)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP5137" class="Pathway http___identifiers_org_pw_PW_0000010 http___identifiers_org_pw_PW_0000002 Viewport"  name="Name: Linoleic acid oxylipin metabolism Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0000010 http___identifiers_org_pw_PW_0000002 Viewport"><rect   width="1541.6" height="439.25" style="stroke:none"/><g id="id2edb9ab2" class="Edge"  ><path    d="m476.77 336.05 1e-13 48.20" style="marker-end:url(#memconversion000)"/><g id="eaa39" class="AB" transform="translate(476.77 355.33)"  ><g class="AB"/></g></g><g id="id34f8b171" class="Edge"  ><path    d="m268.26 335.25-7e-14 49.00" style="marker-end:url(#memconversion000)"/><g id="bc1e1" class="AB" transform="translate(268.26 354.85)"  ><g class="AB"/></g></g><g id="id4133e341" class="Edge"  ><path    d="m151.1 338.17 325.68 17.16" style="marker-end:url(#memcatalysis000)"/></g><g id="id75a435df" class="Edge"  ><path    d="m775.99 250.94 40.52 62.74" style="marker-end:url(#memconversion000)"/><g id="a8ada" class="AB" transform="translate(792.2 276.03)"  ><g class="AB"/></g></g><g id="id7d78e763" class="Edge"  ><path    d="m640.99 259.69-327.73 50.56" style="marker-end:url(#memconversion000)"/><g id="eaa09" class="AB" transform="translate(509.9 279.91)"  ><g class="AB"/></g></g><g id="id4c0dc271" class="Edge"  ><path    d="m475.93 243.65 33.98 36.26" style="marker-end:url(#memcatalysis000)"/></g><g id="id81c01be3" class="Edge"  ><path    d="m996.51 180.04 75.46 55.90" style="marker-end:url(#memconversion000)"/></g><g id="id8bdcb60f" class="Edge"  ><path    d="m1252 173.79 79.67 3e-14" style="marker-end:url(#memconversion000)"/></g><g id="id921e4fb7" class="Edge"  ><path    d="m996.51 313.68h75.46" style="marker-end:url(#memconversion000)"/></g><g id="idb0fafff9" class="Edge"  ><path    d="m151.1 344.42 117.17 10.43" style="marker-end:url(#memcatalysis000)"/></g><g id="idc9035eaf" class="Edge"  ><path    d="m775.99 233.44 40.52-59.65" style="marker-end:url(#memconversion000)"/><g id="eb5ec" class="AB" transform="translate(792.2 209.58)"  ><g class="AB"/></g></g><g id="id277cee1e" class="Edge"  ><path    d="m711.41 153.44 80.79 56.14" style="marker-end:url(#memcatalysis000)"/></g><g id="idccb86d9a" class="Edge"  ><path    d="m906.51 161.29v-55.95" style="marker-end:url(#memconversion000)"/></g><g id="idd2900fde" class="Edge"  ><path    d="m1252 313.68h79.67" style="marker-end:url(#memconversion000)"/></g><g id="ide0746eb" class="Edge"  ><path    d="m996.51 173.79 75.46-3e-14" style="marker-end:url(#memconversion000)"/></g><g id="ide238c030" class="Edge"  ><path    d="m1162 186.29v43.40" style="marker-end:url(#memconversion000)"/></g><g id="ide6d62988" class="Edge"  ><path    d="m996.51 307.43 75.46-58.99" style="marker-end:url(#memconversion000)"/></g><g id="idf8d637d7" class="Edge"  ><path    d="m733.91 338.2 58.29-62.17" style="marker-end:url(#memcatalysis000)"/></g><g id="idfa625c9f" class="Edge"  ><path    d="m685.99 259.69-209.22 51.36" style="marker-end:url(#memconversion000)"/><g id="f4528" class="AB" transform="translate(602.31 280.23)"  ><g class="AB"/></g></g><g id="id2105ffad" class="Edge"  ><path    d="m511.29 243.65 91.02 36.58" style="marker-end:url(#memcatalysis000)"/></g><g id="a2677" class="Protein " transform="translate(61.10 331.92)"  name="sEH" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >sEH</text></g><g id="a9e33" class="Metabolite " transform="translate(816.51 161.29)"  name="9-HpODE" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90 12.5)"     style="fill:#00f">9-HpODE</text></g><g id="bfdd2" class="GeneProduct " transform="translate(666.41 128.44)"  name="ALOX5" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >ALOX5</text></g><g id="c4245" class="GeneProduct " transform="translate(666.41 338.2)"  name="ALOX15" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >ALOX15</text></g><g id="c4311" class="Metabolite " transform="translate(1072 301.18)"  name="13-HODE" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90 12.5)"     style="fill:#00f">13-HODE</text></g><g id="da2d5" class="Metabolite " transform="translate(405.21 220.33)"  name="cytochrome P450" ><rect   width="141.44" height="23.32"/><text   transform="translate(70.72 11.66)"    >cytochrome P450</text></g><g id="f3a3e" class="Metabolite" transform="translate(816.51 301.18)"  name="13-HpODE" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90 12.5)"     style="fill:#00f">13-HpODE</text></g><g id="a0191" class="Metabolite " transform="translate(595.99 224.69)"  name="Linoleic acid" ><rect   width="180" height="35" style="stroke:#00c"/><text   transform="translate(90 17.5)"     style="fill:#00c;font-size:16px">Linoleic acid</text></g><g id="b1a05" class="Metabolite" transform="translate(1072 161.29)"  name="9-HODE" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90 12.5)"     style="fill:#00f">9-HODE</text></g><g id="df713" class="Metabolite" transform="translate(178.26 310.25)"  name="12(13)-EpOME" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90 12.5)"     style="fill:#00f">12(13)-EpOME</text></g><g id="e53d1" class="Metabolite" transform="translate(178.26 384.25)"  name="12,13-DiHOME" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90,12.5)"     style="fill:#00f">12,13-DiHOME</text></g><g id="c93f8" class="Metabolite" transform="translate(386.77 311.05)"  name="9(10)-EpOME" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90 12.5)"     style="fill:#00f">9(10)-EpOME</text></g><g id="aed06" class="Metabolite" transform="translate(386.77 384.25)"  name="9,10-DiHOME" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90 12.5)"     style="fill:#00f">9,10-DiHOME</text></g><g id="c186d" class="Metabolite" transform="translate(1072 229.69)"  name="9,12,13-TriHOME" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90,12.5)"     style="fill:#00f">9,12,13-TriHOME</text></g><g id="fd30d" class="Metabolite" transform="translate(1331.6 301.18)"  name="13-OxoODE" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90 12.5)"     style="fill:#00f">13-OxoODE</text></g><g id="fd2e7" class="Metabolite" transform="translate(1331.6 161.29)"  name="9-OxoODE" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90,12.5)"     style="fill:#00f">9-OxoODE</text></g><g id="c7910" class="Metabolite" transform="translate(816.51 80.33)"  name="9,10,13-TriHOME" ><rect   width="180" height="25" style="stroke:#00f"/><text   transform="translate(90 12.5)"     style="fill:#00f">9,10,13-TriHOME</text></g></g></g></g></svg>

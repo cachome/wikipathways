@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker><marker id="meaf00" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-meaf00" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" fill="#f00" stroke-width="0"/></g></g></marker><marker id="meaff0033" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-meaff0033" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" fill="#f03" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227213606639" class="svg-pan-zoom_viewport" transform="matrix(2.53 0 0 2.53 69.56 0)" style="transform:matrix(2.53, 0, 0, 2.53, 69.56, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP1500" class="Pathway Viewport"  name="Name: SHH, FGF8, Stat3 License: CC BY 2.0 Organism: Mus musculus" ><g class="Pathway Viewport"><rect   width="419" height="282" style="stroke:none"/><g id="id4c9a4117" class="Edge"  ><path    d="m223 132 84.75 0.25"/></g><g id="id868ea73" class="Edge"  ><path    d="m223 132 85 57"/></g><g id="idc4d0b7f8" class="Edge"  ><path    d="m388 85h1.67c1.67 0 5 0 6.67 7.88 1.67 7.88 1.67 23.62-0.04 31.5-1.71 7.88-5.12 7.88-6.83 7.88l-1.71 3e-14"/></g><g id="iddfb52788" class="Edge"  ><path    d="m223 132 85-47"/></g><g id="idd7581af0" class="Edge"  ><path    d="m389 242 5-6e-14c5 3e-14 15 3e-14 20-18.29 5-18.29 5-54.88-0.21-73.17-5.21-18.29-15.62-18.29-20.83-18.29l-5.21 3e-14"/></g><g id="iddc55668c" class="Edge"  ><path    d="m389 242 1.5-6e-14c1.5 3e-14 4.5 3e-14 6-8.83 1.5-8.83 1.5-26.5-0.17-35.33-1.67-8.83-5-8.83-6.67-8.83h-1.67" stroke-dasharray="5,3" style="stroke:#f00;marker-end:url(#meaf00)"/></g><g id="id2326fdb6" class="Edge"  ><path    d="m223 132 86 110" stroke-dasharray="5,3" style="stroke:#f03;marker-end:url(#meaff0033)"/></g><g id="id6fd93d8" class="Edge"  ><path    d="m222 195 87 47" stroke-dasharray="5,3" style="stroke:#f00;marker-end:url(#meaf00)"/></g><g id="ided0c5c32" class="Edge"  ><path    d="m388 189h6.33c6.33 0 19 0 25.33-17.33 6.33-17.33 6.33-52 0-69.33-6.33-17.33-19-17.33-25.33-17.33h-6.33"/></g><g id="id7be1a594" class="Edge"  ><path    d="m388 85h6.33c6.33 0 19 0 25.33 17.33 6.33 17.33 6.33 52 0 69.33-6.33 17.33-19 17.33-25.33 17.33h-6.33"/></g><g id="fb072" class="GeneProduct " transform="translate(143,122)"  name="Shh" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Shh</text></g><g id="afd9e" class="GeneProduct " transform="translate(142,185)"  name="Fgf8" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Fgf8</text></g><g id="b18cf" class="GeneProduct " transform="translate(307.75,122.25)"  name="Msx1" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Msx1</text></g><g id="d562b" class="GeneProduct " transform="translate(308,179)"  name="Foxa2" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Foxa2</text></g><g id="f8c5c" class="GeneProduct " transform="translate(309,232)"  name="Stat3" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Stat3</text></g><g id="c7874" class="GeneProduct " transform="translate(308,75)"  name="Lmx1a" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Lmx1a</text></g></g></g></g></svg>

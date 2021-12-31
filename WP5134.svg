@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="filter-defs"><filter id="doublefalse3filter" x="-50%" y="-50%" width="200%" height="200%"><feComposite in="SourceGraphic" in2="SourceGraphic" result="doubleDark"/><feMorphology in="doubleDark" operator="dilate" radius="0.17" result="in2Double"/><feMorphology in="SourceGraphic" operator="dilate" radius="3" result="inDouble"/><feComposite in="inDouble" in2="in2Double" operator="out" result="doubleResult"/></filter></g><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227212224046" class="svg-pan-zoom_viewport" transform="matrix(1.41 0 0 1.41 101.47 0)" style="transform:matrix(1.41, 0, 0, 1.41, 101.47, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP5134" class="Pathway Viewport"  name="Name: WikiPathways Academy: draw-transport Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="708" height="507" style="stroke:none"/><g id="ee8ac" class=" PhysicalEntity CellularComponent Cell" transform="translate(240.5,142.5)"  name="Liver cell" ><g class=" PhysicalEntity CellularComponent Cell" filter="url(#doublefalse3filter)"><g class=" PhysicalEntity CellularComponent Cell"><rect   width="382" height="283" rx="15" ry="15" stroke-width="3" style="fill:transparent;stroke:#c0c0c0"/></g></g><g ><defs><clipPath ><rect x="-374" y="-14.6" width="382" height="283" style="stroke:none"/></clipPath></defs><text   transform="translate(374 14.6)"     style="fill:#c0c0c0;text-anchor:end">Liver cell</text></g></g><g id="b4e94" class="GeneProduct " transform="translate(311,132.5)"  name="SLC22A7" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >SLC22A7</text></g><g id="cb3ef" class="Metabolite " transform="translate(416,19.5)"  name="5-fluorouracil" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">5-fluorouracil</text></g></g></g></g></svg>
