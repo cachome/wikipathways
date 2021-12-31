@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"><symbol id="Ellipse" class=" Icon Ellipse" x="0" y="0" overflow="visible" preserveAspectRatio="none" viewBox="0 0 50 50"><desc>Ellipse</desc><ellipse cx="25" cy="25" rx="25" ry="25" vector-effect="non-scaling-stroke"/></symbol></g><g id="marker-defs"><marker id="markerstartmimconversion000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refY="6" viewBox="0 0 12 12"><g id="g-markerstartmimconversion000" transform="rotate(180 6 6)"><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker><marker id="memconversion000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memconversion000" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227212219301" class="svg-pan-zoom_viewport" transform="matrix(1.41 0 0 1.41 214.19 0)" style="transform:matrix(1.41, 0, 0, 1.41, 214.19, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP5131" class="Pathway http___identifiers_org_pw_PW_0000107 Viewport"  name="Name: Benzyl sulfide biodegradation Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0000107 Viewport"><rect   width="545.37" height="504.64" style="stroke:none"/><g id="ideb2889a" class="Edge"  ><path    d="m314.37 108.26 108 107.25" stroke-width="3" style="marker-end:url(#memconversion000)"/><g id="ae2fc" class="AB" transform="translate(365.24 158.78)"  ><g class="AB"/></g></g><g id="id2b497e43" class="Edge"  ><path    d="m365.24 158.78-50.87 56.73" stroke-width="3" style="marker-end:url(#memconversion000)"/></g><g id="c3384" class="Metabolite InChIKey_LUFPJJNWMYZRQE-UHFFFAOYSA-N" transform="translate(221.37 38.14)"  name="benzyl sulfide" ><use class="Metabolite InChIKey_LUFPJJNWMYZRQE-UHFFFAOYSA-N Node Icon" transform="matrix(0.97 0 0 0.97 1.45 1.45)" width="93" height="93.5" fill="#ccc" stroke="#000" stroke-width="3" href="#Ellipse"/><text   transform="translate(46.5,46.75)"    >benzyl sulfide</text></g><g id="ee2e6" class="Metabolite InChIKey_GVPWHKZIJBODOX-UHFFFAOYSA-N" transform="translate(422.37 381.14)"  name="dibenzyl disulfide" ><use class="Metabolite InChIKey_GVPWHKZIJBODOX-UHFFFAOYSA-N Node Icon" transform="matrix(0.97 0 0 0.97 1.45 1.45)" width="93" height="93.5" fill="#ccc" stroke="#000" stroke-width="3" href="#Ellipse"/><text   transform="translate(46.5,46.75)"    ><tspan   x="0" y="-6.60">dibenzyl</tspan><tspan   x="0" y="6.60">disulfide</tspan></text></g><g id="e6528" class="Metabolite InChIKey_UENWRTRMUIOCKN-UHFFFAOYSA-N" transform="translate(422.37 192.14)"  name="benzyl thiol" ><use class="Metabolite InChIKey_UENWRTRMUIOCKN-UHFFFAOYSA-N Node Icon" transform="matrix(0.97 0 0 0.97 1.45 1.45)" width="93" height="93.5" fill="#ccc" stroke="#000" stroke-width="3" href="#Ellipse"/><text   transform="translate(46.5,46.75)"    >benzyl thiol</text></g><g id="f66f8" class="Metabolite InChIKey_HUMNYLRZRPPJDN-UHFFFAOYSA-N" transform="translate(221.37 192.14)"  name="benzaldehyde" ><use class="Metabolite InChIKey_HUMNYLRZRPPJDN-UHFFFAOYSA-N Node Icon" transform="matrix(0.97 0 0 0.97 1.45 1.45)" width="93" height="93.5" fill="#ccc" stroke="#000" stroke-width="3" href="#Ellipse"/><text   transform="translate(46.5,46.75)"    >benzaldehyde</text></g><g id="edb8b" class="Metabolite InChIKey_HTMQZWFSTJVJEQ-UHFFFAOYSA-N" transform="translate(36.37 192.14)"  name="dibenzyl sulfoxide" ><use class="Metabolite InChIKey_HTMQZWFSTJVJEQ-UHFFFAOYSA-N Node Icon" transform="matrix(0.97 0 0 0.97 1.45 1.45)" width="93" height="93.5" fill="#ccc" stroke="#000" stroke-width="3" href="#Ellipse"/><text   transform="translate(46.5,46.75)"    ><tspan   x="0" y="-6.60">dibenzyl</tspan><tspan   x="0" y="6.60">sulfoxide</tspan></text></g><g id="b7731" class="Metabolite InChIKey_AWHNUHMUCGRKRA-UHFFFAOYSA-N" transform="translate(36.37 381.14)"  name="dibenzyl solfone" ><use class="Metabolite InChIKey_AWHNUHMUCGRKRA-UHFFFAOYSA-N Node Icon" transform="matrix(0.97 0 0 0.97 1.45 1.45)" width="93" height="93.5" fill="#ccc" stroke="#000" stroke-width="3" href="#Ellipse"/><text   transform="translate(46.5,46.75)"    ><tspan   x="0" y="-6.60">dibenzyl</tspan><tspan   x="0" y="6.60">solfone</tspan></text></g><g id="dcb29" class="Edge"  ><path    d="m82.87 285.64v95.5" stroke-width="3" style="marker-end:url(#memconversion000)"/><g id="d9700" class="AB" transform="translate(82.87 330.62)"  ><g class="AB"/></g></g><g id="ac43f" class="Edge"  ><path    d="m221.37 108.26-92 107.25" stroke-width="3" style="marker-end:url(#memconversion000)"/><g id="fc076" class="AB" transform="translate(178.04 158.78)"  ><g class="AB"/></g></g><g id="cf8b0" class="Edge"  ><path    d="m422.37 404.51-7.17-4e-14c-7.17 4e-14 -21.5 4e-14 -28.67-23.71-7.17-23.71-7.17-71.12-4e-14 -94.83 7.17-23.71 21.5-23.71 28.67-23.71h7.17" stroke-width="3" style="marker-end:url(#memconversion000)"/><g id="c0d81" class="AB" transform="translate(377.17 330.89)"  ><g class="AB"><use class="AB Node Icon" width="8" height="8" href="#Ellipse"/></g></g></g><g id="e4f41" class="Edge"  ><path    d="m515.37 404.51 8-4e-14c8 4e-14 24 4e-14 32-23.71s8-71.12 0-94.83c-8-23.71-24-23.71-32-23.71h-8" marker-start="url(#markerstartmimconversion000)" stroke-width="3" style="marker-end:none"/><g id="e509b" class="AB" transform="translate(557.28 336.03)"  ><g class="AB"><use class="AB Node Icon" width="8" height="8" href="#Ellipse"/></g></g></g></g></g></g></svg>

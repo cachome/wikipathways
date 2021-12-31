@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"><symbol id="HexagonPathVisio" class=" Icon HexagonPathVisio" x="0" y="8" overflow="visible" preserveAspectRatio="none" viewBox="0 8 100 86"><desc>HexagonPathVisio</desc><g transform="scale(1 0.85)"><path d="m1.42 51.00 21.07-42.14h56.19l21.07 42.14-21.07 42.15h-56.19l-21.07-42.15z" stroke="currentColor" vector-effect="non-scaling-stroke"/></g></symbol><symbol id="Octagon" class=" Icon Octagon" x="0" y="0" overflow="visible" preserveAspectRatio="none" viewBox="0 0 100 100"><desc>Octagon</desc><path d="m0 25 25-25h50l25 25v50l-25 25h-50l-25-25z" vector-effect="non-scaling-stroke"/></symbol></g><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211228012401072" class="svg-pan-zoom_viewport" transform="matrix(0.93 0 0 0.93 207.25 0)" style="transform:matrix(0.93, 0, 0, 0.93, 207.25, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP2655" class="Pathway http___identifiers_org_pw_PW_0000100 Viewport"  name="Name: ATF6 (ATF6-alpha) activates chaperone genes Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0000100 Viewport"><rect   width="846" height="769" style="stroke:none"/><g id="b2828" class="Reactome_R-HSA-1791150"  ><path    d="m244 259 33 151" style="marker-end:none"/><g id="f5c2c" class="AB" transform="translate(244,259)"  ><g class="AB"/></g><g id="a0e40" class="AB" transform="translate(276.67,408.49)"  ><g class="AB"/></g><g id="fefb4" class="AB" transform="translate(260.5,334.5)"  ><g class="AB"/></g></g><g id="a182d" class="Reactome_R-HSA-1791150"  ><path    d="m277 410 1 3"/></g><g id="af45c" class="Reactome_R-HSA-1791150"  ><path    d="m265 218 10 83"/></g><g id="e1976" class="Reactome_R-HSA-1791107"  ><path    d="m146 120-21 65" style="marker-end:none"/><g id="d7853" class="AB" transform="translate(146,120)"  ><g class="AB"/></g><g id="c38ff" class="AB" transform="translate(125.21,184.35)"  ><g class="AB"/></g><g id="e9169" class="AB" transform="translate(135.5,152.5)"  ><g class="AB"/></g></g><g id="e16a7" class="Reactome_R-HSA-1791107"  ><path    d="m125 185-3 9"/></g><g id="da49c" class="Reactome_R-HSA-1791107"  ><path    d="m350 62-146 95"/></g><g id="e26be" class="Reactome_R-HSA-1791150"  ><path    d="m265 218 10 83"/></g><g id="e6be8" class="Reactome_R-HSA-1791150"  ><path    d="m265 218 10 83"/></g><g id="e736a" class="Reactome_R-HSA-1791107"  ><path    d="m136 143 10-23" style="marker-end:none"/></g><g id="e7b00" class="Reactome_R-HSA-1791082"  ><path    d="m411 270 31 229" style="marker-end:none"/><g id="c4188" class="AB" transform="translate(411,270)"  ><g class="AB"/></g><g id="d454d" class="AB" transform="translate(441.69,496.71)"  ><g class="AB"/></g><g id="fac7b" class="AB" transform="translate(426.5,384.5)"  ><g class="AB"/></g></g><g id="cfe3c" class="Reactome_R-HSA-1791082"  ><path    d="m442 499 1 3"/></g><g id="d3c05" class="Reactome_R-HSA-1791082"  ><path    d="m397 75 44 245"/></g><g id="f82cb" class="Reactome_R-HSA-1791082"  ><path    d="m401 293 10-23" style="marker-end:none"/></g><g id="fa1b4" class="Reactome_R-HSA-1791107"  ><path    d="m350 62-146 95"/></g><g id="fae26" class="Reactome_R-HSA-1791163"  ><path    d="m593 255 72 242" style="marker-end:none"/><g id="e199e" class="AB" transform="translate(593,255)"  ><g class="AB"/></g><g id="ca695" class="AB" transform="translate(664.28,494.58)"  ><g class="AB"/></g><g id="af97e" class="AB" transform="translate(629,376)"  ><g class="AB"/></g></g><g id="d72be" class="Reactome_R-HSA-1791163"  ><path    d="m584 278 9-23" style="marker-end:none"/></g><g id="f567e" class="Reactome_R-HSA-1791163"  ><path    d="m665 497v3"/></g><g id="ceb23" class="Reactome_R-HSA-1791163"  ><path    d="m444 62 222 230"/></g><g id="fb66e" class="Reactome_R-HSA-1791107"  ><path    d="m350 62-146 95"/></g><g id="fb85a" class="Reactome_R-HSA-1791121"  ><path    d="m620 132 91 27" style="marker-end:none"/><g id="a9013" class="AB" transform="translate(620,132)"  ><g class="AB"/></g><g id="af9f4" class="AB" transform="translate(710.09 158.73)"  ><g class="AB"/></g><g id="bfe72" class="AB" transform="translate(665.5,145.5)"  ><g class="AB"/></g></g><g id="badc7" class="Reactome_R-HSA-1791121"  ><path    d="m711 159-6 16"/></g><g id="eea8f" class="Reactome_R-HSA-1791121"  ><path    d="m444 62 221 71"/></g><g id="f50d5" class="Reactome_R-HSA-1791121"  ><path    d="m444 62 221 71"/></g><g id="fdb44" class="Reactome_R-HSA-1791150"  ><path    d="m235 282 9-23" style="marker-end:none"/></g><g id="fe63b" class="Reactome_R-HSA-1791121"  ><path    d="m611 155 9-23" style="marker-end:none"/></g><g id="dc17f" class="GroupGroup" transform="translate(2,1)"  ><g class="GroupGroup"><g id="a02e8" class="" transform="translate(8,8)"  ><g class=""><rect   width="806" height="652" rx="15" ry="15" stroke-width="3" style="fill:transparent;stroke:#c0c0c0"/></g></g><g id="ab3ac" class="Label" transform="translate(28,604)"  name="cytosol" ><g class="Label"/><text   transform="translate(32,16.5)"    >cytosol</text></g></g></g><g id="ea5a7" class="GroupGroup" transform="translate(28,24)"  ><g class="GroupGroup"><g id="a6d41" class="" transform="translate(8,8)"  ><g class=""><rect   width="751" height="315" rx="15" ry="15" stroke-width="3" style="fill:transparent;stroke:#c0c0c0"/></g></g><g id="b93ff" class="Label" transform="translate(18,279)"  name="nucleoplasm" ><g class="Label"/><text   transform="translate(49.5,16.5)"    >nucleoplasm</text></g></g></g><g id="f32a8" class="GroupGroup" transform="translate(68,373)"  ><g class="GroupGroup"><g id="e0bd4" class="" transform="translate(8,8)"  ><g class=""><rect   width="672" height="222" rx="15" ry="15" stroke-width="3" style="fill:transparent;stroke:#c0c0c0"/></g></g><g id="d9c98" class="Label" transform="translate(28,178)"  name="endoplasmic reticulum lumen" ><g class="Label"/><text   transform="translate(101.5,16.5)"    >endoplasmic reticulum lumen</text></g></g></g><g id="a1837" class="Protein" transform="translate(350,49)"  name="ATF6(1-380)" ><rect   width="95" height="26"/><text   transform="translate(47.5,13)"    >ATF6(1-380)</text></g><g id="a571c" class="GeneProduct " transform="translate(56,118)"  name="DDIT3 gene" ><rect   width="81" height="51"/><text   transform="translate(40.5,25.5)"    >DDIT3 gene</text></g><g id="ad249" class="Protein" transform="translate(233,194)"  name="ATF4" ><rect   width="65" height="24"/><text   transform="translate(32.5,12)"    >ATF4</text></g><g id="adcea" class="GeneProduct " transform="translate(482,253)"  name="HSP90B1 gene" ><rect   width="102" height="51"/><text   transform="translate(51,25.5)"    >HSP90B1 gene</text></g><g id="b8c9b" class="Protein" transform="translate(72,181)"  name="DDIT3" ><rect   width="50" height="27"/><text   transform="translate(25,13.5)"    >DDIT3</text></g><g id="c8fab" class="GeneProduct " transform="translate(149,257)"  name="HSPA5 gene" ><rect   width="86" height="51"/><text   transform="translate(43,25.5)"    >HSPA5 gene</text></g><g id="cddbf" class="Complex Reactome_R-HSA-381204" transform="translate(487,58)"  name="NF-Y" ><g class="Complex Reactome_R-HSA-381204"><use class="Complex Reactome_R-HSA-381204 Node Icon" transform="matrix(0.98 0 0 0.95 0.49 0.48)" width="58" height="21" fill="#fff" stroke="#a52a2a" href="#HexagonPathVisio"/></g><g ><defs><clipPath ><rect x="-29" y="-10.5" width="58" height="21" style="stroke:none"/></clipPath></defs><text   transform="translate(29,10.5)"     style="fill:#a52a2a">NF-Y</text></g></g><g id="d9355" class="Protein" transform="translate(626,500)"  name="HSP90B1" ><rect   width="78" height="28"/><text   transform="translate(39,14)"    >HSP90B1</text></g><g id="dbf0a" class="Protein" transform="translate(416,502)"  name="CALR" ><rect   width="55" height="28"/><text   transform="translate(27.5,14)"    >CALR</text></g><g id="dc02d" class="GeneProduct " transform="translate(535,130)"  name="XBP1 gene" ><rect   width="76" height="51"/><text   transform="translate(38,25.5)"    >XBP1 gene</text></g><g id="e0a51" class="GeneProduct " transform="translate(327,268)"  name="CALR gene" ><rect   width="75" height="51"/><text   transform="translate(37.5,25.5)"    >CALR gene</text></g><g id="f14c9" class="Protein" transform="translate(245,413)"  name="HSPA5" ><rect   width="66" height="24"/><text   transform="translate(33,12)"    >HSPA5</text></g><g id="fca37" class="Protein-2" transform="translate(705,162)"  name="XBP1-2" ><rect   width="57" height="26"/><text   transform="translate(28.5,13)"    >XBP1-2</text></g><g id="d386c" class="GroupComplex" transform="translate(38,667)"  ><g class="GroupComplex"><use class="Icon" transform="matrix(0.99 0 0 0.99 0.50 0.49)" width="124" height="84" fill="#b4b464" fill-opacity=".1" stroke="grey" href="#Octagon"/><g id="b4cda" class="Protein" transform="translate(12,12)"  name="NFYB" ><rect   width="100" height="20"/><text   transform="translate(50,10)"    >NFYB</text></g><g id="f16e2" class="Protein" transform="translate(12,52)"  name="NFYA" ><rect   width="100" height="20"/><text   transform="translate(50,10)"    >NFYA</text></g><g id="fdc0d" class="Protein" transform="translate(12,32)"  name="NFYC" ><rect   width="100" height="20"/><text   transform="translate(50,10)"    >NFYC</text></g></g></g></g></g></g></svg>

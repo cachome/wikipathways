@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="memconversion000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memconversion000" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227213732720" class="svg-pan-zoom_viewport" transform="matrix(1.77 0 0 1.77 0 58.77)" style="transform:matrix(1.77, 0, 0, 1.77, 0, 58.77)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP2561" class="Pathway http___identifiers_org_pw_PW_0000124 http___identifiers_org_pw_PW_0001229 Viewport"  name="Name: Dantrolene metabolic pathway Organism: Mus musculus" ><g class="Pathway http___identifiers_org_pw_PW_0000124 http___identifiers_org_pw_PW_0001229 Viewport"><rect   width="678" height="337" style="stroke:none"/><g id="idf3996bb2" class="Edge"  ><path    d="m492 123 92.5 70" style="marker-end:url(#memconversion000)"/></g><g id="pvjsgeneratedidf3e9b" class="Edge"  ><path    d="m452 123-134.5 68" style="marker-end:url(#memconversion000)"/></g><g id="pvjsgeneratedidf3e9c" class="Edge"  ><path    d="m317.5 211v70" style="marker-end:url(#memconversion000)"/></g><g id="d2be6" class="Label" transform="translate(549,143)"  name="hydroxylation" ><g class="Label"/><text   transform="translate(40,10)"    >hydroxylation</text></g><g id="f3e9a" class="Label" transform="translate(292,138)"  name="reduction" ><g class="Label"/><text   transform="translate(40,10)"    >reduction</text></g><g id="ecdad" class="Label" transform="translate(219,238)"  name="acetylation" ><g class="Label"/><text   transform="translate(40,10)"    >acetylation</text></g><g id="d92a8" class="Metabolite" transform="translate(432,103)"  name="Dantrolene" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">Dantrolene</text></g><g id="b3ba0" class="Metabolite" transform="translate(521,193)"  name="5-hydroxy-dantrolene" ><rect   width="127" height="20" style="stroke:#00f"/><text   transform="translate(63.5,10)"     style="fill:#00f">5-hydroxy-dantrolene</text></g><g id="b6298" class="Metabolite" transform="translate(268,191)"  name="aminodantrolene" ><rect   width="99" height="20" style="stroke:#00f"/><text   transform="translate(49.5,10)"     style="fill:#00f">aminodantrolene</text></g><g id="e6213" class="Metabolite" transform="translate(252,281)"  name="acetyl aminodantrolene" ><rect   width="131" height="20" style="stroke:#00f"/><text   transform="translate(65.5,10)"     style="fill:#00f">acetyl aminodantrolene</text></g></g></g></g></svg>

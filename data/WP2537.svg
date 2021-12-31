@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="memconversion000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memconversion000" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211228012319205" class="svg-pan-zoom_viewport" transform="matrix(1.55 0 0 1.55 93.22 0)" style="transform:matrix(1.55, 0, 0, 1.55, 93.22, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP2537" class="Pathway http___identifiers_org_pw_PW_0000124 http___identifiers_org_pw_PW_0001229 Viewport"  name="Name: Moxicylyte metabolic pathway Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0000124 http___identifiers_org_pw_PW_0001229 Viewport"><rect   width="653" height="460" style="stroke:none"/><g id="id2c31d3f6" class="Edge"  ><path    d="m278 109v61" style="marker-end:url(#memconversion000)"/></g><g id="idb1b54e66" class="Edge"  ><path    d="m238 180h-76" style="marker-end:url(#memconversion000)"/></g><g id="id25de24d4" class="Edge"  ><path    d="m318 180h90" style="marker-end:url(#memconversion000)"/></g><g id="idaef50174" class="Edge"  ><path    d="m278 190v64"/></g><g id="id4aa10a34" class="Edge"  ><path    d="m238 264h-76" style="marker-end:url(#memconversion000)"/></g><g id="idbec9e0a2" class="Edge"  ><path    d="m318 264h90" style="marker-end:url(#memconversion000)"/></g><g id="eb5fc" class="Metabolite" transform="translate(238,89)"  name="Moxisylyte" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">Moxisylyte</text></g><g id="dc093" class="Metabolite" transform="translate(238,170)"  name="DAM" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">DAM</text></g><g id="fd317" class="Metabolite" transform="translate(82,170)"  name="DAM-S" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">DAM-S</text></g><g id="f68f8" class="Metabolite" transform="translate(408,170)"  name="DAM-G" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">DAM-G</text></g><g id="e4785" class="Metabolite" transform="translate(408,254)"  name="MDAM-G" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">MDAM-G</text></g><g id="bfa1d" class="Metabolite" transform="translate(238,254)"  name="MDAM" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">MDAM</text></g><g id="b5149" class="Metabolite" transform="translate(82,254)"  name="MDAM-S" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">MDAM-S</text></g></g></g></g></svg>

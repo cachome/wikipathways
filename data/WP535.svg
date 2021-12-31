@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker><marker id="markerendtbar000" markerHeight="20" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><g id="g-markerendtbar000" transform=""><g transform="rotate(180 5 10)"><rect y="9" width="8" height="2" style="stroke:none"/><line x="0" y="0" width="12" height="12" x1="7" x2="7" y2="20" stroke="#000" stroke-width="1.8"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227214027558" class="svg-pan-zoom_viewport" transform="matrix(1.98 0 0 1.98 30.78 0)" style="transform:matrix(1.98, 0, 0, 1.98, 30.78, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP535" class="Pathway http___identifiers_org_pw_PW_0000003 Viewport"  name="Name: Neural retinal development Organism: Mus musculus" ><g class="Pathway http___identifiers_org_pw_PW_0000003 Viewport"><rect   width="574" height="360" style="stroke:none"/><g id="acd73" class="Edge"  ><path    d="m356.81 115-230.81 28"/></g><g id="b1b13" class="Edge"  ><path    d="m106 184 133 81"/></g><g id="b56d9" class="Edge"  ><path    d="m366 310-87-35" style="marker-end:url(#markerendtbar000)"/></g><g id="b7ddb" class="Edge"  ><path    d="m366 310 43-33" style="marker-end:url(#markerendtbar000)"/></g><g id="bd7bf" class="Edge"  ><path    d="m504 148.67v-28"/></g><g id="c74c4" class="Edge"  ><path    d="m102 67 75 38"/></g><g id="c880a" class="Edge"  ><path    d="m197 115-71 28"/></g><g id="e06c6" class="Edge"  ><path    d="m501.33 80 2.67 20.67"/></g><g id="e63bf" class="Edge"  ><path    d="m23 114 23 60"/></g><g id="efdaf" class="Edge"  ><path    d="m318.98 105h-61.98"/></g><g id="f372c" class="Edge"  ><path    d="m46 205 20-21"/></g><g id="fef6b" class="Edge"  ><path    d="m217 115 42 140"/></g><g id="a1e14" class="GeneProduct " transform="translate(464 63.33)"  name="neuroD1" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >neuroD1</text></g><g id="a29ec" class="Protein " transform="translate(318.98 95)"  name="crx" ><rect   width="75.66" height="20"/><text   transform="translate(37.83 10)"    >crx</text></g><g id="a4239" class="Protein" transform="translate(369,257)"  name="RBP" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >RBP</text></g><g id="a5f98" class="Metabolite" transform="translate(32,49)"  name="RA" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >RA</text></g><g id="aec12" class="Protein " transform="translate(239,255)"  name="rho" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >rho</text></g><g id="aeeba" class="GeneProduct" transform="translate(464 148.67)"  name="neurogenin" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >neurogenin</text></g><g id="d00dd" class="Protein " transform="translate(6,205)"  name="sp4" ><rect   width="80" height="20" style="stroke:#c3f"/><text   transform="translate(40,10)"     style="fill:#cc33ff">sp4</text></g><g id="d0577" class="Protein " transform="translate(177,95)"  name="nrl" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >nrl</text></g><g id="de672" class="Protein " transform="translate(3,94)"  name="Fiz1" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >Fiz1</text></g><g id="dedac" class="GeneProduct " transform="translate(326,310)"  name="KLF15" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >KLF15</text></g><g id="e1359" class="GeneProduct " transform="translate(464 100.67)"  name="neuroD4" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >neuroD4</text></g><g id="e528b" class="Protein " transform="translate(46,133)"  name="PDE6a" ><rect   width="80" height="20" style="stroke:#c0c"/><text   transform="translate(40,10)"     style="fill:#c0c">PDE6a</text></g><g id="f4e1d" class="Protein" transform="translate(46,164)"  name="PDEb" ><rect   width="80" height="20" style="stroke:#c3f"/><text   transform="translate(40,10)"     style="fill:#cc33ff">PDEb</text></g></g></g></g></svg>

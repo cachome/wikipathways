@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="meminhibition000" markerHeight="20" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><g id="g-meminhibition000" transform=""><g transform="rotate(180 5 10)"><rect y="9" width="8" height="2" style="stroke:none"/><line x="0" y="0" width="12" height="12" x1="7" x2="7" y2="20" stroke="#000" stroke-width="1.8"/></g></g></marker><marker id="membinding000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-membinding000" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 12 0 6 12 0 5 6" stroke-width="0"/></g></g></marker><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227204651400" class="svg-pan-zoom_viewport" transform="matrix(1.09 0 0 1.09 126.72 0)" style="transform:matrix(1.09, 0, 0, 1.09, 126.72, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP3997" class="Pathway http___identifiers_org_pw_PW_0000013 Viewport"  name="Name: Epilepsy adverse outcome pathway Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0000013 Viewport"><rect   width="867.34" height="654.25" style="stroke:none"/><g id="pvjsgeneratedidfe5ad" class="Edge"  ><path    d="m491.25 398.25 48.19-103.27" style="marker-end:url(#meminhibition000)"/></g><g id="id10d7e515" class="Edge"  ><path    d="m538.5 171.75-44-41" style="marker-end:url(#meminhibition000)"/></g><g id="id17272227" class="Edge"  ><path    d="m164.5 401.5 39-39" style="marker-end:url(#membinding000)"/></g><g id="id2828235f" class="Edge"  ><path    d="m253.75 123.5 71.01 54.88" style="marker-end:url(#meminhibition000)"/></g><g id="id34cd0b5" class="Edge"  ><path    d="m638.06 441.06-0.82-78.53"/></g><g id="id34dec074" class="Edge"  ><path    d="m699.5 123.5 70.34 48.89"/></g><g id="id4021838e" class="Edge"  ><path    d="m308.5 259.5 43.26-49.25"/></g><g id="id5af241af" class="Edge"  ><path    d="m637.23 337.53-67.53-42.55" style="marker-end:url(#membinding000)"/></g><g id="id70302b61" class="Edge"  ><path    d="m405.76 167.75 43.74-37"/></g><g id="id7685fa71" class="Edge"  ><path    d="M494.5,91.25L558,52"/></g><g id="id7c22cb3c" class="Edge"  ><path    d="m569.71 260.48-8.71-54.23"/></g><g id="idae0634be" class="Edge"  ><path    d="m231 337.5 55-43.5"/></g><g id="idd203819b" class="Edge"  ><path    d="m588 52 66.5 46.5"/></g><g id="idd4c812f5" class="Edge"  ><path    d="m85.5 462.5 34-36"/></g><g id="a63ae" class="Unknown " transform="translate(18,462.5)"  name="presynaptic neuron 1" ><rect   width="90" height="36.5"/><text   transform="translate(45,18.25)"    ><tspan   x="0" y="-6.60">presynaptic</tspan><tspan   x="0" y="6.60">neuron 1</tspan></text></g><g id="ac6de" class="Metabolite " transform="translate(241,259.5)"  name="intracellular Na+" ><rect   width="90" height="34.5" style="stroke:#00f"/><text   transform="translate(45,17.25)"     style="fill:#00f"><tspan   x="0" y="-6.60">intracellular</tspan><tspan   x="0" y="6.60">Na+</tspan></text></g><g id="adc7a" class="Metabolite " transform="translate(97,401.5)"  name="glutamate" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">glutamate</text></g><g id="b2534" class="Protein " transform="translate(176,337.5)"  name="NMDA receptor" ><rect   width="110" height="25"/><text   transform="translate(55,12.5)"    >NMDA receptor</text></g><g id="bc282" class="Metabolite " transform="translate(446.25,398.25)"  name="RDX" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">RDX</text></g><g id="c8195" class="Protein" transform="translate(324.76 167.75)"  name="voltage gated sodium channel" ><rect   width="108" height="42.5"/><text   transform="translate(54,21.25)"    ><tspan   x="0" y="-6.60">voltage gated</tspan><tspan   x="0" y="6.60">sodium channel</tspan></text></g><g id="cb303" class="Metabolite " transform="translate(200.25 98.5)"  name="carbamazepine" ><rect   width="107" height="25" style="stroke:#00f"/><text   transform="translate(53.5,12.5)"     style="fill:#00f">carbamazepine</text></g><g id="e1812" class="Metabolite " transform="translate(576.69 337.53)"  name="GABA" ><rect   width="121.08" height="25" style="stroke:#00f"/><text   transform="translate(60.54 12.5)"     style="fill:#00f">GABA</text></g><g id="e840a" class="Unknown" transform="translate(427,91.25)"  name="membrane depolarization" ><rect   width="90" height="39.5"/><text   transform="translate(45,19.75)"    ><tspan   x="0" y="-6.60">membrane</tspan><tspan   x="0" y="6.60">depolarization</tspan></text></g><g id="e92b6" class="Unknown" transform="translate(498,16.5)"  name="hippocampal hyperdepolarization" ><rect   width="120" height="35.5"/><text   transform="translate(60,17.75)"    ><tspan   x="0" y="-6.60">hippocampal</tspan><tspan   x="0" y="6.60">hyperdepolarization</tspan></text></g><g id="ebf3a" class="Unknown " transform="translate(632,98.5)"  name="seizure" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >seizure</text></g><g id="fe5ac" class="Unknown " transform="translate(747.34 172.39)"  name="epilepsy" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >epilepsy</text></g><g id="d9375" class="Unknown " transform="translate(577.52 441.06)"  name="presynaptic neuron 2" ><rect   width="121.08" height="36.5"/><text   transform="translate(60.54 18.25)"    ><tspan   x="0" y="-6.60">presynaptic</tspan><tspan   x="0" y="6.60">neuron 2</tspan></text></g><g id="e85df" class="Metabolite " transform="translate(516,171.75)"  name="intracellular Cl+" ><rect   width="90" height="34.5" style="stroke:#00f"/><text   transform="translate(45,17.25)"     style="fill:#00f"><tspan   x="0" y="-6.60">intracellular</tspan><tspan   x="0" y="6.60">Cl+</tspan></text></g><g id="dbdc1" class="Protein " transform="translate(509.17 260.48)"  name="GABA-A receptor activation" ><rect   width="121.08" height="34.5"/><text   transform="translate(60.54 17.25)"    ><tspan   x="0" y="-6.60">GABA-A</tspan><tspan   x="0" y="6.60">receptor activation</tspan></text></g></g></g></g></svg>

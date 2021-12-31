@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker><marker id="markerendtbar000" markerHeight="20" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><g id="g-markerendtbar000" transform=""><g transform="rotate(180 5 10)"><rect y="9" width="8" height="2" style="stroke:none"/><line x="0" y="0" width="12" height="12" x1="7" x2="7" y2="20" stroke="#000" stroke-width="1.8"/></g></g></marker><marker id="meminhibition000" markerHeight="20" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><g id="g-meminhibition000" transform=""><g transform="rotate(180 5 10)"><rect y="9" width="8" height="2" style="stroke:none"/><line x="0" y="0" width="12" height="12" x1="7" x2="7" y2="20" stroke="#000" stroke-width="1.8"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227204710578" class="svg-pan-zoom_viewport" transform="matrix(0.99 0 0 0.99 103.89 0)" style="transform:matrix(0.99, 0, 0, 0.99, 103.89, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP4026" class="Pathway http___identifiers_org_pw_PW_0001697 Viewport"  name="Name: Gastric ulcer formation Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0001697 Viewport"><rect   width="1001.2" height="720.5" style="stroke:none"/><g id="pvjsgeneratedidffffd" class="Edge"  ><path    d="m761.5 662.5v-57"/></g><g id="pvjsgeneratedidffffe" class="Edge"  ><path    d="m716.5 593h-58.5" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedidfffff" class="Edge"  ><path    d="m613 662.5v-57" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid100000" class="Edge"  ><path    d="m613 580.5v-58" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid100001" class="Edge"  ><path    d="m613 497.5v-106"/></g><g id="pvjsgeneratedid100002" class="Edge"  ><path    d="m635.5 81.5 228.25 124" style="marker-end:url(#meminhibition000)"/></g><g id="pvjsgeneratedid100003" class="Edge"  ><path    d="m590.5 81.5-248.5 124" style="marker-end:url(#meminhibition000)"/></g><g id="pvjsgeneratedid100004" class="Edge"  ><path    d="m319.5 224.25 112.25 76.25" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid100005" class="Edge"  ><path    d="M297,224.25L407.5,357.5" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid100006" class="Edge"  ><path    d="m297 224.25 33 178.25" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid100007" class="Edge"  ><path    d="M274.5,224.25L270,497.5" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid100008" class="Edge"  ><path    d="M489.25,325.5L568,372.75"/></g><g id="pvjsgeneratedid100009" class="Edge"  ><path    d="M437.75,382.5L568,503.75" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid10000a" class="Edge"  ><path    d="M375,421.25L568,510" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid10000b" class="Edge"  ><path    d="m297 510h271" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid10000c" class="Edge"  ><path    d="m863.75 218-98.5 82.5" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid10000d" class="Edge"  ><path    d="M723.75,325.5L658,372.75"/></g><g id="pvjsgeneratedid10000e" class="Edge"  ><path    d="m908.75 224.25v57.25"/></g><g id="pvjsgeneratedid10000f" class="Edge"  ><path    d="m908.75 306.5v60"/></g><g id="pvjsgeneratedid100010" class="Edge"  ><path    d="m849.25 379h-191.25"/></g><g id="pvjsgeneratedid100011" class="Edge"  ><path    d="m635.5 196.5 29 46.75" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid100012" class="Edge"  ><path    d="m590.5 196.5-22.25 46.75" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid100013" class="Edge"  ><path    d="m664.5 268.25-29 98.25" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid100014" class="Edge"  ><path    d="m568.25 268.25 22.25 98.25" style="marker-end:url(#markerendtbar000)"/></g><g id="pvjsgeneratedid100015" class="Edge"  ><path    d="m697.5 675h-39.5"/></g><g id="a0ecb" class="Metabolite " transform="translate(189,497.5)"  name="Bicarbonate ions" ><rect   width="108" height="25" style="stroke:#00f"/><text   transform="translate(54,12.5)"     style="fill:#00f">Bicarbonate ions</text></g><g id="ac33a" class="GeneProduct " transform="translate(252,199.25)"  name="PTGS1" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >PTGS1</text></g><g id="b36a1" class="Unknown" transform="translate(347,357.5)"  name="Mucosal blood flow" ><rect   width="121" height="25"/><text   transform="translate(60.5,12.5)"    >Mucosal blood flow</text></g><g id="b786f" class="Pathway" transform="translate(403,300.5)"  name="Platelet aggregation" ><g class="Pathway"/><g ><defs><clipPath ><rect x="-57.5" y="-12.5" width="115" height="25" style="stroke:none"/></clipPath></defs><text   transform="translate(57.5,12.5)"    font-weight="bold"  style="fill:#14961e">Platelet aggregation</text></g></g><g id="ba0b6" class="Unknown" transform="translate(568,366.5)"  name="Gastric ulcer" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >Gastric ulcer</text></g><g id="c1884" class="Unknown" transform="translate(568,580.5)"  name="Surfacant" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >Surfacant</text></g><g id="c3ec1" class="GeneProduct " transform="translate(642,243.25)"  name="CNR2" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >CNR2</text></g><g id="c45c4" class="GeneProduct " transform="translate(500.75,243.25)"  name="CNR1" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >CNR1</text></g><g id="c70cd" class="Unknown" transform="translate(849.25,366.5)"  name="Leukocyte activation" ><rect   width="119" height="25"/><text   transform="translate(59.5,12.5)"    >Leukocyte activation</text></g><g id="cde21" class="Unknown" transform="translate(568,497.5)"  name="Mucosal defence" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >Mucosal defence</text></g><g id="db318" class="Unknown" transform="translate(697.5,662.5)"  name="Helicobactor pylori" ><rect   width="128" height="25"/><text   transform="translate(64,12.5)"    >Helicobactor pylori</text></g><g id="e2dfe" class="Unknown" transform="translate(285,402.5)"  name="Mucous" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >Mucous</text></g><g id="e5583" class="Unknown" transform="translate(568,662.5)"  name="Phospholipase" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >Phospholipase</text></g><g id="e792f" class="GeneProduct " transform="translate(863.75,199.25)"  name="PTGS2" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >PTGS2</text></g><g id="ef466" class="Unknown" transform="translate(846.25,281.5)"  name="Leukocyte adherence" ><rect   width="125" height="25"/><text   transform="translate(62.5,12.5)"    >Leukocyte adherence</text></g><g id="f2ff4" class="Metabolite " transform="translate(568,56.5)"  name="NSAIDs" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">NSAIDs</text></g><g id="f59c2" class="Pathway" transform="translate(703,300.5)"  name="Angiogenesis" ><g class="Pathway"/><g ><defs><clipPath ><rect x="-41.5" y="-12.5" width="83" height="25" style="stroke:none"/></clipPath></defs><text   transform="translate(41.5,12.5)"    font-weight="bold"  style="fill:#14961e">Angiogenesis</text></g></g><g id="fe3c3" class="Metabolite " transform="translate(716.5,580.5)"  name="NH4+" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">NH4+</text></g><g id="ffffc" class="GeneProduct " transform="translate(568,171.5)"  name="FAAH" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >FAAH</text></g></g></g></g></svg>

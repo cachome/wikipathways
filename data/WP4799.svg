@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  WikiPathways page: https://www.wikipathways.org/index.php/Pathway:WP4799
-  URL for this compressed file: https://github.com/eweitz/cachome/tree/main/data/wikipathways/WP4799.svg
-  Source code for compression: https://github.com/eweitz/cachome/tree/main/src/wikipathways.py
--->
-<svg class="Diagram" width="800" height="600" color="black" baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid" version="1.1" viewBox="0 0 483 512" vocab="http://vocabularies.wikipathways.org/wp#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }</style><defs><filter id="a" x="0" y="0" width="483" height="512" filterUnits="userSpaceOnUse"><feColorMatrix in="SourceGraphic" values="-1   0   0 0 0                   0  -1   0 0 0                   0   0  -1 0 0                   0   0   0 1 0"/></filter><marker id="c" stroke-dasharray="99999" markerHeight="12" markerUnits="userSpaceOnUse" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><path transform="rotate(180 6 6)" d="M12 11L0 6l12-5z" fill="currentColor" stroke-width="0"/></marker><marker id="e" stroke-dasharray="99999" markerHeight="12" markerUnits="userSpaceOnUse" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><path transform="rotate(180 6 6)" d="M12 11L0 6l12-5z" fill="currentColor" stroke-width="0"/></marker><marker id="b" stroke-dasharray="99999" markerHeight="20" markerUnits="userSpaceOnUse" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><path d="m3 0v20" fill="currentColor" stroke="currentColor"/></marker><symbol id="f" overflow="visible" preserveAspectRatio="none" viewBox="0 0 50 50"><ellipse cx="25" cy="25" rx="25" ry="25" stroke="currentColor" vector-effect="non-scaling-stroke"/></symbol><symbol id="d" preserveAspectRatio="none" viewBox="0 0 100 100"/></defs><g class="Viewport" color="black"  name="Name: Downregulation of ACE2 expression by SARS-CoV infection and SARS-CoV spike protein Organism: Homo sapiens"><rect class="Icon" width="483" height="512" fill="#fff" stroke="#000" stroke-width="0"/><g id="g" class="DirectedInteraction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="65.3935083065865, 5.8"><path class="EdgeBody" d="m219 223.25 36.5 61.125"   marker-end="url(#c)" /></g></g><g id="h" class="DirectedInteraction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="96.87667700115738, 5.8"><path class="EdgeBody" d="m309 307.25 90.5 48.5"   marker-end="url(#c)" /></g></g><g id="i" class="Interaction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="79.46567237927431, 7"><path class="EdgeBody" d="M399.5,386.25L337,446"   marker-end="url(#b)" /></g></g><g id="j" class="DirectedInteraction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="96.43624601871882, 5.8"><path class="EdgeBody" d="m309 307.25-90 48.5"   marker-end="url(#c)" /></g></g><g id="k" class="Interaction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="60.75, 7"><path class="EdgeBody" d="m399.5 125v67.75"   marker-end="url(#b)" /></g></g><g id="l" class="Interaction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="80.30495049647261, 5.8"><path class="EdgeBody" d="M219,386.25L281,446"   marker-end="url(#e)" /></g></g><g id="m" class="Interaction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="64.45114152342144, 7"><path class="EdgeBody" d="m399.5 223.25-37 61.125"   marker-end="url(#b)" /></g></g><g class="Pathway" transform="translate(253,446)" color="#000"  name="Lung injury"><use class="Icon" width="112" height="36" fill="transparent"  stroke="#000" stroke-width="0" xlink:href="#d"/><text class="Text" transform="translate(56,24)"   font-size="20px" font-weight="bold"  text-anchor="middle"><tspan x="0" y="0">Lung injury</tspan></text></g><g class="Uniprot-TrEMBL_P30556 Protein AGTR1 " transform="translate(165.5,355.75)" color="#000"  name="AT1R"><rect class="Icon" transform="matrix(.99074 0 0 .96825 .49537 .48413)" width="107" height="30.5" fill="#fff" stroke="#000"/><text class="Text" transform="translate(53.5,19.25)"   font-size="12px"  text-anchor="middle"><tspan x="0" y="0">AT1R</tspan></text></g><a class="ChEBI_CHEBI_2719 Metabolite  " transform="translate(255.5,276.75)" color="#00f"  name="Ang II"  ><rect class="Icon" transform="matrix(.99074 0 0 .96825 .49537 .48413)" width="107" height="30.5" fill="#fff" stroke="#00f"/><text class="Text" transform="translate(53.5,19.25)" fill="#00f"  font-size="12px"  text-anchor="middle"><tspan x="0" y="0">Ang II</tspan></text></a><g class="Uniprot-TrEMBL_P0DTC2 Protein " transform="translate(346,94.5)" color="#000"  name="SARS-CoV Spike"><use class="Icon" transform="matrix(.99074 0 0 .96825 .49537 .48413)" width="107" height="30.5" fill="#ffcccc" stroke="#000" xlink:href="#f"/><text class="Text" transform="translate(53.5,19.25)"   font-size="12px"  text-anchor="middle"><tspan x="0" y="0">SARS-CoV Spike</tspan></text></g><g class="Uniprot-TrEMBL_Q9BYF1 Protein ACE2 " transform="translate(346,192.75)" color="#000"  name="ACE2"><rect class="Icon" transform="matrix(.99074 0 0 .96825 .49537 .48413)" width="107" height="30.5" fill="#fff" stroke="#000"/><text class="Text" transform="translate(53.5,19.25)"   font-size="12px"  text-anchor="middle"><tspan x="0" y="0">ACE2</tspan></text></g><g class="Uniprot-TrEMBL_A0A0A0MSN4 Protein ACE " transform="translate(165.5,192.75)" color="#000"  name="ACE"><rect class="Icon" transform="matrix(.99074 0 0 .96825 .49537 .48413)" width="107" height="30.5" fill="#fff" stroke="#000"/><text class="Text" transform="translate(53.5,19.25)"   font-size="12px"  text-anchor="middle"><tspan x="0" y="0">ACE</tspan></text></g><g class="Uniprot-TrEMBL_P50052 Protein AGTR2 " transform="translate(346,355.75)" color="#000"  name="AT2R"><rect class="Icon" transform="matrix(.99074 0 0 .96825 .49537 .48413)" width="107" height="30.5" fill="#fff" stroke="#000"/><text class="Text" transform="translate(53.5,19.25)"   font-size="12px"  text-anchor="middle"><tspan x="0" y="0">AT2R</tspan></text></g><text class="Text" transform="translate(5,27)" dominant-baseline="central" fill="black"  font-size="12px" font-weight="bold" overflow="visible" ><tspan x="0" y="-9">Name: Downregulation of ACE2 expression by SARS-CoV infection and SARS-CoV spike protein</tspan> <tspan x="0" y="9">Organism: Homo sapiens</tspan></text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"><symbol id="Ellipse" class=" Icon Ellipse" x="0" y="0" overflow="visible" preserveAspectRatio="none" viewBox="0 0 50 50"><desc>Ellipse</desc><ellipse cx="25" cy="25" rx="25" ry="25" vector-effect="non-scaling-stroke"/></symbol></g><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker><marker id="meminhibition000" markerHeight="20" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><g id="g-meminhibition000" transform=""><g transform="rotate(180 5 10)"><rect y="9" width="8" height="2" style="stroke:none"/><line x="0" y="0" width="12" height="12" x1="7" x2="7" y2="20" stroke="#000" stroke-width="1.8"/></g></g></marker><marker id="memconversion000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memconversion000" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227211653308" class="svg-pan-zoom_viewport" transform="matrix(2.07 0 0 2.07 267.12 0)" style="transform:matrix(2.07, 0, 0, 2.07, 267.12, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP4799" class="Pathway http___identifiers_org_pw_PW_0000013 Viewport"  name="Name: Downregulation of ACE2 by SARS-CoV-2 spike protein Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0000013 Viewport"><rect   width="322" height="345.33" style="stroke:none"/><g id="id2567d541" class="Edge"  ><path    d="m160 124.33 2e-14 32.33"/></g><g id="id5f17221c" class="Edge"  ><path    d="m195 176.67v20h35.83v28.67"/></g><g id="id6c434c1e" class="Edge"  ><path    d="m230.83 245.33 0.33 34.67" style="marker-end:url(#meminhibition000)"/></g><g id="idbca35504" class="Edge"  ><path    d="m195 176.67v20h-38.67v28.67"/></g><g id="idc652beda" class="Edge"  ><path    d="m230 77v27.33" style="marker-end:url(#meminhibition000)"/></g><g id="idc7eb7b47" class="Edge"  ><path    d="m156.33 245.33-0.17 34.67" style="marker-end:url(#memconversion000)"/></g><g id="ide171a636" class="Edge"  ><path    d="m230 124.33 2.8e-13 32.33" style="marker-end:url(#meminhibition000)"/></g><g id="dd819" class="Pathway" transform="translate(118.67 280)"  name="Lung injury" ><g class="Pathway"><rect   width="150" height="20" rx="15" ry="15"/></g><g ><defs><clipPath ><rect x="-75" y="-10" width="150" height="20" style="stroke:none"/></clipPath></defs><text   transform="translate(75,10)"    font-weight="bold" >Lung injury</text></g></g><g id="ab2a6" class="Protein" transform="translate(126.33 225.33)"  name="AT1R" ><rect   width="60" height="20"/><text   transform="translate(30,10)"    >AT1R</text></g><g id="b733a" class="Metabolite " transform="translate(125 156.67)"  name="Angiotensin II" ><rect   width="140" height="20" style="stroke:#00f"/><text   transform="translate(70,10)"     style="fill:#00f">Angiotensin II</text></g><g id="cfddc" class="Protein" transform="translate(168 46.5)"  name="SARS-CoV-2 spike" ><use class="Protein Node Icon" transform="matrix(0.99 0 0 0.97 0.50 0.48)" width="124" height="30.5" fill="#ffcccc" stroke="#000" href="#Ellipse"/><text   transform="translate(62,15.25)"    >SARS-CoV-2 spike</text></g><g id="d051e" class="Protein" transform="translate(200 104.33)"  name="ACE2" ><rect   width="60" height="20"/><text   transform="translate(30,10)"    >ACE2</text></g><g id="d08ac" class="Protein" transform="translate(130 104.33)"  name="ACE" ><rect   width="60" height="20"/><text   transform="translate(30,10)"    >ACE</text></g><g id="ee6b1" class="Protein" transform="translate(200.83 225.33)"  name="AT2R" ><rect   width="60" height="20"/><text   transform="translate(30,10)"    >AT2R</text></g></g></g></g></svg>
