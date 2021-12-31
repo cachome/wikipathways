@@ -12,8 +12,22 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 import requests
-from lxml import html, etree
+from lxml import etree
 from scour import scour
+
+# Scour removes certain style attributes if their value is the
+# SVG-defined default.  However, this module sets certain style
+# attributes in doc-level CSS, which overrides the browser default.
+# E.g. this module sets `text-anchor` to default to `middle`, but
+# browser defaults it to `start` and thus Scour removes it.
+# Without having the attribute, this module can't account for
+# non-module-default attributes in `hoist_style`; so ensures such
+# attributes aren't removed by Scour.
+#
+# TODO: Other props defined in `style` in
+# `custom_lossless_optimize_svg` might be susceptible to the issue
+# described above.  Consider checking more thoroughly.
+del scour.default_properties['text-anchor']
 
 # # Enable importing local modules when directly calling as script
 # if __name__ == "__main__":
@@ -70,6 +84,12 @@ def unwrap_leaf(tree, has_bloat, leaf=None, selector=None):
         grandparent.replace(parent, element)
 
 def get_has_class_clause(raw_class):
+    """Enable typical class selectors in XPath, akin to CSS ".foo"
+
+    XPath makes it complicated to detect if a string is among class values.
+    That functionality is typical for class selectors, so tailor syntax to
+    ease such common queries.
+    """
     normed_class = "concat(' ', normalize-space(@class), ' ')"
     has_class_clause = 'contains(' + normed_class + ', "' + raw_class + '")'
     return has_class_clause
@@ -77,18 +97,22 @@ def get_has_class_clause(raw_class):
 def unwrap(tree):
     """Many elements are extraneously wrapped; this pares them
     """
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+
     # XPath has poor support for typical class attributes,
     # so tailor syntax accordingly
-    bloaters = ["Protein", "Metabolite", "Rna", "Label", "GeneProduct"]
-    has_bloat = " or ".join([
-        get_has_class_clause(b) for b in bloaters
+    wrapped = [
+        "Protein", "Metabolite", "Rna", "Label", "GeneProduct", "Unknown"
+    ]
+    all_wrapped = " or ".join([
+        get_has_class_clause(w) for w in wrapped
     ])
 
-    unwrap_leaf(tree, has_bloat, "rect")
-    unwrap_leaf(tree, has_bloat, "use")
+    unwrap_leaf(tree, all_wrapped, "rect")
+    unwrap_leaf(tree, all_wrapped, "use")
 
-    text_sel = f"//svg:g[{has_bloat}]/svg:g/svg:text"
-    unwrap_leaf(tree, has_bloat, selector=text_sel)
+    text_sel = f"//svg:g[{all_wrapped}]/svg:g/svg:text"
+    unwrap_leaf(tree, all_wrapped, selector=text_sel)
 
     # bloat_groups = ["GroupGroup", "GroupComplex", "GroupNone"]
     # has_bloats = " or ".join([
@@ -98,6 +122,31 @@ def unwrap(tree):
     # unwrap_leaf(tree, has_bloats, selector=group_child_sel)
 
     return tree
+
+def remove_extra_tspans(tree):
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+    sizes = []
+
+    texts = tree.xpath("//svg:text", namespaces=ns_map)
+    # print('text_sel', text_sel)
+    for text in texts:
+        # print('text', etree.tostring(text))
+        tspans = text.xpath('svg:tspan', namespaces=ns_map)
+        if len(tspans) == 1:
+            tspan = tspans[0]
+            content = tspan.text
+            font_size = tspan.attrib["font-size"]
+            sizes.append(font_size)
+            # print('content', content)
+            text.attrib["font-size"] = font_size
+            text.remove(tspan)
+            text.text = content
+
+    default_font_size = None
+    if len(sizes) > 0:
+        default_font_size = max(sizes, key = sizes.count)
+
+    return tree, default_font_size
 
 def trim_markers(tree):
     """Remove unused marker elements from diagram
@@ -179,19 +228,35 @@ def prep_rect_style_hoist(tree):
 
     return elements, defaults_by_prop, noneable_props
 
-def prep_text_style_hoist(tree):
+def prep_text_style_hoist(tree, defaults):
     ns_map = {"svg": "http://www.w3.org/2000/svg"}
     selector = '//svg:text'
     elements = tree.xpath(selector, namespaces=ns_map)
     defaults_by_prop = {
         "fill": "#000",
-        "text-anchor": "middle"
+        "text-anchor": "middle",
+        # "font-weight": "normal"
+    }
+    if 'text' in defaults:
+        defaults_by_prop.update(defaults['text'])
+    noneable_props = []
+
+    return elements, defaults_by_prop, noneable_props
+
+def prep_metabolite_rect_style_hoist(tree):
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+    has_class_clause = get_has_class_clause("Metabolite")
+    selector = f"//svg:g[{has_class_clause}]/rect"
+    elements = tree.xpath(selector, namespaces=ns_map)
+    defaults_by_prop = {
+        "stroke": "#00f"
     }
     noneable_props = []
 
     return elements, defaults_by_prop, noneable_props
 
-def hoist_style(tree):
+
+def hoist_style(tree, defaults):
     """Move default styles from elements to `style` tag
 
     The raw diagram's styles are encoded as attributes on every element.
@@ -202,20 +267,24 @@ def hoist_style(tree):
 
     [1] https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
     """
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
 
-    for element_name in ['edge', 'rect', 'text']:
-        if element_name == 'edge':
+    for name in ['metabolite_rect', 'edge', 'rect', 'text']:
+        if name == 'edge':
             e, d, n = prep_edge_style_hoist(tree)
-        elif element_name == 'rect':
+        elif name == 'rect':
             e, d, n = prep_rect_style_hoist(tree)
-        elif element_name == 'text':
-            e, d, n = prep_text_style_hoist(tree)
+        elif name == 'text':
+            e, d, n = prep_text_style_hoist(tree, defaults)
+        elif name == 'metabolite_rect':
+            e, d, n = prep_metabolite_rect_style_hoist(tree)
 
         elements, defaults_by_prop, noneable_props = [e, d, n]
 
         for element in elements:
             attrs = element.attrib
             styles = []
+
             # Iterate each property the can be encoded as a CSS style
             for prop in defaults_by_prop:
                 if prop in attrs:
@@ -243,9 +312,56 @@ def hoist_style(tree):
     return tree
 
 
+def trim_symbols_and_uses_and_groups(tree):
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+    # Remove unused color attribute in group elements
+    groups = tree.xpath("//svg:g", namespaces=ns_map)
+    for group in groups:
+        if 'color' in group.attrib:
+            del group.attrib['color']
+
+    used_symbols = []
+    group_uses = tree.xpath("//svg:g/svg:use", namespaces=ns_map)
+    for group_use in group_uses:
+        if group_use.attrib["href"] and group_use.attrib["href"] != "#none":
+            # E.g. href="#foo" -> foo
+            used_symbols.append(group_use.attrib["href"][1:])
+        else:
+            group_use.getparent().remove(group_use)
+
+    symbols = tree.xpath("//svg:symbol", namespaces=ns_map)
+    for symbol in symbols:
+        id = symbol.attrib["id"]
+        if id not in used_symbols or id == 'none':
+            symbol.getparent().remove(symbol)
+
+    symbol_children = tree.xpath("//svg:symbol/*", namespaces=ns_map)
+    for sc in symbol_children:
+        if "stroke" in sc.attrib and sc.attrib["stroke"] == "currentColor":
+            del sc.attrib["stroke"]
+
+    return tree
+
+def trim_transform(tree):
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+    rects = tree.xpath("//svg:rect", namespaces=ns_map)
+    uses = tree.xpath("//svg:use", namespaces=ns_map)
+    elements = rects + uses
+    for element in elements:
+        if "transform" in element.attrib:
+            matrix = element.attrib["transform"]
+            coord_string = matrix.replace("matrix(", "").replace(")", "")
+            coords = [float(c) for c in coord_string.split()]
+            is_significant = any([c > 1.1 for c in coords])
+            if not is_significant:
+                del element.attrib["transform"]
+    return tree
+
 def custom_lossless_optimize_svg(svg, pwid):
     """Losslessly decrease size of WikiPathways SVG
     """
+    ns_map = {"svg": "http://www.w3.org/2000/svg"}
+
     svg = re.sub(pwid.lower(), '', svg)
     svg = condense_colors(svg)
 
@@ -256,17 +372,29 @@ def custom_lossless_optimize_svg(svg, pwid):
     metadata = tree.xpath('//*[@id="' + pwid + '-text"]')[0]
     metadata.getparent().remove(metadata)
 
-    tree = unwrap(tree)
-
     tree = trim_markers(tree)
 
-    tree = hoist_style(tree)
+    tree = trim_symbols_and_uses_and_groups(tree)
+
+    tree = trim_transform(tree)
+
+    tree, default_font_size = remove_extra_tspans(tree)
+
+    font_size_css = ""
+    defaults = {}
+    if default_font_size:
+        defaults = {
+            "text": {
+                "font-size": default_font_size
+            }
+        }
+        font_size_css = "font-size: " + default_font_size + ";"
+    tree = hoist_style(tree, defaults)
+
+    tree = unwrap(tree)
 
     svg = etree.tostring(tree).decode("utf-8")
     svg = '<?xml version="1.0" encoding="UTF-8"?>\n' + svg
-
-    # if pwid == "WP231":
-    #     exit()
 
     font_family = "\'Liberation Sans\', Arial, sans-serif"
     svg = re.sub('font-family="Arial"', '', svg)
@@ -297,6 +425,7 @@ def custom_lossless_optimize_svg(svg, pwid):
                 "overflow: hidden;" +
                 "text-anchor: middle;" +
                 "fill: #000;" +
+                font_size_css +
             #   "stroke: #000; " +
             "}" +
             # "g > a {" +
@@ -379,11 +508,11 @@ def custom_lossless_optimize_svg(svg, pwid):
 
     svg = re.sub(r'\d*\.\d{2,}', lambda m: format(float(m.group(0)), '.2f'), svg)
 
-    svg = re.sub(
-        r'text-anchor="middle"><tspan\s+x="0" y="0"',
-        r'text-anchor="middle"><tspan ',
-        svg
-    )
+    # svg = re.sub(
+    #     r'text-anchor="middle"><tspan\s+x="0" y="0"',
+    #     r'text-anchor="middle"><tspan ',
+    #     svg
+    # )
 
     return svg
 
@@ -465,7 +594,7 @@ def custom_lossy_optimize_svg(svg):
     svg = re.sub(r' href="#none"', '', svg)
     svg = re.sub('target="_blank"', '', svg)
 
-    svg = re.sub('font-weight="bold"', '', svg)
+    # svg = re.sub('font-weight="bold"', '', svg)
 
     return svg
 
