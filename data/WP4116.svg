@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"><symbol id="HexagonPathVisio" class=" Icon HexagonPathVisio" x="0" y="8" overflow="visible" preserveAspectRatio="none" viewBox="0 8 100 86"><desc>HexagonPathVisio</desc><g transform="scale(1 0.85)"><path d="m1.42 51.00 21.07-42.14h56.19l21.07 42.14-21.07 42.15h-56.19l-21.07-42.15z" stroke="currentColor" vector-effect="non-scaling-stroke"/></g></symbol><symbol id="Octagon" class=" Icon Octagon" x="0" y="0" overflow="visible" preserveAspectRatio="none" viewBox="0 0 100 100"><desc>Octagon</desc><path d="m0 25 25-25h50l25 25v50l-25 25h-50l-25-25z" vector-effect="non-scaling-stroke"/></symbol></g><g id="marker-defs"><marker id="memcatalysis000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memcatalysis000" transform=""><g transform="rotate(180 6 6)"><circle cx="6" cy="6" r="5.3px" fill="#fff" stroke="#000"/></g></g></marker><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227204927560" class="svg-pan-zoom_viewport" transform="matrix(1.16 0 0 1.16 345.5 0)" style="transform:matrix(1.16, 0, 0, 1.16, 345.50, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP4116" class="Pathway Viewport"  name="Name: Lactose synthesis Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="437" height="613" style="stroke:none"/><g id="ac830" class="Reactome_R-HSA-5653873"  ><path    d="m256 81-1 60" style="marker-end:none"/><g id="e29b3" class="AB" transform="translate(256,81)"  ><g class="AB"/></g><g id="fa10d" class="AB" transform="translate(255.01,140.4)"  ><g class="AB"/></g><g id="fbe94" class="AB" transform="translate(255.5,111)"  ><g class="AB"/></g></g><g id="a7150" class="Reactome_R-HSA-5653873"  ><path    d="m223 106h33" style="marker-end:url(#memcatalysis000)"/></g><g id="b8a82" class="Reactome_R-HSA-5653873"  ><path    d="m255 141v3"/></g><g id="cddd8" class="Reactome_R-HSA-5653878"  ><path    d="m255 267v64" style="marker-end:none"/><g id="f4898" class="AB" transform="translate(255,267)"  ><g class="AB"/></g><g id="ca4f6" class="AB" transform="translate(255,330.36)"  ><g class="AB"/></g><g id="eab14" class="AB" transform="translate(255,299)"  ><g class="AB"/></g></g><g id="bd12a" class="Reactome_R-HSA-5653878"  ><path    d="m255 174v93" style="marker-end:none"/></g><g id="de4c7" class="Reactome_R-HSA-5653878"  ><path    d="m235 238 20 29" style="marker-end:none"/></g><g id="e610f" class="Reactome_R-HSA-5653878"  ><path    d="m175 312h80" style="marker-end:url(#memcatalysis000)"/></g><g id="e702f" class="Reactome_R-HSA-5653873"  ><path    d="m257 78-1 3" style="marker-end:none"/></g><g id="ec043" class="Reactome_R-HSA-5653886"  ><path    d="m121 238-1 60" style="marker-end:none"/><g id="cb9b5" class="AB" transform="translate(121,238)"  ><g class="AB"/></g><g id="cb06f" class="AB" transform="translate(120.01,297.4)"  ><g class="AB"/></g><g id="c305f" class="AB" transform="translate(120.5,268)"  ><g class="AB"/></g></g><g id="a66a6" class="Reactome_R-HSA-5653886"  ><path    d="m122 210-1 28" style="marker-end:none"/></g><g id="a8134" class="Reactome_R-HSA-5653886"  ><path    d="m163 200-42 38" style="marker-end:none"/></g><g id="c1be3" class="Reactome_R-HSA-5653886"  ><path    d="m120 298v3"/></g><g id="a89e9" class="Reactome_R-HSA-5653886"  ><path    d="m165 238-44 19"/></g><g id="a8db3" class="Reactome_R-HSA-5653886"  ><path    d="m165 238-44 19"/></g><g id="f0f07" class="Reactome_R-HSA-5653878"  ><path    d="m255 331 1 49"/></g><g id="f33f4" class="Reactome_R-HSA-5653878"  ><path    d="m255 331-33 28"/></g><g id="bf8c5" class="GroupGroup" transform="translate(12,13)"  ><g class="GroupGroup"><g id="e43e3" class="" transform="translate(8,8)"  ><g class=""><rect   transform="matrix(0.99 0 0 0.99 1.49 1.49)" width="387" height="464" rx="15" ry="15" stroke-width="3" style="fill:transparent;stroke:#c0c0c0"/></g></g><g id="eba7f" class="Label" transform="translate(324,411)"  name="cytosol" ><g class="Label"/><text   transform="translate(32,16.5)"    >cytosol</text></g></g></g><g id="f5b06" class="GroupGroup" transform="translate(109,93)"  ><g class="GroupGroup"><g id="b8b70" class="" transform="translate(8,8)"  ><g class=""><rect   transform="matrix(0.98 0 0 0.99 1.48 1.49)" width="193" height="341" rx="15" ry="15" stroke-width="3" style="fill:transparent;stroke:#c0c0c0"/></g></g><g id="ca9e7" class="Label" transform="translate(20,275)"  name="Golgi lumen" ><g class="Label"/><text   transform="translate(46.5,16.5)"    >Golgi lumen</text></g></g></g><g id="a72e1" class="Metabolite " transform="translate(236,380)"  name="Lac" ><rect   transform="matrix(0.98 0 0 0.97 0.49 0.48)" width="41" height="30" style="stroke:#00f"/><text   transform="translate(20.5,15)"     style="fill:#00f">Lac</text></g><g id="b4a10" class="Protein" transform="translate(89,188)"  name="B4GALT1" ><rect   transform="matrix(0.99 0 0 0.96 0.49 0.48)" width="66" height="22"/><text   transform="translate(33,11)"    >B4GALT1</text></g><g id="b8ddd" class="Metabolite " transform="translate(165,223)"  name="UDP-Gal" ><rect   transform="matrix(0.99 0 0 0.97 0.49 0.48)" width="70" height="30" style="stroke:#00f"/><text   transform="translate(35,15)"     style="fill:#00f">UDP-Gal</text></g><g id="bb3af" class="Protein" transform="translate(163,189)"  name="LALBA" ><rect   transform="matrix(0.98 0 0 0.96 0.49 0.48)" width="49" height="22"/><text   transform="translate(24.5,11)"    >LALBA</text></g><g id="c7dbb" class="Metabolite " transform="translate(237,144)"  name="Glc" ><rect   transform="matrix(0.97 0 0 0.97 0.49 0.48)" width="37" height="30" style="stroke:#00f"/><text   transform="translate(18.5,15)"     style="fill:#00f">Glc</text></g><g id="ccc39" class="Metabolite " transform="translate(239,48)"  name="Glc" ><rect   transform="matrix(0.97 0 0 0.97 0.49 0.48)" width="37" height="30" style="stroke:#00f"/><text   transform="translate(18.5,15)"     style="fill:#00f">Glc</text></g><g id="ddd5d" class="Metabolite " transform="translate(160,261)"  name="Mn2+" ><rect   transform="matrix(0.98 0 0 0.97 0.49 0.48)" width="53" height="30" style="stroke:#00f"/><text   transform="translate(26.5,15)"     style="fill:#00f">Mn2+</text></g><g id="dded7" class="Metabolite " transform="translate(182,344)"  name="UDP" ><rect   transform="matrix(0.98 0 0 0.97 0.49 0.48)" width="41" height="30" style="stroke:#00f"/><text   transform="translate(20.5,15)"     style="fill:#00f">UDP</text></g><g id="e4005" class="Complex Reactome_R-HSA-5653881" transform="translate(109,95)"  name="SLC2A1 tetramer" ><g class="Complex Reactome_R-HSA-5653881"><use class="Complex Reactome_R-HSA-5653881 Node Icon" transform="matrix(0.99 0 0 0.96 0.50 0.48)" width="115" height="22" fill="#fff" stroke="#a52a2a" href="#HexagonPathVisio"/></g><g ><defs><clipPath ><rect x="-57.5" y="-11" width="115" height="22" style="stroke:none"/></clipPath></defs><text   transform="translate(57.5,11)"     style="fill:#a52a2a">SLC2A1 tetramer</text></g></g><g id="fa14b" class="Complex Reactome_R-HSA-5653885" transform="translate(65,301)"  name="B4GALT1:LALBA" ><g class="Complex Reactome_R-HSA-5653885"><use class="Complex Reactome_R-HSA-5653885 Node Icon" transform="matrix(0.99 0 0 0.96 0.50 0.48)" width="111" height="22" fill="#fff" stroke="#a52a2a" href="#HexagonPathVisio"/></g><g ><defs><clipPath ><rect x="-55.5" y="-11" width="111" height="22" style="stroke:none"/></clipPath></defs><text   transform="translate(55.5,11)"     style="fill:#a52a2a">B4GALT1:LALBA</text></g></g><g id="a5444" class="GroupComplex" transform="translate(38,491)"  ><g class="GroupComplex"><use class="Icon" transform="matrix(0.99 0 0 0.98 0.50 0.49)" width="124" height="44" fill="#b4b464" fill-opacity=".1" stroke="grey" href="#Octagon"/><g id="f3838" class="Protein" transform="translate(12,12)"  name="SLC2A1" ><rect   transform="matrix(0.99 0 0 0.95 0.50 0.48)" width="100" height="20"/><text   transform="translate(50,10)"    >SLC2A1</text></g></g></g><g id="f0546" class="GroupComplex" transform="translate(178,531)"  ><g class="GroupComplex"><use class="Icon" transform="matrix(0.99 0 0 0.98 0.50 0.49)" width="124" height="64" fill="#b4b464" fill-opacity=".1" stroke="grey" href="#Octagon"/><g id="b5fbc" class="Protein" transform="translate(12,32)"  name="LALBA" ><rect   transform="matrix(0.99 0 0 0.95 0.50 0.48)" width="100" height="20"/><text   transform="translate(50,10)"    >LALBA</text></g><g id="e6f24" class="Protein" transform="translate(12,12)"  name="B4GALT1" ><rect   transform="matrix(0.99 0 0 0.95 0.50 0.48)" width="100" height="20"/><text   transform="translate(50,10)"    >B4GALT1</text></g></g></g></g></g></g></svg>

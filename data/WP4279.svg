@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227205120589" class="svg-pan-zoom_viewport" transform="matrix(0.76 0 0 0.76 0 123.94)" style="transform:matrix(0.76, 0, 0, 0.76, 0, 123.94)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP4279" class="Pathway Viewport"  name="Name: CYP2E1 activation leading to neurodegeneration Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="1572.7" height="610.89" style="stroke:none"/><g id="id47f59c32" class="Edge"  ><path    d="m460.65 209.54 77.27 3e-14"/></g><g id="id60cc8488" class="Edge"  ><path    d="m1271.9 209.54 70.86-3e-14"/></g><g id="id6719b485" class="Edge"  ><path    d="m1001.2 209.54 70.63 3e-14"/></g><g id="ida0636265" class="Edge"  ><path    d="m426 349.25 123-4.5"/></g><g id="ide7f3beac" class="Edge"  ><path    d="m737.92 209.54 63.30-3e-14"/></g><g id="idf60d8d2c" class="Edge"  ><path    d="m688 344.75 119-60.77"/></g><g id="id55780fcf" class="Edge"  ><path    d="m1003 283.98 116-8.37"/></g><g id="id918fe10a" class="Edge"  ><path    d="m1228 275.61 112.81-9.45"/></g><g id="ida09f601" class="Edge"  ><path    d="m181.77 389.39 111.23-40.14"/></g><g id="b021c" class="Label" transform="translate(801.22 197.04)"  name="KE: Unfolded Protein Response (1512)" ><rect   width="200" height="25"/><text   transform="translate(100,12.5)"    >KE: Unfolded Protein Response (1512)</text></g><g id="c9b21" class="Label" transform="translate(1071.9 197.04)"  name="KE: Apoptosis (1513)" ><rect   width="200" height="25"/><text   transform="translate(100,12.5)"    >KE: Apoptosis (1513)</text></g><g id="cb3d2" class="Label" transform="translate(260.65 197.04)"  name="MIE: CYP2E1 Activation (1508)" ><rect   width="200" height="25"/><text   transform="translate(100,12.5)"    >MIE: CYP2E1 Activation (1508)</text></g><g id="cd000" class="Label" transform="translate(532.45 298.6)"  name="Increase concentration of ROS" ><g class="Label"/><text   transform="translate(96.28 10.95)"    >Increase concentration of ROS</text></g><g id="cdf89" class="Label" transform="translate(537.92 197.04)"  name="KE: Oxidative Stress (1510)" ><rect   width="200" height="25"/><text   transform="translate(100,12.5)"    >KE: Oxidative Stress (1510)</text></g><g id="d41e3" class="Label" transform="translate(1340.8 258.36)"  name="Biomarker SBDP-145 increase" ><g class="Label"/><text   transform="translate(95.69 15.61)"    >Biomarker SBDP-145 increase</text></g><g id="f0a4b" class="Label" transform="translate(1342.7 197.04)"  name="AO: Neurodegeneration (1514)" ><rect   width="200" height="25"/><text   transform="translate(100,12.5)"    >AO: Neurodegeneration (1514)</text></g><g id="f5fd4" class="Label" transform="translate(81.09 287.97)"  name="Stressors" ><g class="Label"/><text   transform="translate(45,12.5)"    font-weight="bold" >Stressors</text></g><g id="fab56" class="Label" transform="translate(996.6 292.4)"  name="Increase caspase expression" ><g class="Label"/><text   transform="translate(54.20 17.30)"    ><tspan   x="0" y="-6.60">Increase caspase</tspan><tspan   x="0" y="6.60">expression</tspan></text></g><g id="ab8f8" class="GeneProduct " transform="translate(582.52 371.56)"  name="NFE2L2" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >NFE2L2</text></g><g id="bf173" class="Metabolite " transform="translate(715.8 386.55)"  name="Acetylcysteine" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">Acetylcysteine</text></g><g id="c7a11" class="Pathway" transform="translate(549,332.5)"  name="Oxidative Stress" ><g class="Pathway"/><g ><defs><clipPath ><rect x="-69.5" y="-12.25" width="139" height="24.5" style="stroke:none"/></clipPath></defs><text   transform="translate(69.5,12.25)"    font-weight="bold"  style="fill:#14961e">Oxidative Stress</text></g></g><g id="ce445" class="GeneProduct " transform="translate(715.8 336.55)"  name="SOD1" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >SOD1</text></g><g id="df710" class="Pathway" transform="translate(293,334.5)"  name="CYP2E1 activation" ><g class="Pathway"/><g ><defs><clipPath ><rect x="-66.5" y="-14.75" width="133" height="29.5" style="stroke:none"/></clipPath></defs><text   transform="translate(66.5,14.75)"    font-weight="bold"  style="fill:#14961e">CYP2E1 activation</text></g></g><g id="f27e7" class="Metabolite " transform="translate(715.8 361.55)"  name="L(-)-Glutathione(oxidized)" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">L(-)-Glutathione(oxidized)</text></g><g id="df043" class="GroupGroup" transform="translate(807,250.5)"  ><g class="GroupGroup"><g id="a8c20" class="Pathway" transform="translate(8,8)"  name="Unfolded Protein Response" ><g class="Pathway"/><g ><defs><clipPath ><rect x="-90" y="-19.75" width="180" height="39.5" style="stroke:none"/></clipPath></defs><text   transform="translate(90,19.75)"    font-weight="bold"  style="fill:#14961e">Unfolded Protein Response</text></g></g><g id="e97c7" class="GeneProduct " transform="translate(46.77 50.94)"  name="ATF6" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >ATF6</text></g><g id="f115c" class="GeneProduct " transform="translate(46.77 100.94)"  name="EIF2AK3" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >EIF2AK3</text></g><g id="f618d" class="GeneProduct " transform="translate(46.77 75.94)"  name="ERN1" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >ERN1</text></g></g></g><g id="fbb6e" class="GroupGroup" transform="translate(1119,244.5)"  ><g class="GroupGroup"><g id="a8aaf" class="Pathway" transform="translate(8,8)"  name="Apoptosis" ><g class="Pathway"/><g ><defs><clipPath ><rect x="-45" y="-12.5" width="90" height="25" style="stroke:none"/></clipPath></defs><text   transform="translate(45,12.5)"    font-weight="bold"  style="fill:#14961e">Apoptosis</text></g></g><g id="ee677" class="GeneProduct " transform="translate(10.99 91.44)"  name="MAPK8" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >MAPK8</text></g><g id="f68e1" class="GeneProduct " transform="translate(10.99 66.44)"  name="BCL2" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >BCL2</text></g><g id="fbe4c" class="GeneProduct " transform="translate(10.99 41.44)"  name="TP53TG3C" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >TP53TG3C</text></g></g></g><g id="ff9ae" class="GroupGroup" transform="translate(75.77 322.89)"  ><g class="GroupGroup"><g id="a4ffa" class="Metabolite " transform="translate(8,133)"  name="methoxyflurane" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">methoxyflurane</text></g><g id="a66ce" class="Metabolite " transform="translate(8,108)"  name="isoflurane" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">isoflurane</text></g><g id="acb71" class="Metabolite " transform="translate(8,58)"  name="Enflurane" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">Enflurane</text></g><g id="b80f9" class="Metabolite " transform="translate(8 183)"  name="Isoniazid" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">Isoniazid</text></g><g id="c56a5" class="Metabolite " transform="translate(8,8)"  name="ethanol" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">ethanol</text></g><g id="c9f06" class="Metabolite " transform="translate(8 208)"  name="Sevoflurane" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">Sevoflurane</text></g><g id="d208a" class="Metabolite " transform="translate(8 233)"  name="titanium oxide" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">titanium oxide</text></g><g id="dda46" class="Metabolite " transform="translate(8,33)"  name="acetaminophen" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">acetaminophen</text></g><g id="e5263" class="Metabolite " transform="translate(8,158)"  name="chlorzoxazone" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">chlorzoxazone</text></g><g id="fe998" class="Metabolite " transform="translate(8,83)"  name="Halothane" ><rect   width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">Halothane</text></g></g></g></g></g></g></svg>

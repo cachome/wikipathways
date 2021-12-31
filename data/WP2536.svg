@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  WikiPathways page: https://www.wikipathways.org/index.php/Pathway:WP2536
-  URL for this compressed file: https://github.com/eweitz/cachome/tree/main/data/wikipathways/WP2536.svg
-  Source code for compression: https://github.com/eweitz/cachome/tree/main/src/wikipathways.py
--->
-<svg class="Diagram" width="800" height="600" color="black" baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid" version="1.1" viewBox="0 0 763 437" vocab="http://vocabularies.wikipathways.org/wp#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }</style><defs><filter id="a" x="0" y="0" width="763" height="437" filterUnits="userSpaceOnUse"><feColorMatrix in="SourceGraphic" values="-1   0   0 0 0                   0  -1   0 0 0                   0   0  -1 0 0                   0   0   0 1 0"/></filter><marker id="d" stroke-dasharray="99999" markerHeight="12" markerUnits="userSpaceOnUse" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><path transform="rotate(180 6 6)" d="M12 11L0 6l12-5z" fill="currentColor" stroke-width="0"/></marker><marker id="c" stroke-dasharray="99999" markerHeight="12" markerUnits="userSpaceOnUse" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><circle transform="rotate(180 6 6)" cx="6" cy="6" r="5.3" fill="none" stroke="#000"/></marker><marker id="e" stroke-dasharray="99999" markerHeight="20" markerUnits="userSpaceOnUse" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><path d="m3 0v20" fill="currentColor" stroke="currentColor"/></marker><symbol id="b" preserveAspectRatio="none" viewBox="0 0 100 100"/></defs><g class="Viewport" color="black"  name="Name: Colchicine metabolic pathway Organism: Homo sapiens"><rect class="Icon" width="763" height="437" fill="#fff" stroke="#000" stroke-width="0"/><g id="f" class="DirectedInteraction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="79.2, 5.8"><path class="EdgeBody" d="m185 111h85"   marker-end="url(#d)" /></g><g class="Burr Anchor" transform="translate(211,111)" ><use class="Icon" width="0" height="0" fill="#141414" stroke-width="0" xlink:href="#b"/></g></g><g id="g" class="Interaction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="60, 11"><path class="EdgeBody" d="m211 182v-71"   marker-end="url(#c)" /></g></g><g id="h" class="Interaction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="59.30987860040162, 7"><path class="EdgeBody" d="m165 121 26 61"   marker-end="url(#e)" /></g></g><a class="Chemspider_5933 Metabolite ChEBI_CHEBI_27882  " transform="translate(105,101)" color="#00f"  name="Colchicine"  ><rect class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#00f"/><text class="Text" transform="translate(40,13)" fill="#00f"  font-size="10px"  text-anchor="middle"><tspan x="0" y="0">Colchicine</tspan></text></a><a class="Chemspider_264748 Metabolite " transform="translate(270,101)" color="#00f"  name="3DMC"  ><rect class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#00f"/><text class="Text" transform="translate(40,13)" fill="#00f"  font-size="10px"  text-anchor="middle"><tspan x="0" y="0">3DMC</tspan></text></a><g id="i" class="DirectedInteraction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="109.2, 5.8"><path class="EdgeBody" d="m145 121v115"   marker-end="url(#d)" /></g><g class="Burr Anchor" transform="translate(145,192)" ><use class="Icon" width="0" height="0" fill="#141414" stroke-width="0" xlink:href="#b"/></g></g><g id="j" class="Interaction" color="#000" ><g color="#000" fill="transparent"  filter="url(#a)" stroke="#000" stroke-dasharray="15, 11"><path class="EdgeBody" d="m171 192h-26"   marker-end="url(#c)" /></g></g><a class="Chemspider_22210 Metabolite " transform="translate(105,236)" color="#00f"  name="2DMC"  ><rect class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#00f"/><text class="Text" transform="translate(40,13)" fill="#00f"  font-size="10px"  text-anchor="middle"><tspan x="0" y="0">2DMC</tspan></text></a><a  class="Uniprot-TrEMBL_P08684 Protein CYP3A4 " transform="translate(171,182)"   name="CYP3A4"  ><rect class="Icon" transform="matrix(.98765 0 0 .95238 .49383 .47619)" width="80" height="20" fill="#fff" stroke="#000"/><text class="Text" transform="translate(40,13)"   font-size="10px"  text-anchor="middle"><tspan x="0" y="0">CYP3A4</tspan></text></a><text class="Text" transform="translate(5,27)" dominant-baseline="central" fill="black"  font-size="12px" font-weight="bold" overflow="visible" ><tspan x="0" y="-9">Name: Colchicine metabolic pathway</tspan> <tspan x="0" y="9">Organism: Homo sapiens</tspan></text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker><marker id="memcatalysis000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memcatalysis000" transform=""><g transform="rotate(180 6 6)"><circle cx="6" cy="6" r="5.3px" fill="#fff" stroke="#000"/></g></g></marker><marker id="meminhibition000" markerHeight="20" markerWidth="10" orient="auto" preserveAspectRatio="none" refX="10" refY="10" viewBox="0 0 10 20"><g id="g-meminhibition000" transform=""><g transform="rotate(180 5 10)"><rect y="9" width="8" height="2" style="stroke:none"/><line x="0" y="0" width="12" height="12" x1="7" x2="7" y2="20" stroke="#000" stroke-width="1.8"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211228012317961" class="svg-pan-zoom_viewport" transform="matrix(1.57 0 0 1.57 0 13.36)" style="transform:matrix(1.57, 0, 0, 1.57, 0, 13.36)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP2536" class="Pathway http___identifiers_org_pw_PW_0000375 http___identifiers_org_pw_PW_0001229 Viewport"  name="Name: Colchicine metabolic pathway Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0000375 http___identifiers_org_pw_PW_0001229 Viewport"><rect   width="763" height="437" style="stroke:none"/><g id="id2b3f4a18" class="Edge"  ><path    d="m185 111h85"/><g id="fdf56" class="AB" transform="translate(211,111)"  ><g class="AB"/></g></g><g id="iddb8622d1" class="Edge"  ><path    d="m211 182v-71" style="marker-end:url(#memcatalysis000)"/></g><g id="pvjsgeneratedidff781" class="Edge"  ><path    d="m165 121 26 61" style="marker-end:url(#meminhibition000)"/></g><g id="c6ebc" class="Metabolite" transform="translate(105,101)"  name="Colchicine" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">Colchicine</text></g><g id="d4a9d" class="Metabolite" transform="translate(270,101)"  name="3DMC" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">3DMC</text></g><g id="b7125" class="Edge"  ><path    d="m145 121v115"/><g id="e652e" class="AB" transform="translate(145,192)"  ><g class="AB"/></g></g><g id="fbf4e" class="Edge"  ><path    d="m171 192h-26" style="marker-end:url(#memcatalysis000)"/></g><g id="d406b" class="Metabolite" transform="translate(105,236)"  name="2DMC" ><rect   width="80" height="20" style="stroke:#00f"/><text   transform="translate(40,10)"     style="fill:#00f">2DMC</text></g><g id="ff780" class="Protein" transform="translate(171,182)"  name="CYP3A4" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >CYP3A4</text></g></g></g></g></svg>

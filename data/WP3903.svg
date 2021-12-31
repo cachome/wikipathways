@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="memconversion000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memconversion000" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227204536100" class="svg-pan-zoom_viewport" transform="matrix(3.21 0 0 3.21 0 46.51)" style="transform:matrix(3.21, 0, 0, 3.21, 0, 46.51)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP3903" class="Pathway Viewport"  name="Name: WikiPathwaysAcademy-Demo_2 Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="373.92" height="193.5" style="stroke:none"/><g id="idbd0e8a1" class="Edge"  ><path    d="m158 150.9h95.92" style="marker-end:url(#memconversion000)"/><g id="pvjsgeneratedidf563d" class="AB" transform="translate(204 148.9)"  ><g class="AB"><rect   width="4" height="4" style="stroke:none"/></g></g></g><g id="bbe77" class="Metabolite " transform="translate(68 138.4)"  name="citrate" ><rect   transform="matrix(0.99 0 0 0.96 0.49 0.48)" width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">citrate</text></g><g id="f563c" class="Metabolite " transform="translate(253.92 138.4)"  name="cis-aconitate" ><rect   transform="matrix(0.99 0 0 0.96 0.49 0.48)" width="90" height="25" style="stroke:#00f"/><text   transform="translate(45,12.5)"     style="fill:#00f">cis-aconitate</text></g></g></g></g></svg>

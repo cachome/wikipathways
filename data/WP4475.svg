@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227205356097" class="svg-pan-zoom_viewport" transform="matrix(1.48 0 0 1.48 0 52.57)" style="transform:matrix(1.48, 0, 0, 1.48, 0, 52.57)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP4475" class="Pathway Viewport"  name="Name: Twelve loci associated with ADHD Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="813" height="412.5" style="stroke:none"/><g id="fd5a3" class="Label" transform="translate(80,57.5)"  name="Locus 1" ><g class="Label"/><text   transform="translate(45,12.5)"    >Locus 1</text></g><g id="f6d01" class="GeneProduct " transform="translate(275,91.5)"  name="SPAG16" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >SPAG16</text></g><g id="pvjsgeneratedidfd5a4" class="GroupGroup" transform="translate(25,83.5)"  ><g class="GroupGroup"><g id="a10ba" class="GeneProduct " transform="translate(8,33)"  name="KDM4A" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >KDM4A</text></g><g id="cf5a8" class="GeneProduct " transform="translate(8,58)"  name="KDM4A-AS1" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >KDM4A-AS1</text></g><g id="d3a43" class="GeneProduct " transform="translate(8,83)"  name="PTPRF" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >PTPRF</text></g><g id="eeeec" class="GeneProduct " transform="translate(8,8)"  name="ST3GAL3" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >ST3GAL3</text></g><g id="d9c3b" class="GeneProduct " transform="translate(8,108)"  name="SLC6A9" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >SLC6A9</text></g><g id="b41de" class="GeneProduct " transform="translate(101,8)"  name="DPH2" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >DPH2</text></g><g id="d51b4" class="GeneProduct " transform="translate(101,33)"  name="ATP6V0B" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >ATP6V0B</text></g><g id="c1648" class="GeneProduct " transform="translate(8,133)"  name="ARTN" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >ARTN</text></g><g id="aa0f7" class="GeneProduct " transform="translate(101,58)"  name="B4GALT2" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >B4GALT2</text></g><g id="e28f9" class="GeneProduct " transform="translate(101,83)"  name="CCDC24" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >CCDC24</text></g><g id="b896e" class="GeneProduct " transform="translate(101,108)"  name="IPO13" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >IPO13</text></g></g></g><g id="f1dd7" class="Label" transform="translate(275,57.5)"  name="Locus 3" ><g class="Label"/><text   transform="translate(45,12.5)"    >Locus 3</text></g><g id="pvjsgeneratedidfd5a5" class="GroupGroup" transform="translate(402,83.5)"  ><g class="GroupGroup"><g id="a11b4" class="GeneProduct " transform="translate(8,33)"  name="LINC02497" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >LINC02497</text></g><g id="dc81d" class="GeneProduct " transform="translate(8,8)"  name="PCDH7" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >PCDH7</text></g></g></g><g id="cd724" class="Label" transform="translate(410,57.5)"  name="Locus 5" ><g class="Label"/><text   transform="translate(45,12.5)"    >Locus 5</text></g><g id="e3e85" class="GeneProduct " transform="translate(550,116.5)"  name="MIR9-2" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >MIR9-2</text></g><g id="d7e50" class="GeneProduct " transform="translate(550,91.5)"  name="LINC00461" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >LINC00461</text></g><g id="b2332" class="Label" transform="translate(550,57.5)"  name="Locus 6" ><g class="Label"/><text   transform="translate(45,12.5)"    >Locus 6</text></g><g id="c4cca" class="GeneProduct " transform="translate(550,166.5)"  name="TMEM161B-AS1" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >TMEM161B-AS1</text></g><g id="c2622" class="GeneProduct " transform="translate(550,141.5)"  name="LINC02060" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >LINC02060</text></g><g id="bbb41" class="GeneProduct " transform="translate(693,91.5)"  name="FOXP2" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >FOXP2</text></g><g id="b2da5" class="Label" transform="translate(693,57.5)"  name="Locus 7" ><g class="Label"/><text   transform="translate(45,12.5)"    >Locus 7</text></g><g id="dc813" class="GeneProduct " transform="translate(693,116.5)"  name="MIR3666" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >MIR3666</text></g><g id="e01e0" class="GeneProduct " transform="translate(80,332.5)"  name="LINC01288" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >LINC01288</text></g><g id="bf393" class="Label" transform="translate(80,298.5)"  name="Locus 8" ><g class="Label"/><text   transform="translate(45,12.5)"    >Locus 8</text></g><g id="c3b42" class="GeneProduct " transform="translate(275,332.5)"  name="SORCS3" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >SORCS3</text></g><g id="dd174" class="Label" transform="translate(275,298.5)"  name="Locus 9" ><g class="Label"/><text   transform="translate(45,12.5)"    >Locus 9</text></g><g id="bfbc3" class="GeneProduct " transform="translate(410,332.5)"  name="DUSP6" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >DUSP6</text></g><g id="e7cd6" class="Label" transform="translate(410,298.5)"  name="Locus 10" ><g class="Label"/><text   transform="translate(45,12.5)"    >Locus 10</text></g><g id="bbbd8" class="GeneProduct " transform="translate(550,332.5)"  name="SEMA6D" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >SEMA6D</text></g><g id="dd455" class="Label" transform="translate(550,298.5)"  name="Locus 11" ><g class="Label"/><text   transform="translate(45,12.5)"    >Locus 11</text></g><g id="f5ea7" class="GeneProduct " transform="translate(693,332.5)"  name="LINC01572" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >LINC01572</text></g><g id="dc25b" class="Label" transform="translate(693,298.5)"  name="Locus 12" ><g class="Label"/><text   transform="translate(45,12.5)"    >Locus 12</text></g><g id="ea7b7" class="GeneProduct " transform="translate(410,357.5)"  name="POC1B" ><rect   width="90" height="25"/><text   transform="translate(45,12.5)"    >POC1B</text></g></g></g></g></svg>

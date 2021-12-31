@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227212123879" class="svg-pan-zoom_viewport" transform="matrix(0.72 0 0 0.72 381.34 0)" style="transform:matrix(0.72, 0, 0, 0.72, 381.35, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP5091" class="Pathway Viewport"  name="Name: Mesothelial cell interaction leading to malignant pleural mesothelioma Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="604.93" height="987.67" style="stroke:none"/><g id="pvjsgeneratedidf93a9" class="Edge"  ><path    d="m218.79 544.69v1e-13" style="marker-end:none"/></g><g id="id1eab35fd" class="Edge"  ><path    d="m218.79 626.5 105.62 84.05"/></g><g id="id43029c3b" class="Edge"  ><path    d="m218.79 544.69v56.81"/></g><g id="id46d57cdd" class="Edge"  ><path    d="m324.4 735.55v66.76"/></g><g id="id47587b50" class="Edge"  ><path    d="m373.08 252.54h141.79v38.71"/></g><g id="id4a5e94cc" class="Edge"  ><path    d="m313.91 195.8 6e-14 44.24"/></g><g id="id88726a4e" class="Edge"  ><path    d="m313.91 265.04v-4e-14" style="marker-end:none"/></g><g id="id8c9d40cf" class="Edge"  ><path    d="m313.91 436.52v-1e-13" style="marker-end:none"/></g><g id="idb0870270" class="Edge"  ><path    d="m313.91 265.04v70"/></g><g id="idd647b9e5" class="Edge"  ><path    d="m324.4 932.67h6e-14" style="marker-end:none"/></g><g id="idd752e958" class="Edge"  ><path    d="m324.4 827.31" style="marker-end:none"/></g><g id="ideb015692" class="Edge"  ><path    d="m324.4 827.31-6e-14 80.35"/></g><g id="e4d43" class="Unknown" transform="translate(208.72 170.8)"  name="Interaction with mesothelial cells" ><rect   width="210.38" height="25"/><text   transform="translate(105.19 12.5)"    >Interaction with mesothelial cells</text></g><g id="c085f" class="Unknown" transform="translate(254.74 240.04)"  name="Oxidative stress" ><rect   width="118.33" height="25"/><text   transform="translate(59.17 12.5)"    >Oxidative stress</text></g><g id="d8c92" class="Pathway" transform="translate(248.33 265.04)"  name="Oxidative stress" ><g class="Pathway"><rect   width="131.15" height="25.58" rx="15" ry="15" style="stroke:#14961e"/></g><g ><defs><clipPath ><rect x="-65.58" y="-12.79" width="131.15" height="25.58" style="stroke:none"/></clipPath></defs><text   transform="translate(65.58 12.79)"    font-weight="bold"  style="fill:#14961e">Oxidative stress</text></g></g><g id="ea09b" class="Unknown" transform="translate(228.97 335.04)"  name="Oxidative lesions to DNA (loss of 3p21, 9p21)" ><rect   width="169.87" height="39.94"/><text   transform="translate(84.94 19.97)"    ><tspan   x="0" y="-6.60">Oxidative lesions to DNA</tspan><tspan   x="0" y="6.60">(loss of 3p21, 9p21)</tspan></text></g><g id="ef11f" class="Unknown" transform="translate(129.05 519.69)"  name="DNA double strand breaks" ><rect   width="179.48" height="25"/><text   transform="translate(89.74 12.5)"    >DNA double strand breaks</text></g><g id="cb783" class="Unknown" transform="translate(431.42 563.36)"  name="Increases in mutations" ><rect   width="143.5" height="25"/><text   transform="translate(71.75 12.5)"    >Increases in mutations</text></g><g id="f93a8" class="Unknown" transform="translate(85.83 601.5)"  name="Chromosome breaks and rearrangements" ><rect   width="265.91" height="25"/><text   transform="translate(132.95 12.5)"    >Chromosome breaks and rearrangements</text></g><g id="e9f1c" class="Unknown" transform="translate(258.53 710.55)"  name="Genomic instability" ><rect   width="131.74" height="25"/><text   transform="translate(65.87 12.5)"    >Genomic instability</text></g><g id="a6b44" class="Unknown" transform="translate(230.28 802.31)"  name="Mesothelial cell proliferation" ><rect   width="188.25" height="25"/><text   transform="translate(94.12 12.5)"    >Mesothelial cell proliferation</text></g><g id="ace2c" class="Unknown" transform="translate(270.27 907.67)"  name="Mesothelioma" ><rect   width="108.26" height="25"/><text   transform="translate(54.13 12.5)"    >Mesothelioma</text></g><g id="f97a3" class="Edge"  ><path    d="m313.91 374.98v36.55"/></g><g id="c2060" class="Edge"  ><path    d="m313.91 436.52-95.12 83.17"/></g><g id="a1070" class="Unknown" transform="translate(236.46 411.52)"  name="Inadequate DNA repair" ><rect   width="154.91" height="25"/><text   transform="translate(77.45 12.5)"    >Inadequate DNA repair</text></g><g id="d9772" class="Edge"  ><path    d="m313.91 436.52 189.26 126.84"/></g><g id="fb4a4" class="Edge"  ><path    d="m503.18 588.36-178.77 122.19"/></g><g id="a7818" class="Pathway" transform="translate(230.62 436.52)"  name="DNA Repair Pathways" ><g class="Pathway"><rect   width="166.57" height="25" rx="15" ry="15" style="stroke:#14961e"/></g><g ><defs><clipPath ><rect x="-83.29" y="-12.5" width="166.57" height="25" style="stroke:none"/></clipPath></defs><text   transform="translate(83.29 12.5)"    font-weight="bold"  style="fill:#14961e">DNA Repair Pathways</text></g></g><g id="d9c97" class="Pathway" transform="translate(285.43 827.31)"  name="Cell Cycle" ><g class="Pathway"><rect   width="77.95" height="25" rx="15" ry="15" style="stroke:#14961e"/></g><g ><defs><clipPath ><rect x="-38.98" y="-12.5" width="77.95" height="25" style="stroke:none"/></clipPath></defs><text   transform="translate(38.98 12.5)"    font-weight="bold"  style="fill:#14961e">Cell Cycle</text></g></g><g id="ee242" class="Pathway" transform="translate(204.38 932.67)"  name="Malignant Pleural Mesothelioma" ><g class="Pathway"><rect   width="240.05" height="25" rx="15" ry="15" style="stroke:#14961e"/></g><g ><defs><clipPath ><rect x="-120.03" y="-12.5" width="240.05" height="25" style="stroke:none"/></clipPath></defs><text   transform="translate(120.03 12.5)"    font-weight="bold"  style="fill:#14961e">Malignant Pleural Mesothelioma</text></g></g><g id="d0e21" class="Unknown" transform="translate(455.7 291.25)"  name="Chromothripsis" ><rect   width="118.33" height="25"/><text   transform="translate(59.17 12.5)"    >Chromothripsis</text></g><g id="e1d85" class="Edge"  ><path    d="m514.87 316.25v38.76h-116.02"/></g><g id="c33db" class="Pathway" transform="translate(118.62 544.69)"  name="Homologous Recombination" ><g class="Pathway"><rect   width="200.34" height="25.58" rx="15" ry="15" style="stroke:#14961e"/></g><g ><defs><clipPath ><rect x="-100.17" y="-12.79" width="200.34" height="25.58" style="stroke:none"/></clipPath></defs><text   transform="translate(100.17 12.79)"    font-weight="bold"  style="fill:#14961e">Homologous Recombination</text></g></g></g></g></g></svg>

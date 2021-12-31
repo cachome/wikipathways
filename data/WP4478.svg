@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="filter-defs"><filter id="doublefalse3filter" x="-50%" y="-50%" width="200%" height="200%"><feComposite in="SourceGraphic" in2="SourceGraphic" result="doubleDark"/><feMorphology in="doubleDark" operator="dilate" radius="0.17" result="in2Double"/><feMorphology in="SourceGraphic" operator="dilate" radius="3" result="inDouble"/><feComposite in="inDouble" in2="in2Double" operator="out" result="doubleResult"/></filter></g><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"><symbol id="Ellipse" class=" Icon Ellipse" x="0" y="0" overflow="visible" preserveAspectRatio="none" viewBox="0 0 50 50"><desc>Ellipse</desc><ellipse cx="25" cy="25" rx="25" ry="25" vector-effect="non-scaling-stroke"/></symbol></g><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211227205357418" class="svg-pan-zoom_viewport" transform="matrix(0.82 0 0 0.82 224.17 0)" style="transform:matrix(0.82, 0, 0, 0.82, 224.17, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 12px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP4478" class="Pathway Viewport"  name="Name: LTF danger signal response pathway Organism: Homo sapiens" ><g class="Pathway Viewport"><rect   width="918" height="872" style="stroke:none"/><g id="id43bd3790" class="Edge"  ><path    d="m668 233.31 30 48.69"/></g><g id="a41ea" class="Edge"  ><path    d="m629.98 133.84h18.04" style="marker-end:none"/></g><g id="id61386777" class="Edge"  ><path    d="m600 313 28 69"/></g><g id="a790c" class="Edge"  ><path    d="m638.94 98.02-8.65 34.98" style="marker-end:none"/></g><g id="id8031b391" class="Edge"  ><path    d="m608 223.31h-122.4v58.69"/></g><g id="a8b24" class="Edge"  ><path    d="m639 601h67" stroke-width="2" style="marker-end:none"/></g><g id="ida4b6448b" class="Edge"  ><path    d="m628 233.31-28 39.69"/></g><g id="bd142" class="Edge"  ><path    d="m661.92 98.59-9.17 22.48" style="marker-end:none"/></g><g id="ida652d326" class="Edge"  ><path    d="m688 223.31h128v58.69"/></g><g id="c185d" class="Edge"  ><path    d="m678.83 154-20.94 46.26" style="marker-end:none"/></g><g id="idacdd3129" class="Edge"  ><path    d="m485.6 302 35.40 145"/></g><g id="c6354" class="Edge"  ><path    d="m656.68 168.66 1.22 31.67" style="marker-end:none"/></g><g id="idbb75c54d" class="Edge"  ><path    d="m648 402 21 56"/></g><g id="e08ef" class="Edge"  ><path    d="m638.63 98.66h23.34" style="marker-end:none"/></g><g id="idcb0a9339" class="Edge"  ><path    d="m816 302-128 90"/></g><g id="ef590" class="Edge"  ><path    d="m660.59 153.43 18.31 0.28" style="marker-end:none"/></g><g id="iddfa27cfb" class="Edge"  ><path    d="m718 302-50 80"/></g><g id="dc27b" class=" PhysicalEntity CellularComponent Cell" transform="translate(393.5,293.5)"  ><g class=" PhysicalEntity CellularComponent Cell" filter="url(#doublefalse3filter)"><g class=" PhysicalEntity CellularComponent Cell"><rect   width="496" height="375" rx="15" ry="15" stroke-width="3" style="fill:transparent;stroke:#c0c0c0"/></g></g></g><g id="f8992" class="" transform="translate(500.3 733)"  ><g class=""><rect   width="298.54" height="109" style="fill:transparent"/></g></g><g id="fb621" class=" PhysicalEntity CellularComponent Nucleus" transform="translate(556.5,545.5)"  ><g class=" PhysicalEntity CellularComponent Nucleus" filter="url(#doublefalse3filter)"><g class=" PhysicalEntity CellularComponent Nucleus"><use class=" PhysicalEntity CellularComponent Nucleus Node Icon" transform="matrix(0.94 0 0 0.89 5.64 5.36)" width="189" height="101" fill="transparent" stroke="#c0c0c0" stroke-width="3" href="#Ellipse"/></g></g></g><g id="b3788" class="Label" transform="translate(590.8 62.2)"  name="Trauma or Infection" ><g class="Label"/><text   transform="translate(62,15.75)"    >Trauma or Infection</text></g><g id="dabc7" class="Label" transform="translate(635,608.3)"  name="DNA" ><g class="Label"/><text   transform="translate(45,12.5)"    font-weight="bold"  style="font-size:9px">DNA</text></g><g id="f5869" class="Label" transform="translate(383,635.5)"  name="Cytosol" ><g class="Label"/><text   transform="translate(45,12.5)"    >Cytosol</text></g><g id="fa1eb" class="Label" transform="translate(559,609.5)"  name="Nucleus" ><g class="Label"/><text   transform="translate(45,12.5)"     style="font-size:9px">Nucleus</text></g><g id="pvjsgeneratedida01" class="GeneProduct " transform="translate(518.23 741.68)"  name="IL1A" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >IL1A</text></g><g id="pvjsgeneratediddc27c" class="GeneProduct " transform="translate(518.23 761.68)"  name="IL1B" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >IL1B</text></g><g id="pvjsgeneratedidf8993" class="GeneProduct " transform="translate(611 741.68)"  name="IL6" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >IL6</text></g><g id="pvjsgeneratedidfb622" class="GeneProduct " transform="translate(611 761.68)"  name="IL8" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >IL8</text></g><g id="pvjsgeneratedidfb623" class="GeneProduct " transform="translate(704.94 741.68)"  name="TNF" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >TNF</text></g><g id="pvjsgeneratedidfb624" class="GeneProduct " transform="translate(611,793)"  name="IFNA" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >IFNA</text></g><g id="pvjsgeneratedidfb625" class="GeneProduct " transform="translate(611,813)"  name="IFNB" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >IFNB</text></g><g id="afa82" class="GeneProduct " transform="translate(629,458)"  name="IRAK1" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >IRAK1</text></g><g id="b2581" class="GeneProduct " transform="translate(743,447)"  name="TRAF6" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >TRAF6</text></g><g id="c2f36" class="GeneProduct " transform="translate(560,293)"  name="TLR4" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >TLR4</text></g><g id="c9f90" class="GeneProduct " transform="translate(608 213.31)"  name="LTF" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >LTF</text></g><g id="d82d5" class="GeneProduct " transform="translate(776,282)"  name="TREM1" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >TREM1</text></g><g id="dbeeb" class="GeneProduct " transform="translate(628.97 478)"  name="IRAK4" ><rect   width="80.06" height="20"/><text   transform="translate(40.03 10)"    >IRAK4</text></g><g id="dfda9" class="GeneProduct " transform="translate(560,273)"  name="TLR2" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >TLR2</text></g><g id="e2d3f" class="GeneProduct " transform="translate(678,282)"  name="CD14" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >CD14</text></g><g id="f77a9" class="GeneProduct " transform="translate(481,447)"  name="MAPK1" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >MAPK1</text></g><g id="fb925" class="GeneProduct " transform="translate(445.6 282)"  name="RAGE" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >RAGE</text></g><g id="fd6cb" class="GeneProduct " transform="translate(611,568)"  name="NFkB" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >NFkB</text></g><g id="a8b39" class="GeneProduct " transform="translate(608,382)"  name="MYD88" ><rect   width="80" height="20"/><text   transform="translate(40,10)"    >MYD88</text></g><g id="a12d1" class="Edge"  ><path    d="m638.57 168.45h18.04" style="marker-end:none"/></g><g id="b229b" class="Edge"  ><path    d="m653.32 121.26 21.45-0.06" style="marker-end:none"/></g><g id="b2ee4" class="Edge"  ><path    d="m674.82 121.46-14.27 31.97" style="marker-end:none"/></g><g id="fdf0c" class="Edge"  ><path    d="m648.04 133.97-9.35 34.08" style="marker-end:none"/></g><g id="d55ee" class="Edge"  ><path    d="m649 611h67" stroke-width="2" style="marker-end:none"/></g><g id="idf3fdd3ca" class="Edge"  ><path    d="m649 622 0.57 111"/></g><g id="idbf676e5d" class="Edge"  ><path    d="m783 467-112 101"/></g><g id="id5a537308" class="Edge"  ><path    d="m669 498-18 70"/></g><g id="ida062b5a3" class="Edge"  ><path    d="m521 467 110 101"/></g></g></g></g></svg>

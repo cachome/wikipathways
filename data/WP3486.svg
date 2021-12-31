@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="-svg" class="Diagram"  baseProfile="full" prefix="schema:http://schema.org/" preserveAspectRatio="xMidYMid"  version="1.1"><defs><g id="icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"/><g id="marker-defs"><marker id="mea" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-mea" transform=""><g transform="rotate(180 6 6)"><rect y="5.4" width="2" height="1.2" style="stroke:#fff"/><polygon points="12 11 0 6 12 1" stroke-width="0"/></g></g></marker><marker id="memcatalysis000" markerHeight="12" markerWidth="12" orient="auto" preserveAspectRatio="none" refX="12" refY="6" viewBox="0 0 12 12"><g id="g-memcatalysis000" transform=""><g transform="rotate(180 6 6)"><circle cx="6" cy="6" r="5.3px" fill="#fff" stroke="#000"/></g></g></marker></g><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.33; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="viewport-20211228013124043" class="svg-pan-zoom_viewport" transform="matrix(1.75 0 0 1.75 205.28 0)" style="transform:matrix(1.75, 0, 0, 1.75, 205.28, 0)"><style>svg {font-family: 'Liberation Sans', Arial, sans-serif; }path {fill: transparent;stroke: #000;marker-end: url(#mea);}symbol path {fill: inherit;stroke: inherit;stroke-width: inherit;marker-end: inherit;}rect {fill: #fff;stroke: #000;}text {dominant-baseline: central;overflow: hidden;text-anchor: middle;fill: #000;font-size: 10px;}</style><style type="text/css">.Viewport .textContent {
+  pointer-events: none;
+  stroke-width: 0px;
+}
+
+					.Viewport.Icon {
+  fill: white;
+}
+
+/* Hide the InfoBox */
+.Viewport.textContent {
+  font-size: 0;
+}
+
+.textContent {
+  stroke: none;
+}
+
+.DataNode {
+  stroke-miterlimit: 1;
+  pointer-events: auto;
+}
+
+.DataNode:hover {
+  cursor: pointer;
+}
+
+/* TODO should this apply to things other than DataNodes? */
+.DataNode.textContent {
+  pointer-events: none;
+}
+
+.DataNode.Highlighted {
+  opacity: 0.6;
+  stroke-width: 0px;
+}
+
+marker {
+  /* this is what should work per the spec
+  stroke-dasharray: none; */
+  /* but I need to add this to make it work in Safari */
+  stroke-dasharray: 9999999999999999999999999;
+}
+
+.Citation.Icon {
+  fill: none;
+  stroke-width: 0px;
+}
+
+.Citation.textContent {
+  text-align: center;
+  vertical-align: top;
+  font-size: 7px;
+  fill: #999;
+  fill-opacity: 1;
+  stroke: none;
+}</style><g id="WP3486" class="Pathway http___identifiers_org_pw_PW_0001472 Viewport"  name="Name: Abnormal conversion of 2-oxoglutarate to 2-hydroxyglutarate Organism: Homo sapiens" ><g class="Pathway http___identifiers_org_pw_PW_0001472 Viewport"><rect   width="450" height="407" style="stroke:none"/><g id="ceeca" class="Reactome_R-HSA-880053"  ><path    d="m175 144 106-1" style="marker-end:none"/><g id="cd045" class="AB" transform="translate(175,144)"  ><g class="AB"/></g><g id="fae69" class="AB" transform="translate(279.94,143.01)"  ><g class="AB"/></g><g id="dc1d6" class="AB" transform="translate(228,143.5)"  ><g class="AB"/></g></g><g id="b52a8" class="Reactome_R-HSA-880053"  ><path    d="m118 143 57 1" style="marker-end:none"/></g><g id="b73fa" class="Reactome_R-HSA-880053"  ><path    d="m281 143h42"/></g><g id="d18e7" class="Reactome_R-HSA-880053"  ><path    d="m167 85 59 58" style="marker-end:url(#memcatalysis000)"/></g><g id="d9fae" class="Reactome_R-HSA-880053"  ><path    d="m136 197 39-53" style="marker-end:none"/></g><g id="e1f61" class="Reactome_R-HSA-880053"  ><path    d="m164 184 11-40" style="marker-end:none"/></g><g id="fd2e1" class="Reactome_R-HSA-880053"  ><path    d="m281 143 34 54"/></g><g id="f81f9" class="GroupGroup" transform="translate(16,20)"  ><g class="GroupGroup"><g id="cdbd3" class="" transform="translate(8,8)"  ><g class=""><rect   transform="matrix(0.99 0 0 0.99 1.49 1.48)" width="396" height="251" rx="15" ry="15" stroke-width="3" style="fill:transparent;stroke:#c0c0c0"/></g></g><g id="a4006" class="Label" transform="translate(21,213)"  name="cytosol" ><g class="Label"/><text   transform="translate(32,16.5)"    >cytosol</text></g></g></g><g id="a5abd" class="Metabolite " transform="translate(62,129)"  name="2OG" ><rect   transform="matrix(0.98 0 0 0.97 0.49 0.48)" width="57" height="28" style="stroke:#00f"/><text   transform="translate(28.5,14)"     style="fill:#00f">2OG</text></g><g id="a72a2" class="Metabolite " transform="translate(323,129)"  name="2HG" ><rect   transform="matrix(0.98 0 0 0.97 0.49 0.48)" width="55" height="29" style="stroke:#00f"/><text   transform="translate(27.5,14.5)"     style="fill:#00f">2HG</text></g><g id="b4578" class="Metabolite " transform="translate(144,184)"  name="H+" ><rect   transform="matrix(0.98 0 0 0.96 0.49 0.48)" width="41" height="27" style="stroke:#00f"/><text   transform="translate(20.5,13.5)"     style="fill:#00f">H+</text></g><g id="b4aaa" class="Metabolite " transform="translate(315,182)"  name="NADP+" ><rect   transform="matrix(0.98 0 0 0.97 0.49 0.48)" width="60" height="31" style="stroke:#00f"/><text   transform="translate(30,15.5)"     style="fill:#00f">NADP+</text></g><g id="e0dbc" class="Complex Reactome_R-HSA-880004" transform="translate(167,67)"  name="IDH1 R132mutant dimers" ><g class="Complex Reactome_R-HSA-880004"><rect   transform="matrix(0.99 0 0 0.97 0.50 0.49)" width="118" height="36" rx="15" ry="15" style="stroke:#a52a2a"/></g><g ><defs><clipPath ><rect x="-59" y="-18" width="118" height="36" style="stroke:none"/></clipPath></defs><text   transform="translate(59,18)"     style="fill:#a52a2a"><tspan   x="0" y="-5.5">IDH1 R132mutant</tspan><tspan   x="0" y="5.5">dimers</tspan></text></g></g><g id="edf8e" class="Metabolite " transform="translate(70,183)"  name="NADPH" ><rect   transform="matrix(0.99 0 0 0.97 0.49 0.48)" width="67" height="29" style="stroke:#00f"/><text   transform="translate(33.5,14.5)"     style="fill:#00f">NADPH</text></g><g id="e93fc" class="GroupNone" transform="translate(41,288)"  ><g class="GroupNone"><rect   transform="matrix(0.99 0 0 0.99 0.50 0.49)" width="118" height="98" fill-opacity=".1" stroke-dasharray="5,3" style="fill:#b4b464;stroke:grey"/><g id="b88a1" class="Protein" transform="translate(9,69)"  name="IDH1 R132S mutant" ><rect   transform="matrix(0.99 0 0 0.95 0.50 0.48)" width="100" height="20"/><text   transform="translate(50,10)"    >IDH1 R132S mutant</text></g><g id="bc246" class="Protein" transform="translate(9,9)"  name="IDH1 R132H mutant" ><rect   transform="matrix(0.99 0 0 0.95 0.50 0.48)" width="100" height="20"/><text   transform="translate(50,10)"    >IDH1 R132H mutant</text></g><g id="d0637" class="Protein" transform="translate(9,49)"  name="IDH1 R132L mutant" ><rect   transform="matrix(0.99 0 0 0.95 0.50 0.48)" width="100" height="20"/><text   transform="translate(50,10)"    >IDH1 R132L mutant</text></g><g id="eb574" class="Protein" transform="translate(9,29)"  name="IDH1 R132C mutant" ><rect   transform="matrix(0.99 0 0 0.95 0.50 0.48)" width="100" height="20"/><text   transform="translate(50,10)"    >IDH1 R132C mutant</text></g></g></g></g></g></g></svg>
