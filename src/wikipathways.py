@@ -350,6 +350,8 @@ def trim_transform(tree):
     for element in elements:
         if "transform" in element.attrib:
             matrix = element.attrib["transform"]
+            if "matrix" not in matrix:
+                continue
             coord_string = matrix.replace("matrix(", "").replace(")", "")
             coords = [float(c) for c in coord_string.split()]
             is_significant = any([c > 1.1 for c in coords])
@@ -367,10 +369,18 @@ def custom_lossless_optimize_svg(svg, pwid):
 
     svg = svg.replace('<?xml version="1.0" encoding="UTF-8"?>\n', '')
     tree = etree.fromstring(svg)
+
     controls = tree.xpath('//*[@class="svg-pan-zoom-control"]')[0]
     tree.remove(controls)
+    controls_style = tree.xpath('//*[@id="svg-pan-zoom-controls-styles"]')[0]
+    controls_style.getparent().remove(controls_style)
+
     metadata = tree.xpath('//*[@id="' + pwid + '-text"]')[0]
     metadata.getparent().remove(metadata)
+
+    icons_id = "icon-defs-ArcPathVisioBraceEllipseEndoplasmicReticulumGolgiApparatusHexagonPathVisioMimDegradationMitochondriaOctagonPentagonPathVisioRectangleRoundedRectangleSarcoplasmicReticulumTriangleEquilateralEastTrianglePathVisionone"
+    icon_defs = tree.xpath('//*[@id="' + icons_id + '"]')[0]
+    icon_defs.attrib["id"] = "icon-defs"
 
     tree = trim_markers(tree)
 
@@ -401,26 +411,26 @@ def custom_lossless_optimize_svg(svg, pwid):
     svg = re.sub(f'font-family="{font_family}"', '', svg)
     style = (
         "<style>" +
-            "svg {" +
+            "svg.Diagram {" +
             f"font-family: {font_family}; "
             "}" +
-            "path {" +
+            ".Diagram path {" +
                 "fill: transparent;" +
                 "stroke: #000;" +
                 # "stroke-width: 2;" +
                 "marker-end: url(#mea);"
             "}" +
-            "symbol path {" +
+            ".Diagram symbol path {" +
                 "fill: inherit;" +
                 "stroke: inherit;" +
                 "stroke-width: inherit;" +
                 "marker-end: inherit;"
             "}" +
-            "rect {" +
+            ".Diagram rect {" +
                 "fill: #fff;" +
                 "stroke: #000;" +
             "}" +
-            "text {" +
+            ".Diagram text {" +
                 "dominant-baseline: central;" +
                 "overflow: hidden;" +
                 "text-anchor: middle;" +
@@ -605,8 +615,6 @@ class WikiPathwaysCache():
         self.output_dir = output_dir
         self.tmp_dir = f"tmp/"
         self.reuse = reuse
-        # self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        # self.driver.implicitly_wait(3) # seconds
 
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
@@ -636,12 +644,15 @@ class WikiPathwaysCache():
                     print(f"Found previous error; skip processing {id}")
                     continue
 
-            # url = f"https://pathway-viewer.toolforge.org/?id={id}"
-
-            # url = f"https://www.wikipathways.org/wpi/PathwayWidget.php?id={id}"
             url = f"https://www.wikipathways.org/index.php/Pathway:{id}?view=widget"
-            # url = f"https://example.com"
-            self.driver.get(url)
+            try:
+                driver = self.driver
+            except AttributeError:
+                # Only initializes once, and if not reusing populated cache
+                self.driver = webdriver.Chrome(ChromeDriverManager().install())
+                self.driver.implicitly_wait(3) # seconds
+                driver = self.driver
+            driver.get(url)
 
             try:
                 sleep(1)
